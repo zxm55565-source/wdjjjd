@@ -6,21 +6,14 @@ log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - zxmzy
   type: vless
-  server: 206.1.96.228
-  port: 8082
-  uuid: bfb3f06c-e33f-41ac-b101-012c8325a689
+  server: 195.162.69.203
+  port: 8443
+  uuid: 953358cb-82ba-4296-960d-6d2ec3468f4c
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: 195-162-69-203.sslip.io
 - name: 🇹🇷 土耳其 (Turkey) 02 - zxmzy
-  type: vless
-  server: 206.1.96.228
-  port: 8082
-  uuid: bfb3f06c-e33f-41ac-b101-012c8325a689
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 03 - zxmzy
   type: vless
   server: 151.241.226.201
   port: 2053
@@ -31,16 +24,23 @@ proxies:
   reality-opts:
     public-key: k5COjpopVNGzEuMb457zCrrZegSdBX-d8bg0G6HDsE4
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: random
+- name: 🇹🇷 土耳其 (Turkey) 03 - zxmzy
+  type: vless
+  server: 206.1.96.228
+  port: 8082
+  uuid: bfb3f06c-e33f-41ac-b101-012c8325a689
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇹🇷 土耳其 (Turkey) 04 - zxmzy
   type: vless
-  server: 195.162.69.203
-  port: 8443
-  uuid: 953358cb-82ba-4296-960d-6d2ec3468f4c
+  server: 206.1.96.228
+  port: 8082
+  uuid: bfb3f06c-e33f-41ac-b101-012c8325a689
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: 195-162-69-203.sslip.io
 - name: 🇹🇷 土耳其 (Turkey) 05 - zxmzy
   type: vless
   server: 195.162.69.203
