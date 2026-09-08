@@ -6,20 +6,24 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇬 BG 01 - xiaohe",
-        "🇧🇬 BG 02 - xiaohe",
-        "🇧🇬 BG 03 - xiaohe",
-        "🇧🇬 BG 04 - xiaohe"
+        "🇧🇬 BG 01 - zxmzy",
+        "🇧🇬 BG 02 - zxmzy",
+        "🇧🇬 BG 03 - zxmzy",
+        "🇧🇬 BG 04 - zxmzy",
+        "🇧🇬 BG 05 - zxmzy",
+        "🇧🇬 BG 06 - zxmzy"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇬 BG 01 - xiaohe",
-        "🇧🇬 BG 02 - xiaohe",
-        "🇧🇬 BG 03 - xiaohe",
-        "🇧🇬 BG 04 - xiaohe"
+        "🇧🇬 BG 01 - zxmzy",
+        "🇧🇬 BG 02 - zxmzy",
+        "🇧🇬 BG 03 - zxmzy",
+        "🇧🇬 BG 04 - zxmzy",
+        "🇧🇬 BG 05 - zxmzy",
+        "🇧🇬 BG 06 - zxmzy"
       ],
       "url": "https://www.google.com/generate_204"
     },

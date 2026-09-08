@@ -6,24 +6,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇪🇪 EE 01 - xiaohe",
-        "🇪🇪 EE 02 - xiaohe",
-        "🇪🇪 EE 03 - xiaohe",
-        "🇪🇪 EE 04 - xiaohe",
-        "🇪🇪 EE 05 - xiaohe",
-        "🇪🇪 EE 06 - xiaohe"
+        "🇪🇪 EE 01 - zxmzy",
+        "🇪🇪 EE 02 - zxmzy",
+        "🇪🇪 EE 03 - zxmzy",
+        "🇪🇪 EE 04 - zxmzy"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇪🇪 EE 01 - xiaohe",
-        "🇪🇪 EE 02 - xiaohe",
-        "🇪🇪 EE 03 - xiaohe",
-        "🇪🇪 EE 04 - xiaohe",
-        "🇪🇪 EE 05 - xiaohe",
-        "🇪🇪 EE 06 - xiaohe"
+        "🇪🇪 EE 01 - zxmzy",
+        "🇪🇪 EE 02 - zxmzy",
+        "🇪🇪 EE 03 - zxmzy",
+        "🇪🇪 EE 04 - zxmzy"
       ],
       "url": "https://www.google.com/generate_204"
     },

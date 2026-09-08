@@ -4,11 +4,11 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
+- name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - zxmzy
   type: vless
-  server: d38422b4-tl4g00-ts3rye-mrtr.hk3.hyhuawei.com
+  server: 58.153.148.126
   port: 443
-  uuid: 28a8a4d0-3e02-11eb-a8bf-f23c91cfbbc9
+  uuid: 460749c2-bcef-11ee-89fc-f23c913c8d2b
   udp: true
   tls: true
   skip-cert-verify: true
@@ -21,12 +21,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - zxmzy
 rules:
 - MATCH,PROXIES
