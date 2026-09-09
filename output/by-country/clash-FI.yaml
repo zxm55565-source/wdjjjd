@@ -6,6 +6,20 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - zxmzy
   type: vless
+  server: k2.cloud--vpn.site
+  port: 443
+  uuid: d9eda159-18d6-4457-8983-55523a21658c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: c12.com
+- name: 🇫🇮 FI 02 - zxmzy
+  type: vless
   server: italic.dearhossein-taktaz.ir
   port: 8080
   uuid: 83fd52e3-c8d4-4ba6-abf4-445b99fec0f0
@@ -17,7 +31,7 @@ proxies:
     path: /
     headers:
       Host: italic.dearhossein-taktaz.ir
-- name: 🇫🇮 FI 02 - zxmzy
+- name: 🇫🇮 FI 03 - zxmzy
   type: vless
   server: 151.101.56.6
   port: 443
@@ -29,20 +43,6 @@ proxies:
   network: ws
   ws-opts:
     path: /?TELEGRAM---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI
-    headers:
-      Host: c12.com
-- name: 🇫🇮 FI 03 - zxmzy
-  type: vless
-  server: k2.cloud--vpn.site
-  port: 443
-  uuid: d9eda159-18d6-4457-8983-55523a21658c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /
     headers:
       Host: c12.com
 - name: 🇫🇮 FI 04 - zxmzy
@@ -60,6 +60,20 @@ proxies:
     headers:
       Host: c12.com
 - name: 🇫🇮 FI 05 - zxmzy
+  type: vless
+  server: a2.arshia-nova.ir
+  port: 443
+  uuid: d9eda159-18d6-4457-8983-55523a21658c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: c12.com
+- name: 🇫🇮 FI 06 - zxmzy
   type: vless
   server: 185.79.138.71
   port: 448
@@ -81,6 +95,7 @@ proxy-groups:
   - 🇫🇮 FI 03 - zxmzy
   - 🇫🇮 FI 04 - zxmzy
   - 🇫🇮 FI 05 - zxmzy
+  - 🇫🇮 FI 06 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -91,5 +106,6 @@ proxy-groups:
   - 🇫🇮 FI 03 - zxmzy
   - 🇫🇮 FI 04 - zxmzy
   - 🇫🇮 FI 05 - zxmzy
+  - 🇫🇮 FI 06 - zxmzy
 rules:
 - MATCH,PROXIES
