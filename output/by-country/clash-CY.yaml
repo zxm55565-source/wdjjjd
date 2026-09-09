@@ -36,7 +36,7 @@ proxies:
   reality-opts:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
   servername: deepl.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇨🇾 CY 04 - zxmzy
   type: vless
   server: 194.76.154.31
@@ -48,7 +48,55 @@ proxies:
   reality-opts:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
   servername: deepl.com
+  client-fingerprint: chrome
+- name: 🇨🇾 CY 05 - zxmzy
+  type: vless
+  server: 194.76.154.31
+  port: 40443
+  uuid: 9f0baff8-bdee-4de9-9515-bcc4932b41fa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
+  servername: deepl.com
   client-fingerprint: firefox
+- name: 🇨🇾 CY 06 - zxmzy
+  type: vless
+  server: 194.76.154.31
+  port: 40443
+  uuid: 9f0baff8-bdee-4de9-9515-bcc4932b41fa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
+  servername: deepl.com
+  client-fingerprint: qq
+- name: 🇨🇾 CY 07 - zxmzy
+  type: vless
+  server: 194.76.154.31
+  port: 40443
+  uuid: 9f0baff8-bdee-4de9-9515-bcc4932b41fa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
+  servername: deepl.com
+  client-fingerprint: chrome
+- name: 🇨🇾 CY 08 - zxmzy
+  type: vless
+  server: 194.76.154.31
+  port: 40443
+  uuid: 9f0baff8-bdee-4de9-9515-bcc4932b41fa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
+  servername: deepl.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -58,6 +106,10 @@ proxy-groups:
   - 🇨🇾 CY 02 - zxmzy
   - 🇨🇾 CY 03 - zxmzy
   - 🇨🇾 CY 04 - zxmzy
+  - 🇨🇾 CY 05 - zxmzy
+  - 🇨🇾 CY 06 - zxmzy
+  - 🇨🇾 CY 07 - zxmzy
+  - 🇨🇾 CY 08 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -67,5 +119,9 @@ proxy-groups:
   - 🇨🇾 CY 02 - zxmzy
   - 🇨🇾 CY 03 - zxmzy
   - 🇨🇾 CY 04 - zxmzy
+  - 🇨🇾 CY 05 - zxmzy
+  - 🇨🇾 CY 06 - zxmzy
+  - 🇨🇾 CY 07 - zxmzy
+  - 🇨🇾 CY 08 - zxmzy
 rules:
 - MATCH,PROXIES

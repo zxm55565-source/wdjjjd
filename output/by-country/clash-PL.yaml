@@ -5,19 +5,32 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - zxmzy
-  type: vless
-  server: 94.183.209.43
-  port: 443
-  uuid: 5e7ecc47-e424-4653-876e-c7515a2c82b4
+  type: ss
+  server: 194.61.121.93
+  port: 7538
+  cipher: chacha20-ietf-poly1305
+  password: U9YAoqBgg5VyGBc6vQv1sN
   udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 94.183.209.43
 - name: 🇵🇱 PL 02 - zxmzy
+  type: vless
+  server: 2.26.224.233
+  port: 8443
+  uuid: 758f49d3-5f5f-47e7-bfa4-4ce96faf800d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: NI5Rkfn6zO_gF-UC1nuvJwu4SDakCXh3ygJOKU1EITU
+  servername: cdn.shopify.com
+  client-fingerprint: firefox
+- name: 🇵🇱 PL 03 - zxmzy
+  type: ss
+  server: 64.176.73.160
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: VJtsgllDDJfNmaTe
+  udp: true
+- name: 🇵🇱 PL 04 - zxmzy
   type: vless
   server: 94.183.209.59
   port: 443
@@ -30,7 +43,7 @@ proxies:
     path: /
     headers:
       Host: 94.183.209.59
-- name: 🇵🇱 PL 03 - zxmzy
+- name: 🇵🇱 PL 05 - zxmzy
   type: vless
   server: 94.183.209.43
   port: 443
@@ -43,25 +56,6 @@ proxies:
     path: /
     headers:
       Host: 94.183.209.43
-- name: 🇵🇱 PL 04 - zxmzy
-  type: vless
-  server: 2.26.224.233
-  port: 8443
-  uuid: 758f49d3-5f5f-47e7-bfa4-4ce96faf800d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: NI5Rkfn6zO_gF-UC1nuvJwu4SDakCXh3ygJOKU1EITU
-  servername: cdn.shopify.com
-  client-fingerprint: firefox
-- name: 🇵🇱 PL 05 - zxmzy
-  type: ss
-  server: 194.61.121.93
-  port: 7538
-  cipher: chacha20-ietf-poly1305
-  password: U9YAoqBgg5VyGBc6vQv1sN
-  udp: true
 - name: 🇵🇱 PL 06 - zxmzy
   type: vless
   server: 94.183.209.58
@@ -76,13 +70,6 @@ proxies:
     headers:
       Host: pl2.lckdwn.ru
 - name: 🇵🇱 PL 07 - zxmzy
-  type: ss
-  server: 64.176.73.160
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: VJtsgllDDJfNmaTe
-  udp: true
-- name: 🇵🇱 PL 08 - zxmzy
   type: vless
   server: 94.183.209.58
   port: 443
@@ -107,7 +94,6 @@ proxy-groups:
   - 🇵🇱 PL 05 - zxmzy
   - 🇵🇱 PL 06 - zxmzy
   - 🇵🇱 PL 07 - zxmzy
-  - 🇵🇱 PL 08 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -120,6 +106,5 @@ proxy-groups:
   - 🇵🇱 PL 05 - zxmzy
   - 🇵🇱 PL 06 - zxmzy
   - 🇵🇱 PL 07 - zxmzy
-  - 🇵🇱 PL 08 - zxmzy
 rules:
 - MATCH,PROXIES
