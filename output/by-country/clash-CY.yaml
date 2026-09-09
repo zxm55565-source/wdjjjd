@@ -15,15 +15,8 @@ proxies:
   reality-opts:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
   servername: deepl.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇨🇾 CY 02 - zxmzy
-  type: ss
-  server: 185.203.4.204
-  port: 3
-  cipher: chacha20-ietf-poly1305
-  password: 816Efx8yiCSDDpvvpxXL8Q
-  udp: true
-- name: 🇨🇾 CY 03 - zxmzy
   type: vless
   server: 45.9.2.171
   port: 8443
@@ -32,7 +25,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: torr.wlrus.cfd
-- name: 🇨🇾 CY 04 - zxmzy
+- name: 🇨🇾 CY 03 - zxmzy
   type: vless
   server: 194.76.154.31
   port: 40443
@@ -44,6 +37,18 @@ proxies:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
   servername: deepl.com
   client-fingerprint: chrome
+- name: 🇨🇾 CY 04 - zxmzy
+  type: vless
+  server: 194.76.154.31
+  port: 40443
+  uuid: 9f0baff8-bdee-4de9-9515-bcc4932b41fa
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
+  servername: deepl.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
