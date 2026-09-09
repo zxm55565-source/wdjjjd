@@ -13,10 +13,10 @@ proxies:
   udp: true
 - name: 🇿🇦 ZA 02 - zxmzy
   type: ss
-  server: 20.164.43.105
-  port: 443
+  server: 139.84.247.164
+  port: 8388
   cipher: chacha20-ietf-poly1305
-  password: BhYMkBpjAjE6ixSw
+  password: tfAcRikawhNoZAhu
   udp: true
 - name: 🇿🇦 ZA 03 - zxmzy
   type: ss
@@ -32,13 +32,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: BhYMkBpjAjE6ixSw
   udp: true
-- name: 🇿🇦 ZA 05 - zxmzy
-  type: ss
-  server: 20.164.43.105
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: BhYMkBpjAjE6ixSw
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -48,7 +41,6 @@ proxy-groups:
   - 🇿🇦 ZA 02 - zxmzy
   - 🇿🇦 ZA 03 - zxmzy
   - 🇿🇦 ZA 04 - zxmzy
-  - 🇿🇦 ZA 05 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -58,6 +50,5 @@ proxy-groups:
   - 🇿🇦 ZA 02 - zxmzy
   - 🇿🇦 ZA 03 - zxmzy
   - 🇿🇦 ZA 04 - zxmzy
-  - 🇿🇦 ZA 05 - zxmzy
 rules:
 - MATCH,PROXIES
