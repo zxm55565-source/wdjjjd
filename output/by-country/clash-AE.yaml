@@ -6,53 +6,20 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - zxmzy
   type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  server: 185.112.249.201
+  port: 8443
+  uuid: 9b18ccef-b9e0-41d1-8990-9d970569e142
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: web-socket.tgdaosheng.ggff.net
   network: ws
   ws-opts:
-    path: /
+    path: /proxyip=bpb.yousef.isegaro.comfp=chrome
     headers:
-      Host: uae.unixzone.us
+      Host: web-socket.tgdaosheng.ggff.net
 - name: 🇦🇪 阿联酋 (UAE) 02 - zxmzy
   type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 03 - zxmzy
-  type: vless
-  server: 104.17.147.22
-  port: 443
-  uuid: 5ef04ae8-8d7c-0a66-13f4-6e3f00000005
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: relay.lunetcloud.ir
-  network: ws
-  ws-opts:
-    path: /lunetnetwork
-    headers:
-      Host: relay.lunetcloud.ir
-- name: 🇦🇪 阿联酋 (UAE) 04 - zxmzy
-  type: ss
-  server: 188.208.110.58
-  port: 8444
-  cipher: chacha20-ietf-poly1305
-  password: tunnel-astrovpn_official
-  udp: true
-- name: 🇦🇪 阿联酋 (UAE) 05 - zxmzy
-  type: vless
   server: 84.235.244.108
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
@@ -64,87 +31,6 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 06 - zxmzy
-  type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 07 - zxmzy
-  type: vless
-  server: 45.130.125.201
-  port: 80
-  uuid: dc8a9493-c54a-459e-d060-81a700000001
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: nahan-core.netizo09.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 08 - zxmzy
-  type: vless
-  server: 104.24.31.89
-  port: 443
-  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: rayan-007.nastaran.dpdns.org
-- name: 🇦🇪 阿联酋 (UAE) 09 - zxmzy
-  type: vless
-  server: 84.235.244.108
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 10 - zxmzy
-  type: vless
-  server: 80.240.18.227
-  port: 10051
-  uuid: f4d859eb-abc6-4c57-9eee-8fe9e2ef0f94
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 11 - zxmzy
-  type: vless
-  server: 203.137.165.164
-  port: 57554
-  uuid: 9c7501fb-4e23-44d8-9a9e-973807ae4f35
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -152,15 +38,6 @@ proxy-groups:
   - AUTO
   - 🇦🇪 阿联酋 (UAE) 01 - zxmzy
   - 🇦🇪 阿联酋 (UAE) 02 - zxmzy
-  - 🇦🇪 阿联酋 (UAE) 03 - zxmzy
-  - 🇦🇪 阿联酋 (UAE) 04 - zxmzy
-  - 🇦🇪 阿联酋 (UAE) 05 - zxmzy
-  - 🇦🇪 阿联酋 (UAE) 06 - zxmzy
-  - 🇦🇪 阿联酋 (UAE) 07 - zxmzy
-  - 🇦🇪 阿联酋 (UAE) 08 - zxmzy
-  - 🇦🇪 阿联酋 (UAE) 09 - zxmzy
-  - 🇦🇪 阿联酋 (UAE) 10 - zxmzy
-  - 🇦🇪 阿联酋 (UAE) 11 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -168,14 +45,5 @@ proxy-groups:
   proxies:
   - 🇦🇪 阿联酋 (UAE) 01 - zxmzy
   - 🇦🇪 阿联酋 (UAE) 02 - zxmzy
-  - 🇦🇪 阿联酋 (UAE) 03 - zxmzy
-  - 🇦🇪 阿联酋 (UAE) 04 - zxmzy
-  - 🇦🇪 阿联酋 (UAE) 05 - zxmzy
-  - 🇦🇪 阿联酋 (UAE) 06 - zxmzy
-  - 🇦🇪 阿联酋 (UAE) 07 - zxmzy
-  - 🇦🇪 阿联酋 (UAE) 08 - zxmzy
-  - 🇦🇪 阿联酋 (UAE) 09 - zxmzy
-  - 🇦🇪 阿联酋 (UAE) 10 - zxmzy
-  - 🇦🇪 阿联酋 (UAE) 11 - zxmzy
 rules:
 - MATCH,PROXIES

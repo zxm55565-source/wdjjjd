@@ -7,12 +7,16 @@ proxies:
 - name: 🇪🇪 EE 01 - zxmzy
   type: vless
   server: 94.183.170.135
-  port: 8443
+  port: 443
   uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 94.183.170.135
 - name: 🇪🇪 EE 02 - zxmzy
   type: vless
   server: 94.183.170.135
@@ -47,30 +51,12 @@ proxies:
 - name: 🇪🇪 EE 05 - zxmzy
   type: vless
   server: 94.183.170.135
-  port: 443
+  port: 8443
   uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 94.183.170.135
-- name: 🇪🇪 EE 06 - zxmzy
-  type: vless
-  server: 172.67.67.178
-  port: 443
-  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: rayan-007.nastaran.dpdns.org
+  servername: estproxy4.lockdwn.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -81,7 +67,6 @@ proxy-groups:
   - 🇪🇪 EE 03 - zxmzy
   - 🇪🇪 EE 04 - zxmzy
   - 🇪🇪 EE 05 - zxmzy
-  - 🇪🇪 EE 06 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -92,6 +77,5 @@ proxy-groups:
   - 🇪🇪 EE 03 - zxmzy
   - 🇪🇪 EE 04 - zxmzy
   - 🇪🇪 EE 05 - zxmzy
-  - 🇪🇪 EE 06 - zxmzy
 rules:
 - MATCH,PROXIES
