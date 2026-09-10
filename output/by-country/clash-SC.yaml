@@ -5,6 +5,58 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇨 SC 01 - zxmzy
+  type: vless
+  server: 45.130.125.96
+  port: 443
+  uuid: 28607fa7-db30-47d6-942a-f5744e4be9ad
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: dfsuporte.garena.com.ex33r.eu.cc
+  network: ws
+  ws-opts:
+    path: /id-pusat
+    headers:
+      Host: dfsuporte.garena.com.ex33r.eu.cc
+- name: 🇸🇨 SC 02 - zxmzy
+  type: vmess
+  server: 156.226.183.181
+  port: 54321
+  uuid: d3bcc1f1-6294-4f68-bcf3-c3bcb2001520
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇸🇨 SC 03 - zxmzy
+  type: vless
+  server: 104.16.72.30
+  port: 443
+  uuid: a8b1d666-d3ba-4b17-90c4-ba7514c74f78
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xstack.mahanfixe.workers.dev
+  network: ws
+  ws-opts:
+    path: /xiron
+    headers:
+      Host: xstack.mahanfixe.workers.dev
+- name: 🇸🇨 SC 04 - zxmzy
+  type: vless
+  server: 104.17.147.22
+  port: 443
+  uuid: 518de0d4-6ce8-4404-80db-23c4a8806128
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ez-5faafb.esmaoi.workers.dev
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiQkFLTnhqM2tZTSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
+    headers:
+      Host: ez-5faafb.esmaoi.workers.dev
+- name: 🇸🇨 SC 05 - zxmzy
   type: vmess
   server: 156.226.183.181
   port: 54321
@@ -20,11 +72,19 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇸🇨 SC 01 - zxmzy
+  - 🇸🇨 SC 02 - zxmzy
+  - 🇸🇨 SC 03 - zxmzy
+  - 🇸🇨 SC 04 - zxmzy
+  - 🇸🇨 SC 05 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇸🇨 SC 01 - zxmzy
+  - 🇸🇨 SC 02 - zxmzy
+  - 🇸🇨 SC 03 - zxmzy
+  - 🇸🇨 SC 04 - zxmzy
+  - 🇸🇨 SC 05 - zxmzy
 rules:
 - MATCH,PROXIES

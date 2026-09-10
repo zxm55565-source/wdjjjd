@@ -15,20 +15,8 @@ proxies:
   reality-opts:
     public-key: 5RCgAVjaT7hwdVIKAEULswXGqR127ZOZV6X17nEhYk8
   servername: bowandbead.com
-  client-fingerprint: chrome
+  client-fingerprint: qq
 - name: 🇳🇴 NO 02 - zxmzy
-  type: vless
-  server: 151.242.168.125
-  port: 390
-  uuid: b02ff150-ee30-46e0-9ea1-adbfd7762a06
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 5RCgAVjaT7hwdVIKAEULswXGqR127ZOZV6X17nEhYk8
-  servername: bowandbead.com
-  client-fingerprint: ios
-- name: 🇳🇴 NO 03 - zxmzy
   type: vless
   server: 151.242.168.125
   port: 390
@@ -39,7 +27,14 @@ proxies:
   reality-opts:
     public-key: 5RCgAVjaT7hwdVIKAEULswXGqR127ZOZV6X17nEhYk8
   servername: bowandbead.com
-  client-fingerprint: edge
+  client-fingerprint: qq
+- name: 🇳🇴 NO 03 - zxmzy
+  type: ss
+  server: 185.213.23.63
+  port: 990
+  cipher: chacha20-ietf-poly1305
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  udp: true
 - name: 🇳🇴 NO 04 - zxmzy
   type: vless
   server: 151.242.168.125
@@ -51,22 +46,8 @@ proxies:
   reality-opts:
     public-key: 5RCgAVjaT7hwdVIKAEULswXGqR127ZOZV6X17nEhYk8
   servername: bowandbead.com
-  client-fingerprint: qq
+  client-fingerprint: chrome
 - name: 🇳🇴 NO 05 - zxmzy
-  type: ss
-  server: 185.213.23.63
-  port: 990
-  cipher: chacha20-ietf-poly1305
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  udp: true
-- name: 🇳🇴 NO 06 - zxmzy
-  type: ss
-  server: 185.213.23.63
-  port: 990
-  cipher: chacha20-ietf-poly1305
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  udp: true
-- name: 🇳🇴 NO 07 - zxmzy
   type: vless
   server: 151.242.168.125
   port: 390
@@ -77,7 +58,7 @@ proxies:
   reality-opts:
     public-key: 5RCgAVjaT7hwdVIKAEULswXGqR127ZOZV6X17nEhYk8
   servername: bowandbead.com
-  client-fingerprint: qq
+  client-fingerprint: edge
 proxy-groups:
 - name: PROXIES
   type: select
@@ -88,8 +69,6 @@ proxy-groups:
   - 🇳🇴 NO 03 - zxmzy
   - 🇳🇴 NO 04 - zxmzy
   - 🇳🇴 NO 05 - zxmzy
-  - 🇳🇴 NO 06 - zxmzy
-  - 🇳🇴 NO 07 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -100,7 +79,5 @@ proxy-groups:
   - 🇳🇴 NO 03 - zxmzy
   - 🇳🇴 NO 04 - zxmzy
   - 🇳🇴 NO 05 - zxmzy
-  - 🇳🇴 NO 06 - zxmzy
-  - 🇳🇴 NO 07 - zxmzy
 rules:
 - MATCH,PROXIES
