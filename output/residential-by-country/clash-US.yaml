@@ -1,0 +1,33 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇺🇸 美国 (United States) 01 (家宽) - zxmzy
+  type: vless
+  server: 162.159.140.78
+  port: 8880
+  uuid: 142d1453-9cfe-4045-8e54-f3fb33342185
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: lively-scene-744f.107-47a.workers.dev
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇺🇸 美国 (United States) 01 (家宽) - zxmzy
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇺🇸 美国 (United States) 01 (家宽) - zxmzy
+rules:
+- MATCH,PROXIES

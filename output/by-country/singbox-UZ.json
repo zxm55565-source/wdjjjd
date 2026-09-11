@@ -6,14 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇿 UZ 01 - zxmzy"
+        "🇺🇿 UZ 01 - zxmzy",
+        "🇺🇿 UZ 02 - zxmzy",
+        "🇺🇿 UZ 03 - zxmzy"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇿 UZ 01 - zxmzy"
+        "🇺🇿 UZ 01 - zxmzy",
+        "🇺🇿 UZ 02 - zxmzy",
+        "🇺🇿 UZ 03 - zxmzy"
       ],
       "url": "https://www.google.com/generate_204"
     },
