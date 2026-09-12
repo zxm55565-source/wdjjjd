@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇫🇮 FI 01 - zxmzy
+- name: 🇺🇸 美国 (United States) 01 (家宽) - zxmzy
   type: vless
-  server: 151.101.56.6
+  server: 172.67.152.162
   port: 443
-  uuid: cc4a473a-2e15-4fc6-ec54-47c3aa5cec09
+  uuid: 07f9bc85-613f-4a33-8da1-191973c43c0a
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ssl.fastly.com
+  servername: app-q0zc4t.user-4gfyh5.workers.dev
   network: ws
   ws-opts:
-    path: /?---TELEGRAM---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI---TOOTFFARANGI
+    path: /cmh
     headers:
-      Host: c12.com
+      Host: app-q0zc4t.user-4gfyh5.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇫🇮 FI 01 - zxmzy
+  - 🇺🇸 美国 (United States) 01 (家宽) - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇮 FI 01 - zxmzy
+  - 🇺🇸 美国 (United States) 01 (家宽) - zxmzy
 rules:
 - MATCH,PROXIES
