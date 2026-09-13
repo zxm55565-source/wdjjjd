@@ -5,19 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - zxmzy
-  type: vless
-  server: 213.21.229.126
-  port: 12345
-  uuid: 8e80fe77-270e-4ac2-8f57-95761072d1a2
+  type: ss
+  server: 70.34.212.124
+  port: 8388
+  cipher: aes-256-gcm
+  password: AxIYWtskJWIIaefW
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select

@@ -6,6 +6,86 @@ log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - zxmzy
   type: vmess
+  server: nycqg19zkwacpm1b.v.3dns.vip
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: NYcQg19zkwaCPM1B.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: NYcQg19zkwaCPM1B.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - zxmzy
+  type: vmess
+  server: wwafj5lhl6bi8au9.v.3dns.vip
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: wwafj5lhl6bi8au9.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: wwafj5lhl6bi8au9.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - zxmzy
+  type: vmess
+  server: vah4urdzl3jdx5r2.v.3dns.vip
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vah4urdzl3jdx5r2.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: vah4urdzl3jdx5r2.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - zxmzy
+  type: vmess
+  server: lcv8v9l7oyamxxfz.v.3dns.vip
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lcv8v9l7OyamxxfZ.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: lcv8v9l7OyamxxfZ.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - zxmzy
+  type: vmess
+  server: mtckundigepwu3up.v.3dns.vip
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: mtckundigepwu3up.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: mtckundigepwu3up.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - zxmzy
+  type: vmess
   server: 47.83.19.148
   port: 443
   uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
@@ -20,9 +100,9 @@ proxies:
     path: /ws-vmess
     headers:
       Host: 6JDvArazgU3qQR6Q.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - zxmzy
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - zxmzy
   type: vmess
-  server: 6jdvarazgu3qqr6q.v.3dns.vip
+  server: m01c7b2z26dtqgee.v.3dns.vip
   port: 443
   uuid: f23bb427c1f94373876c2f43e9f790f3
   alterId: 0
@@ -30,12 +110,28 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: M01c7B2z26DtQGEe.v.3dns.vip
   network: ws
   ws-opts:
     path: /ws-vmess
     headers:
-      Host: ''
+      Host: M01c7B2z26DtQGEe.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - zxmzy
+  type: vmess
+  server: www.shopify.com
+  port: 443
+  uuid: 3aa71202-a099-49c1-99fc-6662f3335369
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: yoga-suggesting-recording-calls.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: /3aa71202-a099-49c1-99fc-6662f3335369-vm
+    headers:
+      Host: yoga-suggesting-recording-calls.trycloudflare.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -43,6 +139,12 @@ proxy-groups:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 - zxmzy
   - 🇭🇰 中国香港 (Hong Kong) 02 - zxmzy
+  - 🇭🇰 中国香港 (Hong Kong) 03 - zxmzy
+  - 🇭🇰 中国香港 (Hong Kong) 04 - zxmzy
+  - 🇭🇰 中国香港 (Hong Kong) 05 - zxmzy
+  - 🇭🇰 中国香港 (Hong Kong) 06 - zxmzy
+  - 🇭🇰 中国香港 (Hong Kong) 07 - zxmzy
+  - 🇭🇰 中国香港 (Hong Kong) 08 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -50,5 +152,11 @@ proxy-groups:
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 - zxmzy
   - 🇭🇰 中国香港 (Hong Kong) 02 - zxmzy
+  - 🇭🇰 中国香港 (Hong Kong) 03 - zxmzy
+  - 🇭🇰 中国香港 (Hong Kong) 04 - zxmzy
+  - 🇭🇰 中国香港 (Hong Kong) 05 - zxmzy
+  - 🇭🇰 中国香港 (Hong Kong) 06 - zxmzy
+  - 🇭🇰 中国香港 (Hong Kong) 07 - zxmzy
+  - 🇭🇰 中国香港 (Hong Kong) 08 - zxmzy
 rules:
 - MATCH,PROXIES
