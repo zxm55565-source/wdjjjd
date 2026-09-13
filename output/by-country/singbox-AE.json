@@ -6,14 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇦 SA 01 - zxmzy"
+        "🇦🇪 阿联酋 (UAE) 01 - zxmzy",
+        "🇦🇪 阿联酋 (UAE) 02 - zxmzy",
+        "🇦🇪 阿联酋 (UAE) 03 - zxmzy"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇦 SA 01 - zxmzy"
+        "🇦🇪 阿联酋 (UAE) 01 - zxmzy",
+        "🇦🇪 阿联酋 (UAE) 02 - zxmzy",
+        "🇦🇪 阿联酋 (UAE) 03 - zxmzy"
       ],
       "url": "https://www.google.com/generate_204"
     },
