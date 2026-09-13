@@ -6,6 +6,73 @@ log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - zxmzy
   type: vless
+  server: 172.66.44.124
+  port: 8443
+  uuid: b2f2f9f2-1864-48ea-839b-22815faff1f1
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
+- name: 🇩🇪 德国 (Germany) 02 - zxmzy
+  type: ss
+  server: 185.226.172.8
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+  udp: true
+- name: 🇩🇪 德国 (Germany) 03 - zxmzy
+  type: vmess
+  server: 51.89.41.22
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇩🇪 德国 (Germany) 04 - zxmzy
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 05 - zxmzy
+  type: vless
+  server: 163.8.195.241
+  port: 2087
+  uuid: 56ba5d34-ef22-4ba6-8090-4188b807df54
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /29c8fed7ca22
+    headers:
+      Host: '%2F%3F--v2rayNplus--v2rayNplus--v2rayNplus--'
+- name: 🇩🇪 德国 (Germany) 06 - zxmzy
+  type: vless
+  server: 151.242.17.99
+  port: 8443
+  uuid: a04814d9-d006-4e7b-ae20-8ab304b3b429
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 6Yskxg5U0WxPGtuCAAGH9uD57T4U8LeGrErTBNvIrwM
+  servername: de.emvservice.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 07 - zxmzy
+  type: vless
   server: 188.114.97.1
   port: 2053
   uuid: 0b3e7958-e5c4-498f-ab21-b49686f95d2d
@@ -18,79 +85,30 @@ proxies:
     path: /
     headers:
       Host: bold-term-4edd.mbigspot.workers.dev
-- name: 🇩🇪 德国 (Germany) 02 - zxmzy
+- name: 🇩🇪 德国 (Germany) 08 - zxmzy
+  type: ss
+  server: 141.95.29.163
+  port: 2083
+  cipher: 2022-blake3-aes-256-gcm
+  password: cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:JTou+JSmZOAyrMLdvNBcXFm0Y9luZ/8u17ie48jQfVc=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 09 - zxmzy
   type: ss
   server: 185.226.172.8
   port: 8008
   cipher: aes-256-gcm
   password: XKFKl2rULjIp74
   udp: true
-- name: 🇩🇪 德国 (Germany) 03 - zxmzy
-  type: ss
-  server: 130.61.85.116
-  port: 59924
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 3/Ww5SSfxqu0aei8xP1jEaBpAc24C4WNY18GEwfTg0M=
-  udp: true
-- name: 🇩🇪 德国 (Germany) 04 - zxmzy
+- name: 🇩🇪 德国 (Germany) 10 - zxmzy
   type: vless
-  server: 81.95.4.189
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bab-6.site
-  network: ws
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: bab-6.site
-- name: 🇩🇪 德国 (Germany) 05 - zxmzy
-  type: vless
-  server: rubifen.adaspoloandco.com
-  port: 443
-  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: rubifen.adaspoloandco.com
-  network: ws
-  ws-opts:
-    path: /GOrbEh
-    headers:
-      Host: rubifen.adaspoloandco.com
-- name: 🇩🇪 德国 (Germany) 06 - zxmzy
-  type: ss
-  server: 2.58.81.221
-  port: 80
-  cipher: aes-256-gcm
-  password: kKEd0rBrd56Furjz
-  udp: true
-- name: 🇩🇪 德国 (Germany) 07 - zxmzy
-  type: ss
-  server: 8.209.74.72
-  port: 20001
-  cipher: chacha20-ietf-poly1305
-  password: PWpjPo3tqhPN4yRZ
-  udp: true
-- name: 🇩🇪 德国 (Germany) 08 - zxmzy
-  type: ss
-  server: 2.58.81.221
-  port: 443
-  cipher: aes-256-gcm
-  password: kKEd0rBrd56Furjz
-  udp: true
-- name: 🇩🇪 德国 (Germany) 09 - zxmzy
-  type: vless
-  server: connect6.nyxserver.ir
+  server: 89.124.251.65
   port: 8446
   uuid: 0b39a009-2a2a-4035-ba87-cc82894f8e21
   udp: true
   tls: true
   skip-cert-verify: true
   servername: connect6.nyxserver.ir
-- name: 🇩🇪 德国 (Germany) 10 - zxmzy
+- name: 🇩🇪 德国 (Germany) 11 - zxmzy
   type: vless
   server: 163.8.195.241
   port: 2087
@@ -103,19 +121,12 @@ proxies:
     path: /29c8fed7ca22
     headers:
       Host: 163.8.195.241
-- name: 🇩🇪 德国 (Germany) 11 - zxmzy
-  type: ss
-  server: 2.58.81.221
-  port: 443
-  cipher: aes-256-gcm
-  password: kKEd0rBrd56Furjz
-  udp: true
 - name: 🇩🇪 德国 (Germany) 12 - zxmzy
   type: ss
-  server: 185.226.172.8
-  port: 8008
+  server: 2.58.81.221
+  port: 80
   cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
+  password: kKEd0rBrd56Furjz
   udp: true
 - name: 🇩🇪 德国 (Germany) 13 - zxmzy
   type: vmess
@@ -129,102 +140,13 @@ proxies:
   skip-cert-verify: true
   servername: ''
 - name: 🇩🇪 德国 (Germany) 14 - zxmzy
-  type: vless
-  server: 81.95.4.189
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bab-6.site
-  network: ws
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: bab-6.site
-- name: 🇩🇪 德国 (Germany) 15 - zxmzy
-  type: vless
-  server: 164.90.166.120
-  port: 443
-  uuid: 8525fe74-67e6-4a55-8a26-95f227bd1384
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: damp-dawn-3a96.alvlirm123.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: damp-dawn-3a96.alvlirm123.workers.dev
-- name: 🇩🇪 德国 (Germany) 16 - zxmzy
-  type: vless
-  server: 82.24.203.20
-  port: 2087
-  uuid: 5fcdc9b7-e70f-4a5c-85c3-e018ad818326
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /fd5ba98a3970
-    headers:
-      Host: 82.24.203.20
-- name: 🇩🇪 德国 (Germany) 17 - zxmzy
-  type: vless
-  server: 172.66.44.124
-  port: 8443
-  uuid: b2f2f9f2-1864-48ea-839b-22815faff1f1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
-- name: 🇩🇪 德国 (Germany) 18 - zxmzy
-  type: vless
-  server: 89.124.251.65
-  port: 8446
-  uuid: 0b39a009-2a2a-4035-ba87-cc82894f8e21
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: connect6.nyxserver.ir
-- name: 🇩🇪 德国 (Germany) 19 - zxmzy
   type: ss
-  server: 141.95.29.163
-  port: 2083
-  cipher: 2022-blake3-aes-256-gcm
-  password: cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:JTou+JSmZOAyrMLdvNBcXFm0Y9luZ/8u17ie48jQfVc=
+  server: 209.46.102.22
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 1hhrqrokj3ag
   udp: true
-- name: 🇩🇪 德国 (Germany) 20 - zxmzy
-  type: vmess
-  server: 51.89.41.22
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇩🇪 德国 (Germany) 21 - zxmzy
-  type: vless
-  server: 172.67.203.158
-  port: 443
-  uuid: 911b84e1-d046-4fbf-bfc0-c168791115ef
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 12ygbae0k3gn0z0f.mehrshadhaddadi8.workers.dev
-  network: ws
-  ws-opts:
-    path: /vl/YCNmDFbqMu7cgTzgsfEWGtBD8kR
-    headers:
-      Host: 12ygbae0k3gn0z0f.mehrshadhaddadi8.workers.dev
-- name: 🇩🇪 德国 (Germany) 22 - zxmzy
+- name: 🇩🇪 德国 (Germany) 15 - zxmzy
   type: vless
   server: 57.129.41.216
   port: 80
@@ -237,14 +159,44 @@ proxies:
     path: /vless/
     headers:
       Host: OV-Germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 23 - zxmzy
+- name: 🇩🇪 德国 (Germany) 16 - zxmzy
   type: ss
-  server: 209.46.102.22
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: 1hhrqrokj3ag
+  server: 2.58.81.221
+  port: 443
+  cipher: aes-256-gcm
+  password: kKEd0rBrd56Furjz
   udp: true
-- name: 🇩🇪 德国 (Germany) 24 - zxmzy
+- name: 🇩🇪 德国 (Germany) 17 - zxmzy
+  type: ss
+  server: 130.61.82.58
+  port: 59924
+  cipher: 2022-blake3-chacha20-poly1305
+  password: hjqTkJV5VFVNHAIg/ivqFp+lDtPbAwt1CF4ZqrbwLAg=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 18 - zxmzy
+  type: ss
+  server: 130.61.85.116
+  port: 59924
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 3/Ww5SSfxqu0aei8xP1jEaBpAc24C4WNY18GEwfTg0M=
+  udp: true
+- name: 🇩🇪 德国 (Germany) 19 - zxmzy
+  type: ss
+  server: 8.209.74.72
+  port: 20001
+  cipher: chacha20-ietf-poly1305
+  password: PWpjPo3tqhPN4yRZ
+  udp: true
+- name: 🇩🇪 德国 (Germany) 20 - zxmzy
+  type: vless
+  server: connect6.nyxserver.ir
+  port: 8446
+  uuid: 0b39a009-2a2a-4035-ba87-cc82894f8e21
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: connect6.nyxserver.ir
+- name: 🇩🇪 德国 (Germany) 21 - zxmzy
   type: vless
   server: 93.152.217.41
   port: 40443
@@ -256,7 +208,7 @@ proxies:
     public-key: VG-FwQBMFzPcemJ_JqtkbO-2WKLmQp2h0CmAj-DfLkA
   servername: deepl.com
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 25 - zxmzy
+- name: 🇩🇪 德国 (Germany) 22 - zxmzy
   type: vless
   server: 93.152.217.41
   port: 40443
@@ -295,9 +247,6 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 20 - zxmzy
   - 🇩🇪 德国 (Germany) 21 - zxmzy
   - 🇩🇪 德国 (Germany) 22 - zxmzy
-  - 🇩🇪 德国 (Germany) 23 - zxmzy
-  - 🇩🇪 德国 (Germany) 24 - zxmzy
-  - 🇩🇪 德国 (Germany) 25 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -325,8 +274,5 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 20 - zxmzy
   - 🇩🇪 德国 (Germany) 21 - zxmzy
   - 🇩🇪 德国 (Germany) 22 - zxmzy
-  - 🇩🇪 德国 (Germany) 23 - zxmzy
-  - 🇩🇪 德国 (Germany) 24 - zxmzy
-  - 🇩🇪 德国 (Germany) 25 - zxmzy
 rules:
 - MATCH,PROXIES
