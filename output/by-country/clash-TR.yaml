@@ -14,20 +14,20 @@ proxies:
   skip-cert-verify: true
   servername: connect3.nyxserver.ir
 - name: 🇹🇷 土耳其 (Turkey) 02 - zxmzy
-  type: vless
-  server: 162.159.91.222
-  port: 443
-  uuid: 50414e45-4c5f-5a45-5553-723a643df685
+  type: ss
+  server: 188.132.174.236
+  port: 1080
+  cipher: chacha20-ietf-poly1305
+  password: rSeYcig_XBy8q3k33NpK3A
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: n3zaxce7u0es.crzl48eiuses.workers.dev
-  network: ws
-  ws-opts:
-    path: /stream/PANEL_ZEUS/723a643df685/loc-0
-    headers:
-      Host: n3zaxce7u0es.crzl48eiuses.workers.dev
 - name: 🇹🇷 土耳其 (Turkey) 03 - zxmzy
+  type: ss
+  server: 185.39.204.3
+  port: 8098
+  cipher: chacha20-ietf-poly1305
+  password: PluSKSrbtxTvlVv7BOUwn4
+  udp: true
+- name: 🇹🇷 土耳其 (Turkey) 04 - zxmzy
   type: vless
   server: connect3.nyxserver.ir
   port: 8444
@@ -44,6 +44,7 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - zxmzy
   - 🇹🇷 土耳其 (Turkey) 02 - zxmzy
   - 🇹🇷 土耳其 (Turkey) 03 - zxmzy
+  - 🇹🇷 土耳其 (Turkey) 04 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -52,5 +53,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - zxmzy
   - 🇹🇷 土耳其 (Turkey) 02 - zxmzy
   - 🇹🇷 土耳其 (Turkey) 03 - zxmzy
+  - 🇹🇷 土耳其 (Turkey) 04 - zxmzy
 rules:
 - MATCH,PROXIES
