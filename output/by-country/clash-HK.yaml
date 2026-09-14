@@ -8,7 +8,7 @@ proxies:
   type: vmess
   server: 47.83.19.148
   port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
   alterId: 0
   cipher: auto
   udp: true
@@ -21,6 +21,67 @@ proxies:
     headers:
       Host: 6JDvArazgU3qQR6Q.v.3dns.vip
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - zxmzy
+  type: vmess
+  server: 156.245.232.239
+  port: 35043
+  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 156.245.232.239
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - zxmzy
+  type: vmess
+  server: ex1ogt73nzpqkac2.v.3dns.vip
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ex1ogt73nzpqkac2.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: ex1ogt73nzpqkac2.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - zxmzy
+  type: vless
+  server: www.wto.org
+  port: 443
+  uuid: 65c56e1f-5c41-40bc-b0b5-9346772476ca
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: hk.152568.xyz
+  network: ws
+  ws-opts:
+    path: /cdn/packages/runtime-core.tar.gz
+    headers:
+      Host: hk.152568.xyz
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - zxmzy
+  type: vmess
+  server: qtkdr8jxe3wefxjm.v.3dns.vip
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: qTKDR8jXE3wEFxJM.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: qTKDR8jXE3wEFxJM.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - zxmzy
   type: vless
   server: 47.238.210.5
   port: 13779
@@ -32,54 +93,7 @@ proxies:
     public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
   servername: tesla.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - zxmzy
-  type: vmess
-  server: 47.244.120.197
-  port: 44867
-  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /arki?ed=2048
-    headers:
-      Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - zxmzy
-  type: vmess
-  server: nycqg19zkwacpm1b.v.3dns.vip
-  port: 443
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: NYcQg19zkwaCPM1B.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: NYcQg19zkwaCPM1B.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - zxmzy
-  type: vmess
-  server: 47.83.19.148
-  port: 443
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 6JDvArazgU3qQR6Q.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: 6JDvArazgU3qQR6Q.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - zxmzy
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - zxmzy
   type: vmess
   server: www.shopify.com
   port: 443
@@ -95,9 +109,9 @@ proxies:
     path: /3aa71202-a099-49c1-99fc-6662f3335369-vm
     headers:
       Host: yoga-suggesting-recording-calls.trycloudflare.com
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - zxmzy
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - zxmzy
   type: vmess
-  server: 47.76.197.72
+  server: nycqg19zkwacpm1b.v.3dns.vip
   port: 443
   uuid: f23bb427c1f94373876c2f43e9f790f3
   alterId: 0
@@ -105,12 +119,28 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: m01c7b2z26dtqgee.v.3dns.vip
+  servername: NYcQg19zkwaCPM1B.v.3dns.vip
   network: ws
   ws-opts:
     path: /ws-vmess
     headers:
-      Host: m01c7b2z26dtqgee.v.3dns.vip
+      Host: NYcQg19zkwaCPM1B.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - zxmzy
+  type: vmess
+  server: i2psm3knof5qjjix.v.3dns.vip
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -123,6 +153,8 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 05 - zxmzy
   - 🇭🇰 中国香港 (Hong Kong) 06 - zxmzy
   - 🇭🇰 中国香港 (Hong Kong) 07 - zxmzy
+  - 🇭🇰 中国香港 (Hong Kong) 08 - zxmzy
+  - 🇭🇰 中国香港 (Hong Kong) 09 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -135,5 +167,7 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 05 - zxmzy
   - 🇭🇰 中国香港 (Hong Kong) 06 - zxmzy
   - 🇭🇰 中国香港 (Hong Kong) 07 - zxmzy
+  - 🇭🇰 中国香港 (Hong Kong) 08 - zxmzy
+  - 🇭🇰 中国香港 (Hong Kong) 09 - zxmzy
 rules:
 - MATCH,PROXIES

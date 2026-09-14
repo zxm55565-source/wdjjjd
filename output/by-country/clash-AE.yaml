@@ -19,29 +19,18 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 02 - zxmzy
   type: vless
-  server: 89.125.147.199
-  port: 443
+  server: cdn.snobvpn.online
+  port: 80
   uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
-  servername: maps.apple.com
-  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /snob-ws
+    headers:
+      Host: cdn.snobvpn.online
 - name: 🇦🇪 阿联酋 (UAE) 03 - zxmzy
-  type: vless
-  server: 89.125.147.199
-  port: 443
-  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
-  servername: maps.apple.com
-  client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 (UAE) 04 - zxmzy
   type: vless
   server: uae.unixzone.us
   port: 22573
@@ -54,6 +43,18 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 04 - zxmzy
+  type: vless
+  server: 89.125.147.199
+  port: 443
+  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
+  servername: maps.apple.com
+  client-fingerprint: chrome
 - name: 🇦🇪 阿联酋 (UAE) 05 - zxmzy
   type: vless
   server: uae.unixzone.us
@@ -67,6 +68,18 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 06 - zxmzy
+  type: vless
+  server: 89.125.147.199
+  port: 443
+  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
+  servername: maps.apple.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -77,6 +90,7 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - zxmzy
   - 🇦🇪 阿联酋 (UAE) 04 - zxmzy
   - 🇦🇪 阿联酋 (UAE) 05 - zxmzy
+  - 🇦🇪 阿联酋 (UAE) 06 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -87,5 +101,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - zxmzy
   - 🇦🇪 阿联酋 (UAE) 04 - zxmzy
   - 🇦🇪 阿联酋 (UAE) 05 - zxmzy
+  - 🇦🇪 阿联酋 (UAE) 06 - zxmzy
 rules:
 - MATCH,PROXIES
