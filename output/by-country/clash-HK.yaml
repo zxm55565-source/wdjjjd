@@ -6,6 +6,85 @@ log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - zxmzy
   type: vmess
+  server: 8.218.184.4
+  port: 443
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: NYcQg19zkwaCPM1B.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: NYcQg19zkwaCPM1B.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - zxmzy
+  type: vmess
+  server: nycqg19zkwacpm1b.v.3dns.vip
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: NYcQg19zkwaCPM1B.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: NYcQg19zkwaCPM1B.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - zxmzy
+  type: vmess
+  server: 47.86.107.119
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lcv8v9l7OyamxxfZ.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: lcv8v9l7OyamxxfZ.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - zxmzy
+  type: vmess
+  server: 156.245.232.239
+  port: 35043
+  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - zxmzy
+  type: vmess
+  server: 47.83.19.148
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 6JDvArazgU3qQR6Q.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: 6JDvArazgU3qQR6Q.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - zxmzy
+  type: vmess
   server: 47.83.19.148
   port: 443
   uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
@@ -20,25 +99,9 @@ proxies:
     path: /ws-vmess
     headers:
       Host: 6JDvArazgU3qQR6Q.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - zxmzy
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - zxmzy
   type: vmess
-  server: m01c7b2z26dtqgee.v.3dns.vip
-  port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: M01c7B2z26DtQGEe.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: M01c7B2z26DtQGEe.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - zxmzy
-  type: vmess
-  server: wwafj5lhl6bi8au9.v.3dns.vip
+  server: 47.243.80.106
   port: 443
   uuid: f23bb427c1f94373876c2f43e9f790f3
   alterId: 0
@@ -52,23 +115,22 @@ proxies:
     path: /ws-vmess
     headers:
       Host: wwafj5LHl6bI8aU9.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - zxmzy
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - zxmzy
   type: vmess
-  server: i2psm3knof5qjjix.v.3dns.vip
-  port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
+  server: 47.244.120.197
+  port: 44867
+  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
   alterId: 0
   cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: ''
   network: ws
   ws-opts:
-    path: /ws-vmess
+    path: /arki?ed=2048
     headers:
       Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - zxmzy
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - zxmzy
   type: vmess
   server: qtkdr8jxe3wefxjm.v.3dns.vip
   port: 443
@@ -84,6 +146,82 @@ proxies:
     path: /ws-vmess
     headers:
       Host: qTKDR8jXE3wEFxJM.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - zxmzy
+  type: vmess
+  server: 156.245.232.239
+  port: 35043
+  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ''
+- name: 🇭🇰 中国香港 (Hong Kong) 11 - zxmzy
+  type: vmess
+  server: 47.76.197.72
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: m01c7b2z26dtqgee.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: m01c7b2z26dtqgee.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 12 - zxmzy
+  type: vmess
+  server: 47.242.79.198
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ejOMsxPtP19APyGL.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: ejOMsxPtP19APyGL.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 13 - zxmzy
+  type: vmess
+  server: 156.245.232.239
+  port: 35043
+  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: ''
+- name: 🇭🇰 中国香港 (Hong Kong) 14 - zxmzy
+  type: vless
+  server: 104.21.19.76
+  port: 2096
+  uuid: fee1da7e-a258-4456-8e5e-8ecf6518ed12
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ez-82c7e7.aBoBaBA.WorkeRS.dEv
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiemxGMEFDU1VDRyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
+    headers:
+      Host: ez-82c7e7.abobaba.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -94,6 +232,15 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 03 - zxmzy
   - 🇭🇰 中国香港 (Hong Kong) 04 - zxmzy
   - 🇭🇰 中国香港 (Hong Kong) 05 - zxmzy
+  - 🇭🇰 中国香港 (Hong Kong) 06 - zxmzy
+  - 🇭🇰 中国香港 (Hong Kong) 07 - zxmzy
+  - 🇭🇰 中国香港 (Hong Kong) 08 - zxmzy
+  - 🇭🇰 中国香港 (Hong Kong) 09 - zxmzy
+  - 🇭🇰 中国香港 (Hong Kong) 10 - zxmzy
+  - 🇭🇰 中国香港 (Hong Kong) 11 - zxmzy
+  - 🇭🇰 中国香港 (Hong Kong) 12 - zxmzy
+  - 🇭🇰 中国香港 (Hong Kong) 13 - zxmzy
+  - 🇭🇰 中国香港 (Hong Kong) 14 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -104,5 +251,14 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 03 - zxmzy
   - 🇭🇰 中国香港 (Hong Kong) 04 - zxmzy
   - 🇭🇰 中国香港 (Hong Kong) 05 - zxmzy
+  - 🇭🇰 中国香港 (Hong Kong) 06 - zxmzy
+  - 🇭🇰 中国香港 (Hong Kong) 07 - zxmzy
+  - 🇭🇰 中国香港 (Hong Kong) 08 - zxmzy
+  - 🇭🇰 中国香港 (Hong Kong) 09 - zxmzy
+  - 🇭🇰 中国香港 (Hong Kong) 10 - zxmzy
+  - 🇭🇰 中国香港 (Hong Kong) 11 - zxmzy
+  - 🇭🇰 中国香港 (Hong Kong) 12 - zxmzy
+  - 🇭🇰 中国香港 (Hong Kong) 13 - zxmzy
+  - 🇭🇰 中国香港 (Hong Kong) 14 - zxmzy
 rules:
 - MATCH,PROXIES
