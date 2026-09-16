@@ -15,7 +15,7 @@ proxies:
   reality-opts:
     public-key: aZOpodpnifoxDqTzWgxJRffgsiGnG9-h-EZd4SvOImc
   servername: deepl.com
-  client-fingerprint: qq
+  client-fingerprint: chrome
 - name: 🇳🇴 NO 02 - zxmzy
   type: ss
   server: 185.213.23.63
@@ -34,7 +34,7 @@ proxies:
   reality-opts:
     public-key: aZOpodpnifoxDqTzWgxJRffgsiGnG9-h-EZd4SvOImc
   servername: deepl.com
-  client-fingerprint: chrome
+  client-fingerprint: qq
 - name: 🇳🇴 NO 04 - zxmzy
   type: vless
   server: 151.242.168.125
@@ -59,30 +59,6 @@ proxies:
     public-key: dvx6zPztKbgHpYaW6J4OZQC74Uy0JS6HUVdDfbjG5V4
   servername: deepl.com
   client-fingerprint: chrome
-- name: 🇳🇴 NO 06 - zxmzy
-  type: vless
-  server: 151.242.168.125
-  port: 390
-  uuid: 7b363f9c-3df9-4b60-a789-9cd36be0bdfe
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 5RCgAVjaT7hwdVIKAEULswXGqR127ZOZV6X17nEhYk8
-  servername: bowandbead.com
-  client-fingerprint: chrome
-- name: 🇳🇴 NO 07 - zxmzy
-  type: vless
-  server: 151.242.168.125
-  port: 390
-  uuid: 7b363f9c-3df9-4b60-a789-9cd36be0bdfe
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 5RCgAVjaT7hwdVIKAEULswXGqR127ZOZV6X17nEhYk8
-  servername: bowandbead.com
-  client-fingerprint: edge
 proxy-groups:
 - name: PROXIES
   type: select
@@ -93,8 +69,6 @@ proxy-groups:
   - 🇳🇴 NO 03 - zxmzy
   - 🇳🇴 NO 04 - zxmzy
   - 🇳🇴 NO 05 - zxmzy
-  - 🇳🇴 NO 06 - zxmzy
-  - 🇳🇴 NO 07 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -105,7 +79,5 @@ proxy-groups:
   - 🇳🇴 NO 03 - zxmzy
   - 🇳🇴 NO 04 - zxmzy
   - 🇳🇴 NO 05 - zxmzy
-  - 🇳🇴 NO 06 - zxmzy
-  - 🇳🇴 NO 07 - zxmzy
 rules:
 - MATCH,PROXIES
