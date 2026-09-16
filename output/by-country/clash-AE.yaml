@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - zxmzy
   type: vless
-  server: 84.235.244.108
+  server: uae.unixzone.us
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -19,17 +19,18 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 02 - zxmzy
   type: vless
-  server: cdn.snobvpn.online
-  port: 80
-  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
+  server: 104.21.67.122
+  port: 443
+  uuid: ee556a4f-d9f6-44de-af02-42c51659416a
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: novantunnel.tech
   network: ws
   ws-opts:
-    path: /snob-ws
+    path: /Novan-AE9
     headers:
-      Host: cdn.snobvpn.online
+      Host: novantunnel.tech
 - name: 🇦🇪 阿联酋 (UAE) 03 - zxmzy
   type: vless
   server: 89.125.147.199
@@ -44,17 +45,71 @@ proxies:
   client-fingerprint: firefox
 - name: 🇦🇪 阿联酋 (UAE) 04 - zxmzy
   type: vless
-  server: 31.58.181.88
-  port: 8443
-  uuid: 70bd60b1-f399-4df4-ad32-9adc40ae5f2c
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 05 - zxmzy
+  type: vless
+  server: 89.125.147.199
+  port: 443
+  uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
+    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
+  servername: maps.apple.com
   client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 05 - zxmzy
+- name: 🇦🇪 阿联酋 (UAE) 06 - zxmzy
+  type: vless
+  server: cdn.snobvpn.online
+  port: 80
+  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /snob-ws
+    headers:
+      Host: cdn.snobvpn.online
+- name: 🇦🇪 阿联酋 (UAE) 07 - zxmzy
+  type: vless
+  server: 146.70.37.253
+  port: 443
+  uuid: b940be1b-3998-45d2-bf7b-06e7b6c4987a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: kkkk-xcd.pages.dev
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: kkkk-xcd.pages.dev
+- name: 🇦🇪 阿联酋 (UAE) 08 - zxmzy
+  type: vless
+  server: 104.17.169.13
+  port: 2053
+  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: inDeX.HaRMONiCA01.WORkers.DeV
+  network: ws
+  ws-opts:
+    path: /axch1mttbxz2k55y01
+    headers:
+      Host: inDeX.HaRMONiCA01.WORkers.DeV
+- name: 🇦🇪 阿联酋 (UAE) 09 - zxmzy
   type: vless
   server: 89.125.147.199
   port: 443
@@ -66,21 +121,9 @@ proxies:
     public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
   servername: maps.apple.com
   client-fingerprint: random
-- name: 🇦🇪 阿联酋 (UAE) 06 - zxmzy
+- name: 🇦🇪 阿联酋 (UAE) 10 - zxmzy
   type: vless
-  server: 89.125.147.199
-  port: 443
-  uuid: cabd9303-ae32-4d25-86b9-26b312d0f044
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
-  servername: maps.apple.com
-  client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 (UAE) 07 - zxmzy
-  type: vless
-  server: uae.unixzone.us
+  server: 84.235.244.108
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -91,19 +134,6 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 08 - zxmzy
-  type: vless
-  server: cdn.snobvpn.online
-  port: 80
-  uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /snob-ws
-    headers:
-      Host: cdn.snobvpn.online
 proxy-groups:
 - name: PROXIES
   type: select
@@ -117,6 +147,8 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 06 - zxmzy
   - 🇦🇪 阿联酋 (UAE) 07 - zxmzy
   - 🇦🇪 阿联酋 (UAE) 08 - zxmzy
+  - 🇦🇪 阿联酋 (UAE) 09 - zxmzy
+  - 🇦🇪 阿联酋 (UAE) 10 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -130,5 +162,7 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 06 - zxmzy
   - 🇦🇪 阿联酋 (UAE) 07 - zxmzy
   - 🇦🇪 阿联酋 (UAE) 08 - zxmzy
+  - 🇦🇪 阿联酋 (UAE) 09 - zxmzy
+  - 🇦🇪 阿联酋 (UAE) 10 - zxmzy
 rules:
 - MATCH,PROXIES

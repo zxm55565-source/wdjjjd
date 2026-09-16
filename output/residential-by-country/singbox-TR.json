@@ -6,20 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇦 SA 01 - zxmzy",
-        "🇸🇦 SA 02 - zxmzy",
-        "🇸🇦 SA 03 - zxmzy",
-        "🇸🇦 SA 04 - zxmzy"
+        "🇹🇷 土耳其 (Turkey) 01 (家宽) - zxmzy"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇦 SA 01 - zxmzy",
-        "🇸🇦 SA 02 - zxmzy",
-        "🇸🇦 SA 03 - zxmzy",
-        "🇸🇦 SA 04 - zxmzy"
+        "🇹🇷 土耳其 (Turkey) 01 (家宽) - zxmzy"
       ],
       "url": "https://www.google.com/generate_204"
     },
