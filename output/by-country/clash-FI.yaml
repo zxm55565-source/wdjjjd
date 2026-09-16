@@ -6,14 +6,6 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - zxmzy
   type: vless
-  server: 2.29.42.188
-  port: 443
-  uuid: 2713d763-325f-4dcb-8656-cca54cbea4d9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇫🇮 FI 02 - zxmzy
-  type: vless
   server: a2.arshia-nova.ir
   port: 443
   uuid: bd5bbbac-adc3-4b23-d3ac-8506694c0ef9
@@ -26,33 +18,17 @@ proxies:
     path: /
     headers:
       Host: c12.com
-- name: 🇫🇮 FI 03 - zxmzy
-  type: vless
-  server: 185.79.138.71
-  port: 448
-  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
-  servername: www.samsung.com
-  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇫🇮 FI 01 - zxmzy
-  - 🇫🇮 FI 02 - zxmzy
-  - 🇫🇮 FI 03 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇫🇮 FI 01 - zxmzy
-  - 🇫🇮 FI 02 - zxmzy
-  - 🇫🇮 FI 03 - zxmzy
 rules:
 - MATCH,PROXIES
