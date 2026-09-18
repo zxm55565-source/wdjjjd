@@ -6,151 +6,43 @@ log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - zxmzy
   type: vless
-  server: 104.16.10.185
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  server: 210.152.85.154
+  port: 19364
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: jp3.yohototo.top
+  servername: cdn8848.776676.xyz
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /collect/user/products?ed=2560
     headers:
-      Host: jp3.yohototo.top
+      Host: cdn8848.776676.xyz
 - name: 🇯🇵 日本 (Japan) 02 - zxmzy
-  type: vless
-  server: www.iplocation.net
-  port: 8880
-  uuid: 4bf6fee9-d3c4-4a98-b83b-170bf37c669c
+  type: vmess
+  server: 45.32.57.118
+  port: 4433
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+  alterId: 0
+  cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 03 - zxmzy
+  type: vless
+  server: 108.160.136.71
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: cold-water-945c.43-bc5.workers.dev
-- name: 🇯🇵 日本 (Japan) 03 - zxmzy
-  type: vmess
-  server: 45.32.57.118
-  port: 4433
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
+      Host: cdn8848.776676.xyz
 - name: 🇯🇵 日本 (Japan) 04 - zxmzy
-  type: vless
-  server: 108.160.136.71
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /doc/products/view?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 05 - zxmzy
-  type: vless
-  server: 167.179.111.237
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /act/player/search?ed=2560fp=chrome
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 06 - zxmzy
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 07 - zxmzy
-  type: vmess
-  server: 45.32.57.118
-  port: 4433
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 08 - zxmzy
-  type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 09 - zxmzy
-  type: vless
-  server: 108.160.136.71
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /doc/products/view?ed=2560fp=chrome
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 10 - zxmzy
-  type: vless
-  server: 207.148.112.220
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /discuss?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 11 - zxmzy
-  type: ss
-  server: 84.247.155.196
-  port: 443
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-  udp: true
-- name: 🇯🇵 日本 (Japan) 12 - zxmzy
-  type: vless
-  server: 162.159.254.3
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 13 - zxmzy
   type: vless
   server: 203.137.165.164
   port: 57554
@@ -164,22 +56,124 @@ proxies:
     path: /p/docs/soft?ed=2560
     headers:
       Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 14 - zxmzy
-  type: vmess
-  server: w12.luoli.de
+- name: 🇯🇵 日本 (Japan) 05 - zxmzy
+  type: vless
+  server: 162.159.254.3
   port: 443
-  uuid: 42a99644-b90b-3627-8809-a2d6c4078b59
-  alterId: 0
-  cipher: auto
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: w12.luoli.de
+  servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /v2ws
+    path: /tyxyws
     headers:
-      Host: w12.luoli.de
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 06 - zxmzy
+  type: vless
+  server: 172.67.156.147
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 07 - zxmzy
+  type: ss
+  server: 84.247.155.196
+  port: 443
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+  udp: true
+- name: 🇯🇵 日本 (Japan) 08 - zxmzy
+  type: vmess
+  server: 45.32.57.118
+  port: 4433
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 09 - zxmzy
+  type: vmess
+  server: 45.32.57.118
+  port: 4433
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 10 - zxmzy
+  type: vless
+  server: 85.121.50.16
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /friends/go.php?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇯🇵 日本 (Japan) 11 - zxmzy
+  type: vless
+  server: 167.179.111.237
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇯🇵 日本 (Japan) 12 - zxmzy
+  type: vless
+  server: 108.160.136.71
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /doc/products/view?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇯🇵 日本 (Japan) 13 - zxmzy
+  type: ss
+  server: 149.22.87.204
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇯🇵 日本 (Japan) 14 - zxmzy
+  type: vless
+  server: 104.16.10.185
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
 - name: 🇯🇵 日本 (Japan) 15 - zxmzy
   type: vless
   server: 138.2.59.96
@@ -196,6 +190,78 @@ proxies:
       Host: cdn8848.776676.xyz
 - name: 🇯🇵 日本 (Japan) 16 - zxmzy
   type: vless
+  server: 172.67.217.240
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 17 - zxmzy
+  type: vless
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 18 - zxmzy
+  type: vless
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 19 - zxmzy
+  type: vless
+  server: 162.159.254.3
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 20 - zxmzy
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 21 - zxmzy
+  type: ss
+  server: 149.22.87.241
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇯🇵 日本 (Japan) 22 - zxmzy
+  type: ss
+  server: 149.22.87.240
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇯🇵 日本 (Japan) 23 - zxmzy
+  type: vless
   server: 108.160.136.71
   port: 443
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
@@ -208,133 +274,7 @@ proxies:
     path: /doc/products/view?ed=2560
     headers:
       Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 17 - zxmzy
-  type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 18 - zxmzy
-  type: vmess
-  server: 45.32.57.118
-  port: 4433
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 19 - zxmzy
-  type: vless
-  server: 45.142.166.211
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /knowledge?ed=2560fp=chrome
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 20 - zxmzy
-  type: vless
-  server: 45.142.166.211
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /knowledge?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 21 - zxmzy
-  type: vmess
-  server: 45.32.57.118
-  port: 4433
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 22 - zxmzy
-  type: ss
-  server: 84.247.155.196
-  port: 80
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-  udp: true
-- name: 🇯🇵 日本 (Japan) 23 - zxmzy
-  type: vless
-  server: 85.121.50.16
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /friends/go.php?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
 - name: 🇯🇵 日本 (Japan) 24 - zxmzy
-  type: vless
-  server: 104.238.148.149
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /about?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 25 - zxmzy
-  type: ss
-  server: 149.22.87.204
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇯🇵 日本 (Japan) 26 - zxmzy
-  type: vless
-  server: 203.137.165.164
-  port: 57554
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /p/docs/soft?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 27 - zxmzy
-  type: vless
-  server: 167.179.111.237
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 28 - zxmzy
   type: vless
   server: 108.160.136.71
   port: 443
@@ -348,21 +288,35 @@ proxies:
     path: /doc/products/view?ed=2560fp=chrome
     headers:
       Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 29 - zxmzy
+- name: 🇯🇵 日本 (Japan) 25 - zxmzy
   type: vless
-  server: 104.21.33.59
+  server: 104.238.148.149
   port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: jp3.yohototo.top
+  servername: cdn8848.776676.xyz
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /about?ed=2560
     headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 30 - zxmzy
+      Host: cdn8848.776676.xyz
+- name: 🇯🇵 日本 (Japan) 26 - zxmzy
+  type: vless
+  server: 45.142.166.211
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /knowledge?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇯🇵 日本 (Japan) 27 - zxmzy
   type: vless
   server: 108.160.136.71
   port: 443
@@ -373,68 +327,45 @@ proxies:
   servername: cdn8848.776676.xyz
   network: ws
   ws-opts:
-    path: /
+    path: /doc/products/view?ed=2560fp=chrome
     headers:
       Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 31 - zxmzy
-  type: vless
-  server: 108.160.136.71
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 32 - zxmzy
-  type: vless
-  server: 104.16.10.185
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 33 - zxmzy
-  type: ss
-  server: 149.22.87.240
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇯🇵 日本 (Japan) 34 - zxmzy
+- name: 🇯🇵 日本 (Japan) 28 - zxmzy
   type: vless
   server: 188.114.97.6
-  port: 8080
-  uuid: 7121d0be-40f5-4eda-b3d1-1556e71ea4fa
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: jp3.yohototo.top
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
+    path: /tyxyws
     headers:
-      Host: shrill-recipe-0c1d.404-a1d.workers.dev
-- name: 🇯🇵 日本 (Japan) 35 - zxmzy
-  type: vmess
-  server: 168.110.60.104
-  port: 18112
-  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
-  alterId: 0
-  cipher: auto
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 29 - zxmzy
+  type: vless
+  server: 43.159.4.80
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 36 - zxmzy
+  servername: cdn8848.776676.xyz
+  network: ws
+  ws-opts:
+    path: /episode/files?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇯🇵 日本 (Japan) 30 - zxmzy
+  type: ss
+  server: 84.247.155.196
+  port: 80
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+  udp: true
+- name: 🇯🇵 日本 (Japan) 31 - zxmzy
   type: vless
   server: 137.220.221.179
   port: 443
@@ -442,20 +373,30 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 37 - zxmzy
+- name: 🇯🇵 日本 (Japan) 32 - zxmzy
   type: vless
-  server: 172.67.156.147
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  server: 203.137.165.164
+  port: 57554
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: jp3.yohototo.top
+  servername: cdn8848.776676.xyz
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /p/docs/soft?ed=2560
     headers:
-      Host: jp3.yohototo.top
+      Host: cdn8848.776676.xyz
+- name: 🇯🇵 日本 (Japan) 33 - zxmzy
+  type: vmess
+  server: 45.32.57.118
+  port: 4433
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -494,10 +435,6 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 31 - zxmzy
   - 🇯🇵 日本 (Japan) 32 - zxmzy
   - 🇯🇵 日本 (Japan) 33 - zxmzy
-  - 🇯🇵 日本 (Japan) 34 - zxmzy
-  - 🇯🇵 日本 (Japan) 35 - zxmzy
-  - 🇯🇵 日本 (Japan) 36 - zxmzy
-  - 🇯🇵 日本 (Japan) 37 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -536,9 +473,5 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 31 - zxmzy
   - 🇯🇵 日本 (Japan) 32 - zxmzy
   - 🇯🇵 日本 (Japan) 33 - zxmzy
-  - 🇯🇵 日本 (Japan) 34 - zxmzy
-  - 🇯🇵 日本 (Japan) 35 - zxmzy
-  - 🇯🇵 日本 (Japan) 36 - zxmzy
-  - 🇯🇵 日本 (Japan) 37 - zxmzy
 rules:
 - MATCH,PROXIES

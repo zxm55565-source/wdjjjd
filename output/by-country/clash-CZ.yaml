@@ -4,9 +4,9 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇦 SA 01 - zxmzy
+- name: 🇨🇿 CZ 01 - zxmzy
   type: vless
-  server: 91.209.253.109
+  server: 195.85.23.111
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -18,23 +18,9 @@ proxies:
     path: /proxyip=us.xiabibi.cf
     headers:
       Host: nb.lovecf.ggff.net
-- name: 🇸🇦 SA 02 - zxmzy
+- name: 🇨🇿 CZ 02 - zxmzy
   type: vless
-  server: 91.209.253.250
-  port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: nb.lovecf.ggff.net
-- name: 🇸🇦 SA 03 - zxmzy
-  type: vless
-  server: 91.209.253.243
+  server: 195.85.23.252
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -46,9 +32,9 @@ proxies:
     path: /proxyip=us.xiabibi.cf
     headers:
       Host: nb.lovecf.ggff.net
-- name: 🇸🇦 SA 04 - zxmzy
+- name: 🇨🇿 CZ 03 - zxmzy
   type: vless
-  server: 91.209.253.68
+  server: 195.85.23.47
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -57,12 +43,40 @@ proxies:
   servername: nb.lovecf.ggff.net
   network: ws
   ws-opts:
-    path: /
+    path: /proxyip=us.xiabibi.cf
     headers:
       Host: nb.lovecf.ggff.net
-- name: 🇸🇦 SA 05 - zxmzy
+- name: 🇨🇿 CZ 04 - zxmzy
   type: vless
-  server: 91.209.253.119
+  server: 195.85.23.29
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇨🇿 CZ 05 - zxmzy
+  type: vless
+  server: 195.85.23.252
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇨🇿 CZ 06 - zxmzy
+  type: vless
+  server: 195.85.23.29
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -79,20 +93,22 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇸🇦 SA 01 - zxmzy
-  - 🇸🇦 SA 02 - zxmzy
-  - 🇸🇦 SA 03 - zxmzy
-  - 🇸🇦 SA 04 - zxmzy
-  - 🇸🇦 SA 05 - zxmzy
+  - 🇨🇿 CZ 01 - zxmzy
+  - 🇨🇿 CZ 02 - zxmzy
+  - 🇨🇿 CZ 03 - zxmzy
+  - 🇨🇿 CZ 04 - zxmzy
+  - 🇨🇿 CZ 05 - zxmzy
+  - 🇨🇿 CZ 06 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇦 SA 01 - zxmzy
-  - 🇸🇦 SA 02 - zxmzy
-  - 🇸🇦 SA 03 - zxmzy
-  - 🇸🇦 SA 04 - zxmzy
-  - 🇸🇦 SA 05 - zxmzy
+  - 🇨🇿 CZ 01 - zxmzy
+  - 🇨🇿 CZ 02 - zxmzy
+  - 🇨🇿 CZ 03 - zxmzy
+  - 🇨🇿 CZ 04 - zxmzy
+  - 🇨🇿 CZ 05 - zxmzy
+  - 🇨🇿 CZ 06 - zxmzy
 rules:
 - MATCH,PROXIES
