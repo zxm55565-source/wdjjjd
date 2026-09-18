@@ -6,22 +6,32 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 (家宽) - zxmzy",
-        "🇰🇷 韩国 (South Korea) 02 (家宽) - zxmzy",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - zxmzy",
+        "🇰🇷 韩国 (South Korea) 01 (家宽) - zxmzy",
+        "🇨🇦 加拿大 (Canada) 02 (家宽) - zxmzy",
+        "🇺🇸 美国 (United States) 03 (家宽) - zxmzy",
         "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - zxmzy",
-        "🇰🇷 韩国 (South Korea) 05 (家宽) - zxmzy"
+        "🇰🇷 韩国 (South Korea) 05 (家宽) - zxmzy",
+        "🇰🇷 韩国 (South Korea) 06 (家宽) - zxmzy",
+        "🇹🇼 中国台湾 (Taiwan) 07 (家宽) - zxmzy",
+        "🇺🇸 美国 (United States) 08 (家宽) - zxmzy",
+        "🇹🇼 中国台湾 (Taiwan) 09 (家宽) - zxmzy",
+        "🇰🇷 韩国 (South Korea) 10 (家宽) - zxmzy"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 (家宽) - zxmzy",
-        "🇰🇷 韩国 (South Korea) 02 (家宽) - zxmzy",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - zxmzy",
+        "🇰🇷 韩国 (South Korea) 01 (家宽) - zxmzy",
+        "🇨🇦 加拿大 (Canada) 02 (家宽) - zxmzy",
+        "🇺🇸 美国 (United States) 03 (家宽) - zxmzy",
         "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - zxmzy",
-        "🇰🇷 韩国 (South Korea) 05 (家宽) - zxmzy"
+        "🇰🇷 韩国 (South Korea) 05 (家宽) - zxmzy",
+        "🇰🇷 韩国 (South Korea) 06 (家宽) - zxmzy",
+        "🇹🇼 中国台湾 (Taiwan) 07 (家宽) - zxmzy",
+        "🇺🇸 美国 (United States) 08 (家宽) - zxmzy",
+        "🇹🇼 中国台湾 (Taiwan) 09 (家宽) - zxmzy",
+        "🇰🇷 韩国 (South Korea) 10 (家宽) - zxmzy"
       ],
       "url": "https://www.google.com/generate_204"
     },
