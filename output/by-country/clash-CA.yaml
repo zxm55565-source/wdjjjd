@@ -5,25 +5,38 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇦 加拿大 (Canada) 01 - zxmzy
-  type: ss
-  server: 149.22.95.183
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 02 - zxmzy
   type: vless
-  server: 34.95.28.161
-  port: 443
-  uuid: 448b76ac-c636-4303-bec1-0b2c22afee0c
+  server: 66.70.179.198
+  port: 2053
+  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: l4tGdE5Zn8ABfBQns3pRBcxy6CckHTLSIsw5JaBumTk
+    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
   servername: www.cloudflare.com
-  client-fingerprint: safari
+  client-fingerprint: firefox
+- name: 🇨🇦 加拿大 (Canada) 02 - zxmzy
+  type: vmess
+  server: 23.162.200.198
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 03 - zxmzy
+  type: vmess
+  server: 23.162.200.198
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 04 - zxmzy
   type: vmess
   server: 134.195.196.211
   port: 18000
@@ -33,22 +46,16 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 04 - zxmzy
-  type: ss
-  server: 51.79.49.116
-  port: 8882
-  cipher: aes-256-gcm
-  password: kDWvXYZoTBcGkC4
-  udp: true
 - name: 🇨🇦 加拿大 (Canada) 05 - zxmzy
-  type: vless
-  server: 184.107.106.68
-  port: 443
-  uuid: 716426fa-bcb7-4eb9-b460-36399ebf740d
+  type: vmess
+  server: 23.162.200.198
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: lizca2.footballfantasyforum.com
 - name: 🇨🇦 加拿大 (Canada) 06 - zxmzy
   type: vmess
   server: 23.162.200.198
@@ -60,20 +67,18 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 07 - zxmzy
-  type: vless
-  server: 66.70.179.198
-  port: 2053
-  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 - name: 🇨🇦 加拿大 (Canada) 08 - zxmzy
   type: vmess
-  server: 23.162.200.198
+  server: 134.195.196.211
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -83,159 +88,22 @@ proxies:
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 09 - zxmzy
   type: ss
-  server: 51.79.85.185
-  port: 8118
-  cipher: aes-256-gcm
-  password: cdBIDV42DCwnfIN
+  server: 149.22.95.183
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
   udp: true
 - name: 🇨🇦 加拿大 (Canada) 10 - zxmzy
   type: vmess
-  server: 23.162.200.227
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: ''
 - name: 🇨🇦 加拿大 (Canada) 11 - zxmzy
-  type: vless
-  server: 34.95.28.161
-  port: 443
-  uuid: 448b76ac-c636-4303-bec1-0b2c22afee0c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: l4tGdE5Zn8ABfBQns3pRBcxy6CckHTLSIsw5JaBumTk
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 12 - zxmzy
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 13 - zxmzy
-  type: vless
-  server: 34.95.28.161
-  port: 443
-  uuid: 448b76ac-c636-4303-bec1-0b2c22afee0c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: l4tGdE5Zn8ABfBQns3pRBcxy6CckHTLSIsw5JaBumTk
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 14 - zxmzy
-  type: vless
-  server: 66.70.179.198
-  port: 2053
-  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 15 - zxmzy
-  type: vless
-  server: 34.95.28.161
-  port: 443
-  uuid: 448b76ac-c636-4303-bec1-0b2c22afee0c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: l4tGdE5Zn8ABfBQns3pRBcxy6CckHTLSIsw5JaBumTk
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇨🇦 加拿大 (Canada) 16 - zxmzy
-  type: vless
-  server: 34.95.28.161
-  port: 443
-  uuid: 448b76ac-c636-4303-bec1-0b2c22afee0c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: l4tGdE5Zn8ABfBQns3pRBcxy6CckHTLSIsw5JaBumTk
-  servername: www.cloudflare.com
-  client-fingerprint: qq
-- name: 🇨🇦 加拿大 (Canada) 17 - zxmzy
-  type: ss
-  server: yyz-ca-01.blncvpn4u.cc
-  port: 9443
-  cipher: aes-256-gcm
-  password: eveaaTOb8ji8yntw2Z9yWUG0d6Ir8Ld8m3ymH8THdC5egiTH1mXCiBc0Skr7FibH
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 18 - zxmzy
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 19 - zxmzy
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 20 - zxmzy
-  type: vless
-  server: 34.95.28.161
-  port: 443
-  uuid: 448b76ac-c636-4303-bec1-0b2c22afee0c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: l4tGdE5Zn8ABfBQns3pRBcxy6CckHTLSIsw5JaBumTk
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 21 - zxmzy
-  type: vless
-  server: 66.70.179.198
-  port: 2053
-  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇨🇦 加拿大 (Canada) 22 - zxmzy
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 23 - zxmzy
   type: vless
   server: 184.107.106.68
   port: 443
@@ -244,24 +112,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: lizca2.footballfantasyforum.com
-- name: 🇨🇦 加拿大 (Canada) 24 - zxmzy
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 25 - zxmzy
-  type: ss
-  server: 51.222.12.127
-  port: 445
-  cipher: aes-256-gcm
-  password: zDNVedRFPQexG9v
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 26 - zxmzy
+- name: 🇨🇦 加拿大 (Canada) 12 - zxmzy
   type: vless
   server: 66.70.179.198
   port: 2053
@@ -272,10 +123,10 @@ proxies:
   reality-opts:
     public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
   servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇨🇦 加拿大 (Canada) 27 - zxmzy
+  client-fingerprint: chrome
+- name: 🇨🇦 加拿大 (Canada) 13 - zxmzy
   type: vmess
-  server: 134.195.196.211
+  server: 23.162.200.198
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -283,9 +134,45 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 28 - zxmzy
+- name: 🇨🇦 加拿大 (Canada) 14 - zxmzy
+  type: vmess
+  server: 23.162.200.198
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 15 - zxmzy
+  type: ss
+  server: yyz-ca-01.blncvpn4u.cc
+  port: 9443
+  cipher: aes-256-gcm
+  password: eveaaTOb8ji8yntw2Z9yWUG0d6Ir8Ld8m3ymH8THdC5egiTH1mXCiBc0Skr7FibH
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 16 - zxmzy
   type: vless
-  server: lizca2.footballfantasyforum.com
+  server: 66.70.179.198
+  port: 2053
+  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇨🇦 加拿大 (Canada) 17 - zxmzy
+  type: ss
+  server: 51.222.12.127
+  port: 445
+  cipher: aes-256-gcm
+  password: zDNVedRFPQexG9v
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 18 - zxmzy
+  type: vless
+  server: 184.107.106.68
   port: 443
   uuid: 716426fa-bcb7-4eb9-b460-36399ebf740d
   udp: true
@@ -315,16 +202,6 @@ proxy-groups:
   - 🇨🇦 加拿大 (Canada) 16 - zxmzy
   - 🇨🇦 加拿大 (Canada) 17 - zxmzy
   - 🇨🇦 加拿大 (Canada) 18 - zxmzy
-  - 🇨🇦 加拿大 (Canada) 19 - zxmzy
-  - 🇨🇦 加拿大 (Canada) 20 - zxmzy
-  - 🇨🇦 加拿大 (Canada) 21 - zxmzy
-  - 🇨🇦 加拿大 (Canada) 22 - zxmzy
-  - 🇨🇦 加拿大 (Canada) 23 - zxmzy
-  - 🇨🇦 加拿大 (Canada) 24 - zxmzy
-  - 🇨🇦 加拿大 (Canada) 25 - zxmzy
-  - 🇨🇦 加拿大 (Canada) 26 - zxmzy
-  - 🇨🇦 加拿大 (Canada) 27 - zxmzy
-  - 🇨🇦 加拿大 (Canada) 28 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -348,15 +225,5 @@ proxy-groups:
   - 🇨🇦 加拿大 (Canada) 16 - zxmzy
   - 🇨🇦 加拿大 (Canada) 17 - zxmzy
   - 🇨🇦 加拿大 (Canada) 18 - zxmzy
-  - 🇨🇦 加拿大 (Canada) 19 - zxmzy
-  - 🇨🇦 加拿大 (Canada) 20 - zxmzy
-  - 🇨🇦 加拿大 (Canada) 21 - zxmzy
-  - 🇨🇦 加拿大 (Canada) 22 - zxmzy
-  - 🇨🇦 加拿大 (Canada) 23 - zxmzy
-  - 🇨🇦 加拿大 (Canada) 24 - zxmzy
-  - 🇨🇦 加拿大 (Canada) 25 - zxmzy
-  - 🇨🇦 加拿大 (Canada) 26 - zxmzy
-  - 🇨🇦 加拿大 (Canada) 27 - zxmzy
-  - 🇨🇦 加拿大 (Canada) 28 - zxmzy
 rules:
 - MATCH,PROXIES

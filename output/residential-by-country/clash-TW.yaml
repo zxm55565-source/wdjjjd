@@ -44,12 +44,26 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: ''
+      Host: dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn
+- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - zxmzy
+  type: ss
+  server: 36.224.185.143
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  udp: true
+- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - zxmzy
+  type: ss
+  server: 36.224.185.173
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -58,6 +72,8 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - zxmzy
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - zxmzy
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - zxmzy
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - zxmzy
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -66,5 +82,7 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - zxmzy
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - zxmzy
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - zxmzy
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - zxmzy
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - zxmzy
 rules:
 - MATCH,PROXIES
