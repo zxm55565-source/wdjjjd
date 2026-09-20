@@ -4,31 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇿 BZ 01 - zxmzy
+- name: 🇺🇸 美国 (United States) 01 (家宽) - zxmzy
   type: vless
-  server: 45.135.235.123
-  port: 443
-  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
+  server: 172.64.158.146
+  port: 2095
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: notls.lukongtou.eu.org
   network: ws
   ws-opts:
-    path: /
+    path: /?ed=2560security=tls
     headers:
-      Host: notls.lukongtou.eu.org
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇧🇿 BZ 01 - zxmzy
+  - 🇺🇸 美国 (United States) 01 (家宽) - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇿 BZ 01 - zxmzy
+  - 🇺🇸 美国 (United States) 01 (家宽) - zxmzy
 rules:
 - MATCH,PROXIES
