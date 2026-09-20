@@ -4,31 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇨 SC 01 - zxmzy
+- name: 🇮🇶 IQ 01 - zxmzy
   type: vless
-  server: 164.92.147.213
-  port: 2087
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  server: 81.90.25.152
+  port: 34302
+  uuid: e9a7f2c2-51bd-4a81-de35-26b369e2585b
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /city/my
-    headers:
-      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇸🇨 SC 01 - zxmzy
+  - 🇮🇶 IQ 01 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇨 SC 01 - zxmzy
+  - 🇮🇶 IQ 01 - zxmzy
 rules:
 - MATCH,PROXIES
