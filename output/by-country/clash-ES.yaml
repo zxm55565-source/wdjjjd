@@ -6,30 +6,6 @@ log-level: info
 proxies:
 - name: 🇪🇸 西班牙 (Spain) 01 - zxmzy
   type: vless
-  server: 212.227.235.66
-  port: 2053
-  uuid: ead0dd61-d398-40ad-80d6-a0e1e516d7d3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇪🇸 西班牙 (Spain) 02 - zxmzy
-  type: vless
-  server: 212.227.235.66
-  port: 2053
-  uuid: ead0dd61-d398-40ad-80d6-a0e1e516d7d3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇪🇸 西班牙 (Spain) 03 - zxmzy
-  type: vless
   server: 104.18.32.252
   port: 443
   uuid: 6dd13cd4-e378-4742-bef1-d8ac54083626
@@ -42,18 +18,19 @@ proxies:
     path: /api/v2/4ecb1e0e26887759/stream
     headers:
       Host: eb9a7750.69lover.site
-- name: 🇪🇸 西班牙 (Spain) 04 - zxmzy
+- name: 🇪🇸 西班牙 (Spain) 02 - zxmzy
   type: vless
-  server: 212.227.235.66
-  port: 2053
-  uuid: ead0dd61-d398-40ad-80d6-a0e1e516d7d3
+  server: 23.227.39.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
-  servername: www.apple.com
-  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime17.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -61,8 +38,6 @@ proxy-groups:
   - AUTO
   - 🇪🇸 西班牙 (Spain) 01 - zxmzy
   - 🇪🇸 西班牙 (Spain) 02 - zxmzy
-  - 🇪🇸 西班牙 (Spain) 03 - zxmzy
-  - 🇪🇸 西班牙 (Spain) 04 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -70,7 +45,5 @@ proxy-groups:
   proxies:
   - 🇪🇸 西班牙 (Spain) 01 - zxmzy
   - 🇪🇸 西班牙 (Spain) 02 - zxmzy
-  - 🇪🇸 西班牙 (Spain) 03 - zxmzy
-  - 🇪🇸 西班牙 (Spain) 04 - zxmzy
 rules:
 - MATCH,PROXIES
