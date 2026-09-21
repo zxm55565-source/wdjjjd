@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - zxmzy
   type: vless
-  server: 195.85.23.219
+  server: 195.85.23.47
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -20,7 +20,7 @@ proxies:
       Host: nb.lovecf.ggff.net
 - name: 🇨🇿 CZ 02 - zxmzy
   type: vless
-  server: 195.85.23.252
+  server: 195.85.23.219
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -29,12 +29,12 @@ proxies:
   servername: nb.lovecf.ggff.net
   network: ws
   ws-opts:
-    path: /proxyip=us.xiabibi.cf
+    path: /
     headers:
       Host: nb.lovecf.ggff.net
 - name: 🇨🇿 CZ 03 - zxmzy
   type: vless
-  server: 195.85.23.29
+  server: 195.85.23.217
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -48,7 +48,7 @@ proxies:
       Host: nb.lovecf.ggff.net
 - name: 🇨🇿 CZ 04 - zxmzy
   type: vless
-  server: 195.85.23.88
+  server: 195.85.23.47
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -62,34 +62,6 @@ proxies:
       Host: nb.lovecf.ggff.net
 - name: 🇨🇿 CZ 05 - zxmzy
   type: vless
-  server: 188.114.97.8
-  port: 8443
-  uuid: d4d2d3f3-9dec-4e8f-8daf-145ecac96e66
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cRIMSON-LeAf-7E45.hzhdUuEBFjDCB.workERs.DEv
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiODgwQ1AwWDV0MnFTRWE1cCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-    headers:
-      Host: crimson-leaf-7e45.hzhduuebfjdcb.workers.dev
-- name: 🇨🇿 CZ 06 - zxmzy
-  type: vless
-  server: cz1.zuoai.cf
-  port: 443
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nb.lovecf.ggff.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 07 - zxmzy
-  type: vless
   server: 195.85.23.252
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
@@ -102,21 +74,21 @@ proxies:
     path: /
     headers:
       Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 08 - zxmzy
+- name: 🇨🇿 CZ 06 - zxmzy
   type: vless
-  server: 172.66.47.44
+  server: 195.85.23.217
   port: 443
-  uuid: 2e305ebe-f6e6-4689-b32f-cd04ab5ff541
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: iDB8onmvBnTuyt5T7T6CejfW8vlRb.PagES.DeV
+  servername: nb.lovecf.ggff.net
   network: ws
   ws-opts:
-    path: /vl/6mJ4GmDKCRZ5zNJka52LVXs3XMbvJohS?ed=2560
+    path: /proxyip=us.xiabibi.cf
     headers:
-      Host: idb8onmvbntuyt5t7t6cejfw8vlrb.pages.dev
-- name: 🇨🇿 CZ 09 - zxmzy
+      Host: nb.lovecf.ggff.net
+- name: 🇨🇿 CZ 07 - zxmzy
   type: vless
   server: 195.85.23.29
   port: 443
@@ -130,23 +102,163 @@ proxies:
     path: /
     headers:
       Host: nb.lovecf.ggff.net
-- name: 🇨🇿 CZ 10 - zxmzy
+- name: 🇨🇿 CZ 08 - zxmzy
   type: vless
-  server: 162.159.153.4
+  server: 195.85.23.75
   port: 443
-  uuid: f2a73750-3087-48ff-a763-1348c15dce68
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: rAyAn-007.mAxImA.DpDnS.OrG
+  servername: nb.lovecf.ggff.net
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: rAyAn-007.mAxImA.DpDnS.OrG
+      Host: nb.lovecf.ggff.net
+- name: 🇨🇿 CZ 09 - zxmzy
+  type: vless
+  server: 195.85.23.88
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇨🇿 CZ 10 - zxmzy
+  type: vless
+  server: 195.85.23.45
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: nb.lovecf.ggff.net
 - name: 🇨🇿 CZ 11 - zxmzy
   type: vless
+  server: 195.85.23.29
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇨🇿 CZ 12 - zxmzy
+  type: vless
   server: 195.85.23.217
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇨🇿 CZ 13 - zxmzy
+  type: vless
+  server: 195.85.23.248
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇨🇿 CZ 14 - zxmzy
+  type: vless
+  server: 195.85.23.45
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇨🇿 CZ 15 - zxmzy
+  type: vless
+  server: 195.85.23.252
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇨🇿 CZ 16 - zxmzy
+  type: vless
+  server: 195.85.23.219
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇨🇿 CZ 17 - zxmzy
+  type: vless
+  server: cz1.zuoai.cf
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇨🇿 CZ 18 - zxmzy
+  type: vless
+  server: 195.85.23.111
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇨🇿 CZ 19 - zxmzy
+  type: vless
+  server: 195.85.23.219
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -174,6 +286,14 @@ proxy-groups:
   - 🇨🇿 CZ 09 - zxmzy
   - 🇨🇿 CZ 10 - zxmzy
   - 🇨🇿 CZ 11 - zxmzy
+  - 🇨🇿 CZ 12 - zxmzy
+  - 🇨🇿 CZ 13 - zxmzy
+  - 🇨🇿 CZ 14 - zxmzy
+  - 🇨🇿 CZ 15 - zxmzy
+  - 🇨🇿 CZ 16 - zxmzy
+  - 🇨🇿 CZ 17 - zxmzy
+  - 🇨🇿 CZ 18 - zxmzy
+  - 🇨🇿 CZ 19 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -190,5 +310,13 @@ proxy-groups:
   - 🇨🇿 CZ 09 - zxmzy
   - 🇨🇿 CZ 10 - zxmzy
   - 🇨🇿 CZ 11 - zxmzy
+  - 🇨🇿 CZ 12 - zxmzy
+  - 🇨🇿 CZ 13 - zxmzy
+  - 🇨🇿 CZ 14 - zxmzy
+  - 🇨🇿 CZ 15 - zxmzy
+  - 🇨🇿 CZ 16 - zxmzy
+  - 🇨🇿 CZ 17 - zxmzy
+  - 🇨🇿 CZ 18 - zxmzy
+  - 🇨🇿 CZ 19 - zxmzy
 rules:
 - MATCH,PROXIES
