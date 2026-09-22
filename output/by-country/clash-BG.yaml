@@ -19,7 +19,7 @@ proxies:
       Host: 192.145.31.5
 - name: 🇧🇬 BG 02 - zxmzy
   type: vless
-  server: 192.145.31.5
+  server: neth9.lunariai.ru
   port: 8443
   uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
   udp: true
@@ -44,6 +44,24 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: neth9.lunariai.ru
+- name: 🇧🇬 BG 05 - zxmzy
+  type: vless
+  server: neth9.lunariai.ru
+  port: 8443
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: neth9.lunariai.ru
+- name: 🇧🇬 BG 06 - zxmzy
+  type: vless
+  server: 192.145.31.5
+  port: 8443
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: neth9.lunariai.ru
 proxy-groups:
 - name: PROXIES
   type: select
@@ -53,6 +71,8 @@ proxy-groups:
   - 🇧🇬 BG 02 - zxmzy
   - 🇧🇬 BG 03 - zxmzy
   - 🇧🇬 BG 04 - zxmzy
+  - 🇧🇬 BG 05 - zxmzy
+  - 🇧🇬 BG 06 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -62,5 +82,7 @@ proxy-groups:
   - 🇧🇬 BG 02 - zxmzy
   - 🇧🇬 BG 03 - zxmzy
   - 🇧🇬 BG 04 - zxmzy
+  - 🇧🇬 BG 05 - zxmzy
+  - 🇧🇬 BG 06 - zxmzy
 rules:
 - MATCH,PROXIES
