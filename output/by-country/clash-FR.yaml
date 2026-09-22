@@ -6,38 +6,132 @@ log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - zxmzy
   type: vless
-  server: 34.155.10.226
-  port: 443
-  uuid: d619964d-26d6-452d-9860-6f058f03ba8e
+  server: 51.44.119.98
+  port: 22223
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: 6tH_NDFcxWn60B3s-MgrkBTU2yUUBY42ZG1av50Ywhk
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 - name: 🇫🇷 法国 (France) 02 - zxmzy
-  type: ss
-  server: 54.36.174.140
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: mrs2e9a
+  type: vless
+  server: 51.44.119.98
+  port: 22224
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
   udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇫🇷 法国 (France) 03 - zxmzy
   type: vless
-  server: 45.131.4.45
-  port: 443
-  uuid: 50414e45-4c5f-5a45-5553-56a63c8d27cf
+  server: 51.44.119.98
+  port: 22223
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 04 - zxmzy
+  type: vmess
+  server: 162.19.204.71
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: z-e-u-s-panel-h28k80.amipeito.workers.dev
+  servername: ''
+- name: 🇫🇷 法国 (France) 05 - zxmzy
+  type: vless
+  server: 13.39.211.208
+  port: 22223
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 06 - zxmzy
+  type: vless
+  server: 147.90.26.57
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
   network: ws
   ws-opts:
-    path: /stream/PANEL_ZEUS/56a63c8d27cf
+    path: /
     headers:
-      Host: z-e-u-s-panel-h28k80.amipeito.workers.dev
-- name: 🇫🇷 法国 (France) 04 - zxmzy
+      Host: shuma.ccwu.cc
+- name: 🇫🇷 法国 (France) 07 - zxmzy
+  type: vless
+  server: 91.107.252.248
+  port: 8443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇫🇷 法国 (France) 08 - zxmzy
+  type: ss
+  server: 51.255.13.232
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: BqnqToih0PbU
+  udp: true
+- name: 🇫🇷 法国 (France) 09 - zxmzy
+  type: vmess
+  server: 141.95.65.9
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇫🇷 法国 (France) 10 - zxmzy
+  type: vless
+  server: 51.44.119.98
+  port: 22224
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 11 - zxmzy
+  type: vless
+  server: 13.39.211.208
+  port: 22222
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 12 - zxmzy
+  type: vmess
+  server: 162.19.204.71
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇫🇷 法国 (France) 13 - zxmzy
+  type: vmess
+  server: 162.19.204.71
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇫🇷 法国 (France) 14 - zxmzy
   type: vless
   server: 149.202.58.99
   port: 443
@@ -51,53 +145,21 @@ proxies:
     path: /vws/
     headers:
       Host: bab-6.site
-- name: 🇫🇷 法国 (France) 05 - zxmzy
-  type: vmess
-  server: 162.19.204.71
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 06 - zxmzy
+- name: 🇫🇷 法国 (France) 15 - zxmzy
   type: vless
-  server: 199.232.246.236
-  port: 443
-  uuid: 8abb648a-b004-42a4-aa05-49cdc2f94d4e
+  server: 45.38.228.237
+  port: 8443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: global.fastly.com
+  servername: shuma.ccwu.cc
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: teranko.global.ssl.fastly.net
-- name: 🇫🇷 法国 (France) 07 - zxmzy
-  type: ss
-  server: 51.255.13.232
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: BqnqToih0PbU
-  udp: true
-- name: 🇫🇷 法国 (France) 08 - zxmzy
-  type: vless
-  server: 149.202.58.99
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bab-6.site
-  network: ws
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: 149.202.58.99
-- name: 🇫🇷 法国 (France) 09 - zxmzy
+      Host: shuma.ccwu.cc
+- name: 🇫🇷 法国 (France) 16 - zxmzy
   type: vless
   server: 34.155.10.226
   port: 443
@@ -109,6 +171,51 @@ proxies:
     public-key: 6tH_NDFcxWn60B3s-MgrkBTU2yUUBY42ZG1av50Ywhk
   servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 17 - zxmzy
+  type: vmess
+  server: 141.95.65.9
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇫🇷 法国 (France) 18 - zxmzy
+  type: vless
+  server: 34.155.10.226
+  port: 443
+  uuid: d619964d-26d6-452d-9860-6f058f03ba8e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 6tH_NDFcxWn60B3s-MgrkBTU2yUUBY42ZG1av50Ywhk
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 19 - zxmzy
+  type: vless
+  server: 13.39.211.208
+  port: 22224
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 20 - zxmzy
+  type: vless
+  server: 45.155.169.170
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: shuma.ccwu.cc
 proxy-groups:
 - name: PROXIES
   type: select
@@ -123,6 +230,17 @@ proxy-groups:
   - 🇫🇷 法国 (France) 07 - zxmzy
   - 🇫🇷 法国 (France) 08 - zxmzy
   - 🇫🇷 法国 (France) 09 - zxmzy
+  - 🇫🇷 法国 (France) 10 - zxmzy
+  - 🇫🇷 法国 (France) 11 - zxmzy
+  - 🇫🇷 法国 (France) 12 - zxmzy
+  - 🇫🇷 法国 (France) 13 - zxmzy
+  - 🇫🇷 法国 (France) 14 - zxmzy
+  - 🇫🇷 法国 (France) 15 - zxmzy
+  - 🇫🇷 法国 (France) 16 - zxmzy
+  - 🇫🇷 法国 (France) 17 - zxmzy
+  - 🇫🇷 法国 (France) 18 - zxmzy
+  - 🇫🇷 法国 (France) 19 - zxmzy
+  - 🇫🇷 法国 (France) 20 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -137,5 +255,16 @@ proxy-groups:
   - 🇫🇷 法国 (France) 07 - zxmzy
   - 🇫🇷 法国 (France) 08 - zxmzy
   - 🇫🇷 法国 (France) 09 - zxmzy
+  - 🇫🇷 法国 (France) 10 - zxmzy
+  - 🇫🇷 法国 (France) 11 - zxmzy
+  - 🇫🇷 法国 (France) 12 - zxmzy
+  - 🇫🇷 法国 (France) 13 - zxmzy
+  - 🇫🇷 法国 (France) 14 - zxmzy
+  - 🇫🇷 法国 (France) 15 - zxmzy
+  - 🇫🇷 法国 (France) 16 - zxmzy
+  - 🇫🇷 法国 (France) 17 - zxmzy
+  - 🇫🇷 法国 (France) 18 - zxmzy
+  - 🇫🇷 法国 (France) 19 - zxmzy
+  - 🇫🇷 法国 (France) 20 - zxmzy
 rules:
 - MATCH,PROXIES
