@@ -6,22 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 CZ 01 - zxmzy",
-        "🇨🇿 CZ 02 - zxmzy",
-        "🇨🇿 CZ 03 - zxmzy",
-        "🇨🇿 CZ 04 - zxmzy",
-        "🇨🇿 CZ 05 - zxmzy"
+        "🇨🇿 CZ 01 - zxmzy"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 CZ 01 - zxmzy",
-        "🇨🇿 CZ 02 - zxmzy",
-        "🇨🇿 CZ 03 - zxmzy",
-        "🇨🇿 CZ 04 - zxmzy",
-        "🇨🇿 CZ 05 - zxmzy"
+        "🇨🇿 CZ 01 - zxmzy"
       ],
       "url": "https://www.google.com/generate_204"
     },

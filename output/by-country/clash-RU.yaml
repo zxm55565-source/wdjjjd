@@ -6,33 +6,6 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - zxmzy
   type: vless
-  server: 109.176.239.123
-  port: 443
-  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: notls.lukongtou.eu.org
-  network: ws
-  ws-opts:
-    path: /Telegram-WangCai2🇨🇳
-    headers:
-      Host: notls.lukongtou.eu.org
-- name: 🇷🇺 俄罗斯 (Russia) 02 - zxmzy
-  type: vless
-  server: 108.162.198.178
-  port: 8080
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls+
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 03 - zxmzy
-  type: vless
   server: 46.8.200.91
   port: 443
   uuid: b8201bab-fa6c-4f6e-b289-b5da660c6f69
@@ -45,45 +18,44 @@ proxies:
     path: /cdn/v3/live
     headers:
       Host: cf3.rumedia-cdn.com
-- name: 🇷🇺 俄罗斯 (Russia) 04 - zxmzy
+- name: 🇷🇺 俄罗斯 (Russia) 02 - zxmzy
   type: vless
-  server: 172.64.155.209
-  port: 8443
-  uuid: 4ff70740-8c80-48ae-985f-2afe4924e908
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: pubb.clnahanpnln.workers.dev
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: pubb.clnahanpnln.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 05 - zxmzy
-  type: vless
-  server: 194.156.26.45
-  port: 443
-  uuid: 6bef6685-e989-467c-8fea-7fa1c6a0af2c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: LZc2j8i5PteXj5I7Aq0hFxQadvZcq.wF99sAF201Sfs9.wOrKers.dev
-  network: ws
-  ws-opts:
-    path: /vl/BBj8crirrHMxntD7H3o3z
-    headers:
-      Host: LZc2j8i5PteXj5I7Aq0hFxQadvZcq.wF99sAF201Sfs9.wOrKers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 06 - zxmzy
-  type: vless
-  server: 108.162.198.178
-  port: 8080
+  server: 188.114.97.6
+  port: 8880
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /?ed=2560
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 03 - zxmzy
+  type: vless
+  server: 5.129.238.144
+  port: 8443
+  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xinnusvpn.duckdns.org
+  network: ws
+  ws-opts:
+    path: /wsnl
+    headers:
+      Host: xinnusvpn.duckdns.org
+- name: 🇷🇺 俄罗斯 (Russia) 04 - zxmzy
+  type: vless
+  server: 172.64.154.8
+  port: 2086
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 proxy-groups:
@@ -95,8 +67,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - zxmzy
   - 🇷🇺 俄罗斯 (Russia) 03 - zxmzy
   - 🇷🇺 俄罗斯 (Russia) 04 - zxmzy
-  - 🇷🇺 俄罗斯 (Russia) 05 - zxmzy
-  - 🇷🇺 俄罗斯 (Russia) 06 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -106,7 +76,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - zxmzy
   - 🇷🇺 俄罗斯 (Russia) 03 - zxmzy
   - 🇷🇺 俄罗斯 (Russia) 04 - zxmzy
-  - 🇷🇺 俄罗斯 (Russia) 05 - zxmzy
-  - 🇷🇺 俄罗斯 (Russia) 06 - zxmzy
 rules:
 - MATCH,PROXIES
