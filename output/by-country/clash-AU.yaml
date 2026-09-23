@@ -18,16 +18,13 @@ proxies:
   client-fingerprint: random
 - name: 🇦🇺 澳大利亚 (Australia) 02 - zxmzy
   type: vless
-  server: 34.87.244.111
+  server: 172.105.169.70
   port: 443
-  uuid: 325bc1be-0cb7-4cf7-bd35-a79ded91bbbd
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+  servername: 172.105.169.70
 - name: 🇦🇺 澳大利亚 (Australia) 03 - zxmzy
   type: vless
   server: 34.87.229.148
@@ -51,7 +48,7 @@ proxies:
   reality-opts:
     public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇦🇺 澳大利亚 (Australia) 05 - zxmzy
   type: vless
   server: nova.freshnet.ir
@@ -68,6 +65,18 @@ proxies:
       Host: nova.freshnet.ir
 - name: 🇦🇺 澳大利亚 (Australia) 06 - zxmzy
   type: vless
+  server: 34.87.229.148
+  port: 443
+  uuid: 4f865f35-cf47-4e7f-a7e6-8882511a1b36
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: OgTkmAQdLjipA9oLloxbU5BAX3hPjzbvkEGHF4aZ8z4
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇦🇺 澳大利亚 (Australia) 07 - zxmzy
+  type: vless
   server: 34.87.244.111
   port: 443
   uuid: 325bc1be-0cb7-4cf7-bd35-a79ded91bbbd
@@ -78,7 +87,7 @@ proxies:
     public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇦🇺 澳大利亚 (Australia) 07 - zxmzy
+- name: 🇦🇺 澳大利亚 (Australia) 08 - zxmzy
   type: vless
   server: 34.87.229.148
   port: 443
@@ -90,18 +99,6 @@ proxies:
     public-key: OgTkmAQdLjipA9oLloxbU5BAX3hPjzbvkEGHF4aZ8z4
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇦🇺 澳大利亚 (Australia) 08 - zxmzy
-  type: vless
-  server: 34.87.244.111
-  port: 443
-  uuid: 325bc1be-0cb7-4cf7-bd35-a79ded91bbbd
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
 - name: 🇦🇺 澳大利亚 (Australia) 09 - zxmzy
   type: vless
   server: 34.87.244.111
@@ -137,7 +134,7 @@ proxies:
   reality-opts:
     public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
   servername: www.cloudflare.com
-  client-fingerprint: safari
+  client-fingerprint: chrome
 - name: 🇦🇺 澳大利亚 (Australia) 12 - zxmzy
   type: vless
   server: 34.87.244.111
@@ -149,7 +146,7 @@ proxies:
   reality-opts:
     public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
   servername: www.cloudflare.com
-  client-fingerprint: qq
+  client-fingerprint: safari
 - name: 🇦🇺 澳大利亚 (Australia) 13 - zxmzy
   type: vless
   server: 34.87.244.111
@@ -161,7 +158,19 @@ proxies:
   reality-opts:
     public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
   servername: www.cloudflare.com
-  client-fingerprint: random
+  client-fingerprint: firefox
+- name: 🇦🇺 澳大利亚 (Australia) 14 - zxmzy
+  type: vless
+  server: 34.87.244.111
+  port: 443
+  uuid: 325bc1be-0cb7-4cf7-bd35-a79ded91bbbd
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
+  servername: www.cloudflare.com
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
@@ -180,6 +189,7 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 11 - zxmzy
   - 🇦🇺 澳大利亚 (Australia) 12 - zxmzy
   - 🇦🇺 澳大利亚 (Australia) 13 - zxmzy
+  - 🇦🇺 澳大利亚 (Australia) 14 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -198,5 +208,6 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 11 - zxmzy
   - 🇦🇺 澳大利亚 (Australia) 12 - zxmzy
   - 🇦🇺 澳大利亚 (Australia) 13 - zxmzy
+  - 🇦🇺 澳大利亚 (Australia) 14 - zxmzy
 rules:
 - MATCH,PROXIES
