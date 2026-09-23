@@ -4,10 +4,10 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇲🇩 MD 01 - zxmzy
+- name: 🇺🇿 UZ 01 - zxmzy
   type: vless
-  server: 185.153.198.86
-  port: 443
+  server: 46.8.194.76
+  port: 2053
   uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
   tls: true
@@ -18,32 +18,33 @@ proxies:
     path: /
     headers:
       Host: shuma.ccwu.cc
-- name: 🇲🇩 MD 02 - zxmzy
+- name: 🇺🇿 UZ 02 - zxmzy
   type: vless
-  server: 143.246.219.51
-  port: 8081
-  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  server: 104.18.80.149
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-4017ea8bea78
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: zeus-panel-mvtum1.mahdiharchegani.workers.dev
   network: ws
   ws-opts:
-    path: /vless-test
+    path: /stream/PANEL_ZEUS/4017ea8bea78/loc-4
     headers:
-      Host: 143.246.219.51
+      Host: zeus-panel-mvtum1.mahdiharchegani.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇲🇩 MD 01 - zxmzy
-  - 🇲🇩 MD 02 - zxmzy
+  - 🇺🇿 UZ 01 - zxmzy
+  - 🇺🇿 UZ 02 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇲🇩 MD 01 - zxmzy
-  - 🇲🇩 MD 02 - zxmzy
+  - 🇺🇿 UZ 01 - zxmzy
+  - 🇺🇿 UZ 02 - zxmzy
 rules:
 - MATCH,PROXIES
