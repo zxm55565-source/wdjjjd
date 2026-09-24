@@ -5,15 +5,8 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - zxmzy
-  type: ss
-  server: p1tun4.greewebservices.ir
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: cVvgP0Bz69hsErPBvqKbwQ
-  udp: true
-- name: 🇫🇮 FI 02 - zxmzy
   type: vless
-  server: k2.cloud--vpn.site
+  server: a2.arshia-nova.ir
   port: 443
   uuid: 64c2bc5c-7534-4359-9b1e-e1dce5a380cd
   udp: true
@@ -22,10 +15,10 @@ proxies:
   servername: ssl.fastly.com
   network: ws
   ws-opts:
-    path: /?edTelegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+    path: /
     headers:
       Host: c12.com
-- name: 🇫🇮 FI 03 - zxmzy
+- name: 🇫🇮 FI 02 - zxmzy
   type: vless
   server: 151.101.56.6
   port: 443
@@ -39,7 +32,7 @@ proxies:
     path: /?TELEGRAM--BYA---@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud
     headers:
       Host: c12.com
-- name: 🇫🇮 FI 04 - zxmzy
+- name: 🇫🇮 FI 03 - zxmzy
   type: vless
   server: k2.cloud--vpn.site
   port: 443
@@ -50,18 +43,9 @@ proxies:
   servername: ssl.fastly.com
   network: ws
   ws-opts:
-    path: /
+    path: /?edTelegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
     headers:
       Host: c12.com
-- name: 🇫🇮 FI 05 - zxmzy
-  type: vless
-  server: karo.rick313.dpdns.org
-  port: 2087
-  uuid: 2e4e6812-be87-415b-a2e8-b0e17e9f2da7
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: karo.rick313.dpdns.org
 proxy-groups:
 - name: PROXIES
   type: select
@@ -70,8 +54,6 @@ proxy-groups:
   - 🇫🇮 FI 01 - zxmzy
   - 🇫🇮 FI 02 - zxmzy
   - 🇫🇮 FI 03 - zxmzy
-  - 🇫🇮 FI 04 - zxmzy
-  - 🇫🇮 FI 05 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -80,7 +62,5 @@ proxy-groups:
   - 🇫🇮 FI 01 - zxmzy
   - 🇫🇮 FI 02 - zxmzy
   - 🇫🇮 FI 03 - zxmzy
-  - 🇫🇮 FI 04 - zxmzy
-  - 🇫🇮 FI 05 - zxmzy
 rules:
 - MATCH,PROXIES
