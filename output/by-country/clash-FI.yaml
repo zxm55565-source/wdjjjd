@@ -5,30 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - zxmzy
-  type: vmess
-  server: me6.movieseryalirani.ir
-  port: 57361
-  uuid: ed815caa-bff1-4419-8c61-1d108eabaf1f
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇫🇮 FI 02 - zxmzy
-  type: vless
-  server: 151.101.56.6
-  port: 443
-  uuid: 64c2bc5c-7534-4359-9b1e-e1dce5a380cd
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /?TELEGRAM--BYA--CHANEL---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr--@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr
-    headers:
-      Host: c12.com
-- name: 🇫🇮 FI 03 - zxmzy
   type: vless
   server: 151.101.56.6
   port: 443
@@ -42,7 +18,83 @@ proxies:
     path: /
     headers:
       Host: c12.com
+- name: 🇫🇮 FI 02 - zxmzy
+  type: vless
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+  servername: www.google.com
+  client-fingerprint: random
+- name: 🇫🇮 FI 03 - zxmzy
+  type: vless
+  server: 95.216.27.15
+  port: 2053
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+  servername: www.google.com
+  client-fingerprint: chrome
 - name: 🇫🇮 FI 04 - zxmzy
+  type: vless
+  server: 151.101.56.6
+  port: 443
+  uuid: 64c2bc5c-7534-4359-9b1e-e1dce5a380cd
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM--BYA---@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud
+    headers:
+      Host: c12.com
+- name: 🇫🇮 FI 05 - zxmzy
+  type: vmess
+  server: me6.movieseryalirani.ir
+  port: 57361
+  uuid: ed815caa-bff1-4419-8c61-1d108eabaf1f
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇫🇮 FI 06 - zxmzy
+  type: vless
+  server: 151.101.56.6
+  port: 443
+  uuid: 64c2bc5c-7534-4359-9b1e-e1dce5a380cd
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: c12.com
+- name: 🇫🇮 FI 07 - zxmzy
+  type: vless
+  server: 151.101.56.6
+  port: 443
+  uuid: 64c2bc5c-7534-4359-9b1e-e1dce5a380cd
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM--BYA--CHANEL---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr--@vpnserverrr---@vpnserverrr---@vpnserverrr---@vpnserverrr
+    headers:
+      Host: c12.com
+- name: 🇫🇮 FI 08 - zxmzy
   type: vless
   server: 185.79.138.71
   port: 448
@@ -54,7 +106,43 @@ proxies:
     public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
   servername: www.samsung.com
   client-fingerprint: chrome
-- name: 🇫🇮 FI 05 - zxmzy
+- name: 🇫🇮 FI 09 - zxmzy
+  type: vless
+  server: 185.79.138.71
+  port: 448
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
+  servername: www.samsung.com
+  client-fingerprint: chrome
+- name: 🇫🇮 FI 10 - zxmzy
+  type: vless
+  server: 185.79.138.71
+  port: 448
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
+  servername: www.samsung.com
+  client-fingerprint: firefox
+- name: 🇫🇮 FI 11 - zxmzy
+  type: vless
+  server: 185.79.138.71
+  port: 448
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
+  servername: www.samsung.com
+  client-fingerprint: chrome
+- name: 🇫🇮 FI 12 - zxmzy
   type: vless
   server: 185.79.138.71
   port: 448
@@ -76,6 +164,13 @@ proxy-groups:
   - 🇫🇮 FI 03 - zxmzy
   - 🇫🇮 FI 04 - zxmzy
   - 🇫🇮 FI 05 - zxmzy
+  - 🇫🇮 FI 06 - zxmzy
+  - 🇫🇮 FI 07 - zxmzy
+  - 🇫🇮 FI 08 - zxmzy
+  - 🇫🇮 FI 09 - zxmzy
+  - 🇫🇮 FI 10 - zxmzy
+  - 🇫🇮 FI 11 - zxmzy
+  - 🇫🇮 FI 12 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -86,5 +181,12 @@ proxy-groups:
   - 🇫🇮 FI 03 - zxmzy
   - 🇫🇮 FI 04 - zxmzy
   - 🇫🇮 FI 05 - zxmzy
+  - 🇫🇮 FI 06 - zxmzy
+  - 🇫🇮 FI 07 - zxmzy
+  - 🇫🇮 FI 08 - zxmzy
+  - 🇫🇮 FI 09 - zxmzy
+  - 🇫🇮 FI 10 - zxmzy
+  - 🇫🇮 FI 11 - zxmzy
+  - 🇫🇮 FI 12 - zxmzy
 rules:
 - MATCH,PROXIES
