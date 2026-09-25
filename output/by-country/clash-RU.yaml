@@ -6,19 +6,85 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - zxmzy
   type: vless
-  server: 217.19.122.65
-  port: 443
-  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
+  server: 104.18.47.113
+  port: 2095
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 02 - zxmzy
+  type: vless
+  server: 104.18.46.234
+  port: 2086
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 03 - zxmzy
+  type: vless
+  server: 172.64.229.170
+  port: 8080
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 04 - zxmzy
+  type: vless
+  server: 162.159.38.127
+  port: 2082
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 05 - zxmzy
+  type: vless
+  server: 188.114.97.3
+  port: 2083
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: fbsv6.guardora.pro
+  servername: newwk1.f1w.de5.net
   network: ws
   ws-opts:
-    path: /ws?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+    path: /
     headers:
-      Host: fbsv6.guardora.pro
-- name: 🇷🇺 俄罗斯 (Russia) 02 - zxmzy
+      Host: newwk1.f1w.de5.net
+- name: 🇷🇺 俄罗斯 (Russia) 06 - zxmzy
+  type: vless
+  server: 172.67.137.223
+  port: 443
+  uuid: 4ce7cb8a-f9b1-4bfa-a80d-9e168c61a633
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: curly-night-6928.ggdhchjk.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: curly-night-6928.ggdhchjk.workers.dev
+- name: 🇷🇺 俄罗斯 (Russia) 07 - zxmzy
   type: vless
   server: 46.8.200.91
   port: 443
@@ -32,20 +98,20 @@ proxies:
     path: /cdn/v3/live
     headers:
       Host: cf3.rumedia-cdn.com
-- name: 🇷🇺 俄罗斯 (Russia) 03 - zxmzy
+- name: 🇷🇺 俄罗斯 (Russia) 08 - zxmzy
   type: vless
-  server: 217.19.122.65
+  server: 172.67.148.26
   port: 443
-  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
+  uuid: 95de071f-747c-dc07-36ac-5c0854a9e50e
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: fbsv6.guardora.pro
+  servername: restless-boat-ebf2.moha102030.workers.dev
   network: ws
   ws-opts:
-    path: /ws
+    path: /sync
     headers:
-      Host: fbsv6.guardora.pro
+      Host: restless-boat-ebf2.moha102030.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -54,6 +120,11 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - zxmzy
   - 🇷🇺 俄罗斯 (Russia) 02 - zxmzy
   - 🇷🇺 俄罗斯 (Russia) 03 - zxmzy
+  - 🇷🇺 俄罗斯 (Russia) 04 - zxmzy
+  - 🇷🇺 俄罗斯 (Russia) 05 - zxmzy
+  - 🇷🇺 俄罗斯 (Russia) 06 - zxmzy
+  - 🇷🇺 俄罗斯 (Russia) 07 - zxmzy
+  - 🇷🇺 俄罗斯 (Russia) 08 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -62,5 +133,10 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - zxmzy
   - 🇷🇺 俄罗斯 (Russia) 02 - zxmzy
   - 🇷🇺 俄罗斯 (Russia) 03 - zxmzy
+  - 🇷🇺 俄罗斯 (Russia) 04 - zxmzy
+  - 🇷🇺 俄罗斯 (Russia) 05 - zxmzy
+  - 🇷🇺 俄罗斯 (Russia) 06 - zxmzy
+  - 🇷🇺 俄罗斯 (Russia) 07 - zxmzy
+  - 🇷🇺 俄罗斯 (Russia) 08 - zxmzy
 rules:
 - MATCH,PROXIES
