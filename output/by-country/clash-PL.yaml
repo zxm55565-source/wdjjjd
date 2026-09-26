@@ -6,12 +6,16 @@ log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - zxmzy
   type: vless
-  server: test.keoplentuio.xyz
-  port: 2053
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+  server: 185.62.1.8
+  port: 8118
+  uuid: eea1c59d-70fd-4829-8ed7-21ddfe55a0da
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: LjAkLizwkZf35ObrUMFZ22UHXTEJzpgcTvHk9AuzcUM
+  servername: play.googleapis.com
+  client-fingerprint: ios
 proxy-groups:
 - name: PROXIES
   type: select
