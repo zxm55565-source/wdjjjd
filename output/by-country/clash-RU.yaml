@@ -6,8 +6,8 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - zxmzy
   type: vless
-  server: 172.64.42.85
-  port: 2086
+  server: 172.64.154.8
+  port: 2082
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
@@ -17,17 +17,41 @@ proxies:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 02 - zxmzy
+  type: ss
+  server: 62.109.12.234
+  port: 2055
+  cipher: chacha20-ietf-poly1305
+  password: WxYpOK1iPSJySbVNMMJDtw
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 03 - zxmzy
+  type: vless
+  server: 188.114.97.6
+  port: 2052
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - zxmzy
+  - 🇷🇺 俄罗斯 (Russia) 02 - zxmzy
+  - 🇷🇺 俄罗斯 (Russia) 03 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - zxmzy
+  - 🇷🇺 俄罗斯 (Russia) 02 - zxmzy
+  - 🇷🇺 俄罗斯 (Russia) 03 - zxmzy
 rules:
 - MATCH,PROXIES

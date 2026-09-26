@@ -16,9 +16,16 @@ proxies:
   server: 20.234.96.89
   port: 443
   cipher: chacha20-ietf-poly1305
-  password: V3WiGKNQiqOCsT60
+  password: C8QhmBLJzhKo2JHR
   udp: true
 - name: 🇮🇪 IE 03 - zxmzy
+  type: ss
+  server: 20.234.96.89
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: V3WiGKNQiqOCsT60
+  udp: true
+- name: 🇮🇪 IE 04 - zxmzy
   type: ss
   server: 20.234.96.89
   port: 443
@@ -33,6 +40,7 @@ proxy-groups:
   - 🇮🇪 IE 01 - zxmzy
   - 🇮🇪 IE 02 - zxmzy
   - 🇮🇪 IE 03 - zxmzy
+  - 🇮🇪 IE 04 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -41,5 +49,6 @@ proxy-groups:
   - 🇮🇪 IE 01 - zxmzy
   - 🇮🇪 IE 02 - zxmzy
   - 🇮🇪 IE 03 - zxmzy
+  - 🇮🇪 IE 04 - zxmzy
 rules:
 - MATCH,PROXIES

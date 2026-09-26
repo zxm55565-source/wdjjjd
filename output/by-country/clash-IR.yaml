@@ -4,29 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇵🇱 PL 01 - zxmzy
+- name: 🇮🇷 IR 01 - zxmzy
   type: vless
-  server: 185.62.1.8
-  port: 8118
-  uuid: eea1c59d-70fd-4829-8ed7-21ddfe55a0da
+  server: service.erisrtg.ir
+  port: 9098
+  uuid: 9730ec36-a1d8-4cae-a246-fde2678be5df
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: LjAkLizwkZf35ObrUMFZ22UHXTEJzpgcTvHk9AuzcUM
-  servername: play.googleapis.com
-  client-fingerprint: ios
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇵🇱 PL 01 - zxmzy
+  - 🇮🇷 IR 01 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇵🇱 PL 01 - zxmzy
+  - 🇮🇷 IR 01 - zxmzy
 rules:
 - MATCH,PROXIES
