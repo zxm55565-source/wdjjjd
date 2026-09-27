@@ -18,7 +18,21 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: 59.125.69.24
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - zxmzy
+- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - zxmzy
+  type: vless
+  server: 144.31.243.120
+  port: 8443
+  uuid: 97532b08-357e-4140-a6f0-8e07f2ed3327
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: yf.962456.xyz
+  network: ws
+  ws-opts:
+    path: /proxyip=kr.william.us.ci
+    headers:
+      Host: yf.962456.xyz
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - zxmzy
   type: vless
   server: 118.167.230.191
   port: 24215
@@ -36,13 +50,15 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - zxmzy
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - zxmzy
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) - zxmzy
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - zxmzy
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - zxmzy
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) - zxmzy
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - zxmzy
 rules:
 - MATCH,PROXIES
