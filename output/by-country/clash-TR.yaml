@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇿 CZ 01 - zxmzy
+- name: 🇹🇷 土耳其 (Turkey) 01 - zxmzy
   type: vless
-  server: 162.159.152.4
+  server: 130.94.0.228
   port: 443
-  uuid: f2a73750-3087-48ff-a763-1348c15dce68
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: rayan-007.maxima.dpdns.org
+  servername: edgetunnel-4uw.pages.dev
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: rayan-007.maxima.dpdns.org
+      Host: edgetunnel-4uw.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇿 CZ 01 - zxmzy
+  - 🇹🇷 土耳其 (Turkey) 01 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇿 CZ 01 - zxmzy
+  - 🇹🇷 土耳其 (Turkey) 01 - zxmzy
 rules:
 - MATCH,PROXIES

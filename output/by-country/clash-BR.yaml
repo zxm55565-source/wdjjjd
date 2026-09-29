@@ -4,9 +4,9 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇪 IE 01 - zxmzy
+- name: 🇧🇷 BR 01 - zxmzy
   type: vless
-  server: 45.141.234.138
+  server: 43.174.192.1
   port: 443
   uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
   udp: true
@@ -18,9 +18,9 @@ proxies:
     path: /
     headers:
       Host: edgetunnel-4uw.pages.dev
-- name: 🇮🇪 IE 02 - zxmzy
+- name: 🇧🇷 BR 02 - zxmzy
   type: vless
-  server: 45.141.234.138
+  server: 43.174.192.1
   port: 443
   uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
   udp: true
@@ -37,14 +37,14 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇮🇪 IE 01 - zxmzy
-  - 🇮🇪 IE 02 - zxmzy
+  - 🇧🇷 BR 01 - zxmzy
+  - 🇧🇷 BR 02 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇪 IE 01 - zxmzy
-  - 🇮🇪 IE 02 - zxmzy
+  - 🇧🇷 BR 01 - zxmzy
+  - 🇧🇷 BR 02 - zxmzy
 rules:
 - MATCH,PROXIES
