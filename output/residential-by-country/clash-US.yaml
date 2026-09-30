@@ -4,31 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇿 CZ 01 - zxmzy
+- name: 🇺🇸 美国 (United States) 01 (家宽) - zxmzy
   type: vless
-  server: netra-85a0ca.shoameni19.workers.dev
-  port: 443
-  uuid: 20836693-ea23-4f40-a1e7-48a6da897917
+  server: 172.64.53.55
+  port: 2052
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: netra-85a0ca.shoameni19.workers.dev
   network: ws
   ws-opts:
-    path: /vl/bluTTbb7MO8rvX1COEYH4WW4qzbr2aui
+    path: /
     headers:
-      Host: netra-85a0ca.shoameni19.workers.dev
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇿 CZ 01 - zxmzy
+  - 🇺🇸 美国 (United States) 01 (家宽) - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇿 CZ 01 - zxmzy
+  - 🇺🇸 美国 (United States) 01 (家宽) - zxmzy
 rules:
 - MATCH,PROXIES
