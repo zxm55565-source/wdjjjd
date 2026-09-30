@@ -4,24 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇷 IR 01 - zxmzy
-  type: ss
-  server: p2tun2.greewebservices.ir
-  port: 1020
-  cipher: chacha20-ietf-poly1305
-  password: DUAd_9d2osCSYDNCWNJngw
+- name: 🇫🇮 FI 01 - zxmzy
+  type: vless
+  server: smart.avenone.ir
+  port: 1085
+  uuid: 0c1b7949-fe09-43d9-863f-2c031f66bfc1
   udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇷 IR 01 - zxmzy
+  - 🇫🇮 FI 01 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇷 IR 01 - zxmzy
+  - 🇫🇮 FI 01 - zxmzy
 rules:
 - MATCH,PROXIES
