@@ -4,16 +4,16 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇱 CL 01 - zxmzy
+- name: 🇶🇦 QA 01 - zxmzy
   type: vless
-  server: 34.176.187.219
+  server: 34.18.222.19
   port: 443
-  uuid: ad5325f8-f0b3-41c4-a561-113529b60e70
+  uuid: bd82d5e7-4395-40e1-b34e-2974eb0c8555
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: HnHVuSObMrldWGzq1-Eb93fwgu6QQRp6H0_8LX3ikDc
+    public-key: ZRWl48Ahw4vlnPSTMkNs6xcCEDd9Qq4AsChUp-mg7A4
   servername: www.cloudflare.com
   client-fingerprint: chrome
 proxy-groups:
@@ -21,12 +21,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇨🇱 CL 01 - zxmzy
+  - 🇶🇦 QA 01 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇱 CL 01 - zxmzy
+  - 🇶🇦 QA 01 - zxmzy
 rules:
 - MATCH,PROXIES
