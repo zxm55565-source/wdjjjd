@@ -22,7 +22,7 @@ proxies:
   servername: shephe.dpdns.org
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /
     headers:
       Host: shephe.dpdns.org
 proxy-groups:
