@@ -6,14 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇷 韩国 (South Korea) 01 (家宽) - zxmzy"
+        "🇧🇷 BR 01 - zxmzy",
+        "🇧🇷 BR 02 - zxmzy",
+        "🇧🇷 BR 03 - zxmzy"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇷 韩国 (South Korea) 01 (家宽) - zxmzy"
+        "🇧🇷 BR 01 - zxmzy",
+        "🇧🇷 BR 02 - zxmzy",
+        "🇧🇷 BR 03 - zxmzy"
       ],
       "url": "https://www.google.com/generate_204"
     },
