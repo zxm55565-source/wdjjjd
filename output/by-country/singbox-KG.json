@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇰🇬 KG 01 - zxmzy",
+        "🇰🇬 KG 02 - zxmzy",
+        "🇰🇬 KG 03 - zxmzy",
+        "🇰🇬 KG 04 - zxmzy",
+        "🇰🇬 KG 05 - zxmzy",
+        "🇰🇬 KG 06 - zxmzy"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇰🇬 KG 01 - zxmzy",
+        "🇰🇬 KG 02 - zxmzy",
+        "🇰🇬 KG 03 - zxmzy",
+        "🇰🇬 KG 04 - zxmzy",
+        "🇰🇬 KG 05 - zxmzy",
+        "🇰🇬 KG 06 - zxmzy"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
