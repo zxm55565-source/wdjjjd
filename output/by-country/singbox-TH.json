@@ -6,18 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇰 LK 01 - zxmzy",
-        "🇱🇰 LK 02 - zxmzy",
-        "🇱🇰 LK 03 - zxmzy"
+        "🇹🇭 TH 01 - zxmzy",
+        "🇹🇭 TH 02 - zxmzy"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇰 LK 01 - zxmzy",
-        "🇱🇰 LK 02 - zxmzy",
-        "🇱🇰 LK 03 - zxmzy"
+        "🇹🇭 TH 01 - zxmzy",
+        "🇹🇭 TH 02 - zxmzy"
       ],
       "url": "https://www.google.com/generate_204"
     },
