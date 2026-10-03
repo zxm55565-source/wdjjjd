@@ -42,7 +42,7 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: m.zoom.us
+      Host: cloud.ghostdev.lk
 proxy-groups:
 - name: PROXIES
   type: select
