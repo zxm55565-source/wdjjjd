@@ -19,61 +19,24 @@ proxies:
     headers:
       Host: fbsv6.guardora.pro
 - name: 🇷🇺 俄罗斯 (Russia) 02 - zxmzy
-  type: vless
-  server: 78.159.246.110
-  port: 443
-  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: mhXYDvaSfHzHZXBswC/zo/o8VqdU3XSBpwWx050Y6MU=
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fbsv6.guardora.pro
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: fbsv6.guardora.pro
 - name: 🇷🇺 俄罗斯 (Russia) 03 - zxmzy
   type: vless
-  server: 46.243.232.125
+  server: 62.152.58.90
   port: 443
-  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
+  uuid: 1bb2af63-4472-44ed-9c70-8f316258b68b
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: fbsv6.guardora.pro
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: fbsv6.guardora.pro
-- name: 🇷🇺 俄罗斯 (Russia) 04 - zxmzy
-  type: vless
-  server: fbsv6.guardora.pro
-  port: 443
-  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fbsv6.guardora.pro
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: fbsv6.guardora.pro
-- name: 🇷🇺 俄罗斯 (Russia) 05 - zxmzy
-  type: vless
-  server: 172.67.182.245
-  port: 443
-  uuid: 96e341a7-3077-4613-b482-41bd9c90cc4d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: eZaCCesS-proJEcT-4C7950.Ez-dC9bBB.WorKErs.dEV
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiN2w4dDlRNVV5NkZ5NU1aeSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-    headers:
-      Host: ezaccess-project-4c7950.ez-dc9bbb.workers.dev
+  reality-opts:
+    public-key: JBKJlzuJH1YzDHAoz28wEKbzWTGpDpKjgtSq0oT0a0k
+  servername: 360.yandex.ru
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -82,8 +45,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - zxmzy
   - 🇷🇺 俄罗斯 (Russia) 02 - zxmzy
   - 🇷🇺 俄罗斯 (Russia) 03 - zxmzy
-  - 🇷🇺 俄罗斯 (Russia) 04 - zxmzy
-  - 🇷🇺 俄罗斯 (Russia) 05 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -92,7 +53,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - zxmzy
   - 🇷🇺 俄罗斯 (Russia) 02 - zxmzy
   - 🇷🇺 俄罗斯 (Russia) 03 - zxmzy
-  - 🇷🇺 俄罗斯 (Russia) 04 - zxmzy
-  - 🇷🇺 俄罗斯 (Russia) 05 - zxmzy
 rules:
 - MATCH,PROXIES
