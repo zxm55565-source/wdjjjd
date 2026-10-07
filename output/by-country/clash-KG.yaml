@@ -4,33 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇷 BR 01 - zxmzy
-  type: vmess
-  server: aksai.org
+- name: 🇰🇬 KG 01 - zxmzy
+  type: vless
+  server: 104.21.88.201
   port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
+  uuid: 07f9bc85-613f-4a33-8da1-191973c43c0a
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: aksai.org
+  servername: app-q0zc4t.user-4gfyh5.workers.dev
   network: ws
   ws-opts:
-    path: /linkvws
+    path: /cmh
     headers:
-      Host: aksai.org
+      Host: app-q0zc4t.user-4gfyh5.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇧🇷 BR 01 - zxmzy
+  - 🇰🇬 KG 01 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇷 BR 01 - zxmzy
+  - 🇰🇬 KG 01 - zxmzy
 rules:
 - MATCH,PROXIES

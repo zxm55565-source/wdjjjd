@@ -5,20 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 RO 01 - zxmzy
-  type: vless
-  server: 85.90.196.11
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fzo5i.ir46.90k.hh.ov0.kdns.fr
-  network: ws
-  ws-opts:
-    path: /glasspanel/guest000_0_5de14443985f/
-    headers:
-      Host: fzo5i.ir46.90k.hh.ov0.kdns.fr
-- name: 🇷🇴 RO 02 - zxmzy
   type: ss
   server: bogging-eyeteeth-fly.freesocks.work
   port: 443
@@ -31,13 +17,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇷🇴 RO 01 - zxmzy
-  - 🇷🇴 RO 02 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇷🇴 RO 01 - zxmzy
-  - 🇷🇴 RO 02 - zxmzy
 rules:
 - MATCH,PROXIES
