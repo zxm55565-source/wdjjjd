@@ -16,122 +16,19 @@ proxies:
   skip-cert-verify: true
 - name: 🇲🇾 MY 02 - zxmzy
   type: vless
-  server: platform109.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  server: 216.173.67.59
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /platform109
+    path: /
     headers:
-      Host: platform109.halalkhor.info
+      Host: ccc.010304.xyz
 - name: 🇲🇾 MY 03 - zxmzy
-  type: vless
-  server: platform101.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform101
-    headers:
-      Host: platform101.halalkhor.info
-- name: 🇲🇾 MY 04 - zxmzy
-  type: vless
-  server: platform115.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform115
-    headers:
-      Host: platform115.halalkhor.info
-- name: 🇲🇾 MY 05 - zxmzy
-  type: vless
-  server: platform106.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform106
-    headers:
-      Host: platform106.halalkhor.info
-- name: 🇲🇾 MY 06 - zxmzy
-  type: vless
-  server: platform118.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform118
-    headers:
-      Host: platform118.halalkhor.info
-- name: 🇲🇾 MY 07 - zxmzy
-  type: vless
-  server: 166.88.35.245
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform117
-    headers:
-      Host: platform117.halalkhor.info
-- name: 🇲🇾 MY 08 - zxmzy
-  type: vless
-  server: 45.195.69.230
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform103
-    headers:
-      Host: platform103.halalkhor.info
-- name: 🇲🇾 MY 09 - zxmzy
-  type: vless
-  server: platform103.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform103
-    headers:
-      Host: platform103.halalkhor.info
-- name: 🇲🇾 MY 10 - zxmzy
-  type: vless
-  server: platform117.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform117
-    headers:
-      Host: platform117.halalkhor.info
-- name: 🇲🇾 MY 11 - zxmzy
   type: vless
   server: 216.173.67.59
   port: 443
@@ -145,19 +42,6 @@ proxies:
     path: /
     headers:
       Host: ccc.010304.xyz
-- name: 🇲🇾 MY 12 - zxmzy
-  type: vless
-  server: platform102.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform102
-    headers:
-      Host: platform102.halalkhor.info
 proxy-groups:
 - name: PROXIES
   type: select
@@ -166,15 +50,6 @@ proxy-groups:
   - 🇲🇾 MY 01 - zxmzy
   - 🇲🇾 MY 02 - zxmzy
   - 🇲🇾 MY 03 - zxmzy
-  - 🇲🇾 MY 04 - zxmzy
-  - 🇲🇾 MY 05 - zxmzy
-  - 🇲🇾 MY 06 - zxmzy
-  - 🇲🇾 MY 07 - zxmzy
-  - 🇲🇾 MY 08 - zxmzy
-  - 🇲🇾 MY 09 - zxmzy
-  - 🇲🇾 MY 10 - zxmzy
-  - 🇲🇾 MY 11 - zxmzy
-  - 🇲🇾 MY 12 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -183,14 +58,5 @@ proxy-groups:
   - 🇲🇾 MY 01 - zxmzy
   - 🇲🇾 MY 02 - zxmzy
   - 🇲🇾 MY 03 - zxmzy
-  - 🇲🇾 MY 04 - zxmzy
-  - 🇲🇾 MY 05 - zxmzy
-  - 🇲🇾 MY 06 - zxmzy
-  - 🇲🇾 MY 07 - zxmzy
-  - 🇲🇾 MY 08 - zxmzy
-  - 🇲🇾 MY 09 - zxmzy
-  - 🇲🇾 MY 10 - zxmzy
-  - 🇲🇾 MY 11 - zxmzy
-  - 🇲🇾 MY 12 - zxmzy
 rules:
 - MATCH,PROXIES
