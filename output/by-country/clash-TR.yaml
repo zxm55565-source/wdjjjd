@@ -6,59 +6,33 @@ log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - zxmzy
   type: vless
-  server: 31.40.204.131
+  server: 203.202.232.211
   port: 443
-  uuid: 86b6c7ba-d613-4567-962a-acfdad5c22db
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 0gltyawm4dbxby5k6kw-3d2475.arta-ts.workers.dev
+  servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /
+    path: /fp=chrome
     headers:
-      Host: 0gltyawm4dbxby5k6kw-3d2475.arta-ts.workers.dev
+      Host: ccc.010304.xyz
 - name: 🇹🇷 土耳其 (Turkey) 02 - zxmzy
   type: vless
-  server: 151.241.226.201
-  port: 2053
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  server: 203.202.232.211
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-  servername: www.apple.com
-  client-fingerprint: firefox
+  servername: ccc.010304.xyz
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: ccc.010304.xyz
 - name: 🇹🇷 土耳其 (Turkey) 03 - zxmzy
-  type: vless
-  server: 203.202.232.211
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇹🇷 土耳其 (Turkey) 04 - zxmzy
-  type: vless
-  server: 203.202.232.211
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇹🇷 土耳其 (Turkey) 05 - zxmzy
   type: vless
   server: 155.103.71.142
   port: 443
@@ -72,14 +46,6 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🇹🇷 土耳其 (Turkey) 06 - zxmzy
-  type: vless
-  server: 168.222.43.200
-  port: 2053
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-  udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -88,9 +54,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - zxmzy
   - 🇹🇷 土耳其 (Turkey) 02 - zxmzy
   - 🇹🇷 土耳其 (Turkey) 03 - zxmzy
-  - 🇹🇷 土耳其 (Turkey) 04 - zxmzy
-  - 🇹🇷 土耳其 (Turkey) 05 - zxmzy
-  - 🇹🇷 土耳其 (Turkey) 06 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -99,8 +62,5 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - zxmzy
   - 🇹🇷 土耳其 (Turkey) 02 - zxmzy
   - 🇹🇷 土耳其 (Turkey) 03 - zxmzy
-  - 🇹🇷 土耳其 (Turkey) 04 - zxmzy
-  - 🇹🇷 土耳其 (Turkey) 05 - zxmzy
-  - 🇹🇷 土耳其 (Turkey) 06 - zxmzy
 rules:
 - MATCH,PROXIES
