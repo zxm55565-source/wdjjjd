@@ -6,23 +6,19 @@ log-level: info
 proxies:
 - name: 🇪🇪 EE 01 - zxmzy
   type: vless
-  server: 94.183.170.135
+  server: 77.72.85.247
   port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
+  servername: fdghyt.com
+  network: ws
+  ws-opts:
+    path: /vpn-wss/fluxor/59011/
+    headers:
+      Host: fdghyt.com
 - name: 🇪🇪 EE 02 - zxmzy
-  type: vless
-  server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 03 - zxmzy
   type: vless
   server: 77.72.85.247
   port: 8443
@@ -36,7 +32,7 @@ proxies:
     path: /vpn-wss/fluxor/59011/
     headers:
       Host: fdghyt.com
-- name: 🇪🇪 EE 04 - zxmzy
+- name: 🇪🇪 EE 03 - zxmzy
   type: vless
   server: 77.72.85.246
   port: 8443
@@ -50,6 +46,15 @@ proxies:
     path: /vpn-wss/fluxor/59011/
     headers:
       Host: fdghyt.com
+- name: 🇪🇪 EE 04 - zxmzy
+  type: vless
+  server: 94.183.170.135
+  port: 8443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: estproxy4.lockdwn.com
 - name: 🇪🇪 EE 05 - zxmzy
   type: vless
   server: 77.72.85.246
@@ -66,28 +71,6 @@ proxies:
       Host: fdghyt.com
 - name: 🇪🇪 EE 06 - zxmzy
   type: vless
-  server: 94.183.170.135
-  port: 443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 94.183.170.135
-- name: 🇪🇪 EE 07 - zxmzy
-  type: vless
-  server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 08 - zxmzy
-  type: vless
   server: 77.72.85.246
   port: 8443
   uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
@@ -100,74 +83,7 @@ proxies:
     path: /vpn-wss/fluxor/59011/
     headers:
       Host: fdghyt.com
-- name: 🇪🇪 EE 09 - zxmzy
-  type: vless
-  server: 94.183.170.135
-  port: 443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 94.183.170.135
-- name: 🇪🇪 EE 10 - zxmzy
-  type: vless
-  server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 11 - zxmzy
-  type: vless
-  server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 12 - zxmzy
-  type: vless
-  server: 94.183.170.135
-  port: 443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 13 - zxmzy
-  type: vless
-  server: 77.72.85.247
-  port: 8443
-  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fdghyt.com
-  network: ws
-  ws-opts:
-    path: /vpn-wss/fluxor/59011/
-    headers:
-      Host: fdghyt.com
-- name: 🇪🇪 EE 14 - zxmzy
-  type: vless
-  server: 94.183.170.135
-  port: 8443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 15 - zxmzy
+- name: 🇪🇪 EE 07 - zxmzy
   type: vless
   server: 77.72.85.247
   port: 8443
@@ -193,14 +109,6 @@ proxy-groups:
   - 🇪🇪 EE 05 - zxmzy
   - 🇪🇪 EE 06 - zxmzy
   - 🇪🇪 EE 07 - zxmzy
-  - 🇪🇪 EE 08 - zxmzy
-  - 🇪🇪 EE 09 - zxmzy
-  - 🇪🇪 EE 10 - zxmzy
-  - 🇪🇪 EE 11 - zxmzy
-  - 🇪🇪 EE 12 - zxmzy
-  - 🇪🇪 EE 13 - zxmzy
-  - 🇪🇪 EE 14 - zxmzy
-  - 🇪🇪 EE 15 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -213,13 +121,5 @@ proxy-groups:
   - 🇪🇪 EE 05 - zxmzy
   - 🇪🇪 EE 06 - zxmzy
   - 🇪🇪 EE 07 - zxmzy
-  - 🇪🇪 EE 08 - zxmzy
-  - 🇪🇪 EE 09 - zxmzy
-  - 🇪🇪 EE 10 - zxmzy
-  - 🇪🇪 EE 11 - zxmzy
-  - 🇪🇪 EE 12 - zxmzy
-  - 🇪🇪 EE 13 - zxmzy
-  - 🇪🇪 EE 14 - zxmzy
-  - 🇪🇪 EE 15 - zxmzy
 rules:
 - MATCH,PROXIES
