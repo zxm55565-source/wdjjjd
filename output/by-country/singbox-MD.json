@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇲🇩 MD 01 - zxmzy",
+        "🇲🇩 MD 02 - zxmzy",
+        "🇲🇩 MD 03 - zxmzy",
+        "🇲🇩 MD 04 - zxmzy",
+        "🇲🇩 MD 05 - zxmzy",
+        "🇲🇩 MD 06 - zxmzy",
+        "🇲🇩 MD 07 - zxmzy",
+        "🇲🇩 MD 08 - zxmzy",
+        "🇲🇩 MD 09 - zxmzy",
+        "🇲🇩 MD 10 - zxmzy",
+        "🇲🇩 MD 11 - zxmzy",
+        "🇲🇩 MD 12 - zxmzy",
+        "🇲🇩 MD 13 - zxmzy",
+        "🇲🇩 MD 14 - zxmzy",
+        "🇲🇩 MD 15 - zxmzy",
+        "🇲🇩 MD 16 - zxmzy",
+        "🇲🇩 MD 17 - zxmzy"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇲🇩 MD 01 - zxmzy",
+        "🇲🇩 MD 02 - zxmzy",
+        "🇲🇩 MD 03 - zxmzy",
+        "🇲🇩 MD 04 - zxmzy",
+        "🇲🇩 MD 05 - zxmzy",
+        "🇲🇩 MD 06 - zxmzy",
+        "🇲🇩 MD 07 - zxmzy",
+        "🇲🇩 MD 08 - zxmzy",
+        "🇲🇩 MD 09 - zxmzy",
+        "🇲🇩 MD 10 - zxmzy",
+        "🇲🇩 MD 11 - zxmzy",
+        "🇲🇩 MD 12 - zxmzy",
+        "🇲🇩 MD 13 - zxmzy",
+        "🇲🇩 MD 14 - zxmzy",
+        "🇲🇩 MD 15 - zxmzy",
+        "🇲🇩 MD 16 - zxmzy",
+        "🇲🇩 MD 17 - zxmzy"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

@@ -5,44 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - zxmzy
-  type: ss
-  server: ruot.ayucloudservices.nl
-  port: 40004
-  cipher: aes-128-gcm
-  password: 70a5c510-d56d-43e7-b150-9c00c969bd50
-  udp: true
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - zxmzy
-  type: vmess
-  server: yg1.ygkkk.dpdns.org
-  port: 443
-  uuid: b2ba4a73-3123-479e-aa96-5973a9ecd0c0
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jmp1.907737.xyz
-  network: ws
-  ws-opts:
-    path: /b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm
-    headers:
-      Host: jmp1.907737.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - zxmzy
-  type: vmess
-  server: 156.245.232.239
-  port: 35043
-  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - zxmzy
   type: vless
   server: 43.129.80.179
   port: 8443
@@ -56,62 +18,7 @@ proxies:
     path: /
     headers:
       Host: ccc.010304.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - zxmzy
-  type: vless
-  server: 34.92.19.135
-  port: 443
-  uuid: 90153538-ef08-4942-b8e1-41e7c523e659
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: tSBJnEt6E1dy6UgX9gX5wUfvZ2KAXjGWVKsEq886OWM
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - zxmzy
-  type: vless
-  server: 162.159.153.217
-  port: 443
-  uuid: 1e922b22-d169-4461-89c1-07e09ff2617c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vlesss.xttd.eu.org
-  network: ws
-  ws-opts:
-    path: /proxyip=proxyip.fxxk.dedyn.io
-    headers:
-      Host: vlesss.xttd.eu.org
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - zxmzy
-  type: vless
-  server: 61.18.134.10
-  port: 443
-  uuid: e077d2c2-7dc5-4e6e-a44d-79c4e4d8b384
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: mswo-gy191m.zhiyuantech.cloud
-  network: ws
-  ws-opts:
-    path: /e077d2c2-7dc5-4e6e-a44d-79c4e4d8b384
-    headers:
-      Host: mswo-gy191m.zhiyuantech.cloud
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - zxmzy
-  type: vmess
-  server: 47.244.120.197
-  port: 44867
-  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /arki
-    headers:
-      Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - zxmzy
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - zxmzy
   type: vmess
   server: 8.217.13.103
   port: 443
@@ -127,6 +34,48 @@ proxies:
     path: /ws-vmess
     headers:
       Host: qtkdr8jxe3wefxjm.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - zxmzy
+  type: vless
+  server: 34.92.19.135
+  port: 443
+  uuid: 90153538-ef08-4942-b8e1-41e7c523e659
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: tSBJnEt6E1dy6UgX9gX5wUfvZ2KAXjGWVKsEq886OWM
+  servername: www.cloudflare.com
+  client-fingerprint: ios
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - zxmzy
+  type: vmess
+  server: 156.245.232.239
+  port: 35043
+  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ''
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - zxmzy
+  type: vmess
+  server: 156.245.232.239
+  port: 35043
+  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: www.pubgmobile.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -137,10 +86,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 03 - zxmzy
   - 🇭🇰 中国香港 (Hong Kong) 04 - zxmzy
   - 🇭🇰 中国香港 (Hong Kong) 05 - zxmzy
-  - 🇭🇰 中国香港 (Hong Kong) 06 - zxmzy
-  - 🇭🇰 中国香港 (Hong Kong) 07 - zxmzy
-  - 🇭🇰 中国香港 (Hong Kong) 08 - zxmzy
-  - 🇭🇰 中国香港 (Hong Kong) 09 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -151,9 +96,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 03 - zxmzy
   - 🇭🇰 中国香港 (Hong Kong) 04 - zxmzy
   - 🇭🇰 中国香港 (Hong Kong) 05 - zxmzy
-  - 🇭🇰 中国香港 (Hong Kong) 06 - zxmzy
-  - 🇭🇰 中国香港 (Hong Kong) 07 - zxmzy
-  - 🇭🇰 中国香港 (Hong Kong) 08 - zxmzy
-  - 🇭🇰 中国香港 (Hong Kong) 09 - zxmzy
 rules:
 - MATCH,PROXIES
