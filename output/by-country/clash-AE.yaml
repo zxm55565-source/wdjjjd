@@ -15,7 +15,7 @@ proxies:
   servername: lucasjow.us.ci
   network: ws
   ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132
+    path: /cart/docs/www/proxyip=108.160.132.132fp=unsafe
     headers:
       Host: lucasjow.us.ci
 - name: 🇦🇪 阿联酋 (UAE) 02 - zxmzy
@@ -59,31 +59,32 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 05 - zxmzy
   type: vless
-  server: 31.57.190.49
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  server: 147.78.0.186
+  port: 2053
+  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: lucasjow.us.ci
+  servername: free.cndyw.ggff.net
   network: ws
   ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132fp=unsafe
+    path: pyip=bpb.yousef.isegaro.comfp=chrome
     headers:
-      Host: lucasjow.us.ci
+      Host: free.cndyw.ggff.net
 - name: 🇦🇪 阿联酋 (UAE) 06 - zxmzy
   type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  server: 162.159.152.4
+  port: 443
+  uuid: f2a73750-3087-48ff-a763-1348c15dce68
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: rayan-007.maxima.dpdns.org
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: uae.unixzone.us
+      Host: rayan-007.maxima.dpdns.org
 - name: 🇦🇪 阿联酋 (UAE) 07 - zxmzy
   type: vless
   server: uae.unixzone.us
