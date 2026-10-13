@@ -9,7 +9,7 @@ proxies:
   server: 20.234.97.18
   port: 443
   cipher: chacha20-ietf-poly1305
-  password: GayYa2V7pUbJBfKu
+  password: K5sEvZiKmens104B
   udp: true
 - name: 🇮🇪 IE 02 - zxmzy
   type: ss
@@ -19,6 +19,20 @@ proxies:
   password: GayYa2V7pUbJBfKu
   udp: true
 - name: 🇮🇪 IE 03 - zxmzy
+  type: ss
+  server: 20.234.97.18
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: K5sEvZiKmens104B
+  udp: true
+- name: 🇮🇪 IE 04 - zxmzy
+  type: ss
+  server: 20.234.97.18
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: K5sEvZiKmens104B
+  udp: true
+- name: 🇮🇪 IE 05 - zxmzy
   type: vless
   server: 23.95.225.10
   port: 8443
@@ -40,6 +54,8 @@ proxy-groups:
   - 🇮🇪 IE 01 - zxmzy
   - 🇮🇪 IE 02 - zxmzy
   - 🇮🇪 IE 03 - zxmzy
+  - 🇮🇪 IE 04 - zxmzy
+  - 🇮🇪 IE 05 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -48,5 +64,7 @@ proxy-groups:
   - 🇮🇪 IE 01 - zxmzy
   - 🇮🇪 IE 02 - zxmzy
   - 🇮🇪 IE 03 - zxmzy
+  - 🇮🇪 IE 04 - zxmzy
+  - 🇮🇪 IE 05 - zxmzy
 rules:
 - MATCH,PROXIES
