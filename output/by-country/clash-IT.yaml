@@ -45,17 +45,12 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇮🇹 意大利 (Italy) 06 - zxmzy
-  type: vless
-  server: 57.131.38.163
-  port: 2053
-  uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
+  type: ss
+  server: 57.131.48.45
+  port: 8388
+  cipher: aes-256-gcm
+  password: itzvpn@321
   udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
-  servername: www.apple.com
-  client-fingerprint: chrome
 - name: 🇮🇹 意大利 (Italy) 07 - zxmzy
   type: vless
   server: 204.216.216.23
@@ -66,29 +61,6 @@ proxies:
   skip-cert-verify: true
 - name: 🇮🇹 意大利 (Italy) 08 - zxmzy
   type: vless
-  server: 204.216.216.23
-  port: 10086
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇮🇹 意大利 (Italy) 09 - zxmzy
-  type: ss
-  server: 57.131.48.45
-  port: 8388
-  cipher: aes-256-gcm
-  password: itzvpn@321
-  udp: true
-- name: 🇮🇹 意大利 (Italy) 10 - zxmzy
-  type: vless
-  server: 204.216.216.23
-  port: 10086
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇮🇹 意大利 (Italy) 11 - zxmzy
-  type: vless
   server: 57.131.38.163
   port: 2053
   uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
@@ -99,39 +71,7 @@ proxies:
     public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇮🇹 意大利 (Italy) 12 - zxmzy
-  type: vless
-  server: 204.216.216.23
-  port: 10086
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇮🇹 意大利 (Italy) 13 - zxmzy
-  type: vless
-  server: 204.216.216.23
-  port: 10086
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇮🇹 意大利 (Italy) 14 - zxmzy
-  type: vless
-  server: 204.216.216.23
-  port: 10086
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇮🇹 意大利 (Italy) 15 - zxmzy
-  type: vless
-  server: 204.216.216.23
-  port: 10086
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇮🇹 意大利 (Italy) 16 - zxmzy
+- name: 🇮🇹 意大利 (Italy) 09 - zxmzy
   type: vless
   server: 204.216.216.23
   port: 10086
@@ -153,13 +93,6 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 07 - zxmzy
   - 🇮🇹 意大利 (Italy) 08 - zxmzy
   - 🇮🇹 意大利 (Italy) 09 - zxmzy
-  - 🇮🇹 意大利 (Italy) 10 - zxmzy
-  - 🇮🇹 意大利 (Italy) 11 - zxmzy
-  - 🇮🇹 意大利 (Italy) 12 - zxmzy
-  - 🇮🇹 意大利 (Italy) 13 - zxmzy
-  - 🇮🇹 意大利 (Italy) 14 - zxmzy
-  - 🇮🇹 意大利 (Italy) 15 - zxmzy
-  - 🇮🇹 意大利 (Italy) 16 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -174,12 +107,5 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 07 - zxmzy
   - 🇮🇹 意大利 (Italy) 08 - zxmzy
   - 🇮🇹 意大利 (Italy) 09 - zxmzy
-  - 🇮🇹 意大利 (Italy) 10 - zxmzy
-  - 🇮🇹 意大利 (Italy) 11 - zxmzy
-  - 🇮🇹 意大利 (Italy) 12 - zxmzy
-  - 🇮🇹 意大利 (Italy) 13 - zxmzy
-  - 🇮🇹 意大利 (Italy) 14 - zxmzy
-  - 🇮🇹 意大利 (Italy) 15 - zxmzy
-  - 🇮🇹 意大利 (Italy) 16 - zxmzy
 rules:
 - MATCH,PROXIES
