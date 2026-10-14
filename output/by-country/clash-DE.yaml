@@ -6,6 +6,27 @@ log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - zxmzy
   type: vless
+  server: 199.232.78.159
+  port: 443
+  uuid: eea97160-a606-4552-97ad-8acc1ce863e1
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: speedtest.net
+  network: ws
+  ws-opts:
+    path: /?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+    headers:
+      Host: azdddaiji5.global.ssl.fastly.net
+- name: 🇩🇪 德国 (Germany) 02 - zxmzy
+  type: ss
+  server: 57.129.113.16
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: NcAXc0UZI6yQJE1p8QmOv8
+  udp: true
+- name: 🇩🇪 德国 (Germany) 03 - zxmzy
+  type: vless
   server: sino.bestsellers1.site
   port: 2083
   uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
@@ -18,21 +39,7 @@ proxies:
     path: /
     headers:
       Host: sino.bestsellers1.site
-- name: 🇩🇪 德国 (Germany) 02 - zxmzy
-  type: vless
-  server: 188.114.97.1
-  port: 2053
-  uuid: 0b3e7958-e5c4-498f-ab21-b49686f95d2d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: bold-term-4edd.mbigspot.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: bold-term-4edd.mbigspot.workers.dev
-- name: 🇩🇪 德国 (Germany) 03 - zxmzy
+- name: 🇩🇪 德国 (Germany) 04 - zxmzy
   type: vless
   server: hoert1rert.localip.ir
   port: 2087
@@ -46,175 +53,76 @@ proxies:
     path: /hokm
     headers:
       Host: hoert1rert.localip.ir
-- name: 🇩🇪 德国 (Germany) 04 - zxmzy
+- name: 🇩🇪 德国 (Germany) 05 - zxmzy
+  type: vless
+  server: 57.129.41.216
+  port: 80
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: OV-Germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 06 - zxmzy
+  type: vless
+  server: 178.104.248.34
+  port: 2087
+  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: tuyiuoyuthgfdbf.localip.ir
+  network: ws
+  ws-opts:
+    path: /hokm
+    headers:
+      Host: tuyiuoyuthgfdbf.localip.ir
+- name: 🇩🇪 德国 (Germany) 07 - zxmzy
   type: ss
   server: 209.46.102.22
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: 1hhrqrokj3ag
   udp: true
-- name: 🇩🇪 德国 (Germany) 05 - zxmzy
-  type: vless
-  server: tuyiuoyuthgfdbf.localip.ir
-  port: 2087
-  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: tuyiuoyuthgfdbf.localip.ir
-  network: ws
-  ws-opts:
-    path: /hokm
-    headers:
-      Host: tuyiuoyuthgfdbf.localip.ir
-- name: 🇩🇪 德国 (Germany) 06 - zxmzy
-  type: vless
-  server: 94.103.168.133
-  port: 2087
-  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fert6.localip.ir
-  network: ws
-  ws-opts:
-    path: /hokm
-    headers:
-      Host: fert6.localip.ir
-- name: 🇩🇪 德国 (Germany) 07 - zxmzy
-  type: vless
-  server: 185.86.145.142
-  port: 443
-  uuid: 7832b450-d561-45d6-b425-8527fa8babe0
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: n2.185-86-145-142.sslip.io
-  network: ws
-  ws-opts:
-    path: /e7ws
-    headers:
-      Host: n2.185-86-145-142.sslip.io
 - name: 🇩🇪 德国 (Germany) 08 - zxmzy
-  type: ss
-  server: 57.129.113.16
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: NcAXc0UZI6yQJE1p8QmOv8
-  udp: true
-- name: 🇩🇪 德国 (Germany) 09 - zxmzy
-  type: vless
-  server: 188.114.97.8
-  port: 8443
-  uuid: d4d2d3f3-9dec-4e8f-8daf-145ecac96e66
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cRIMSON-LeAf-7E45.hzhdUuEBFjDCB.workERs.DEv
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiODgwQ1AwWDV0MnFTRWE1cCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-    headers:
-      Host: crimson-leaf-7e45.hzhduuebfjdcb.workers.dev
-- name: 🇩🇪 德国 (Germany) 10 - zxmzy
-  type: vless
-  server: 172.66.44.124
-  port: 8443
-  uuid: b2f2f9f2-1864-48ea-839b-22815faff1f1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
-- name: 🇩🇪 德国 (Germany) 11 - zxmzy
   type: ss
   server: 51.195.126.38
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: 2YdE4lFOid5a
   udp: true
-- name: 🇩🇪 德国 (Germany) 12 - zxmzy
+- name: 🇩🇪 德国 (Germany) 09 - zxmzy
   type: vless
-  server: 199.232.78.159
-  port: 443
-  uuid: eea97160-a606-4552-97ad-8acc1ce863e1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: speedtest.net
-  network: ws
-  ws-opts:
-    path: /?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
-    headers:
-      Host: azdddaiji5.global.ssl.fastly.net
-- name: 🇩🇪 德国 (Germany) 13 - zxmzy
-  type: vless
-  server: 178.104.248.34
+  server: 46.225.46.136
   port: 2087
   uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: tuyiuoyuthgfdbf.localip.ir
+  servername: hoert1rert.localip.ir
   network: ws
   ws-opts:
     path: /hokm
     headers:
-      Host: tuyiuoyuthgfdbf.localip.ir
-- name: 🇩🇪 德国 (Germany) 14 - zxmzy
-  type: vless
-  server: 199.232.78.159
-  port: 443
-  uuid: eea97160-a606-4552-97ad-8acc1ce863e1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: speedtest.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: azdddaiji5.global.ssl.fastly.net
-- name: 🇩🇪 德国 (Germany) 15 - zxmzy
+      Host: hoert1rert.localip.ir
+- name: 🇩🇪 德国 (Germany) 10 - zxmzy
   type: ss
   server: 8.209.74.72
   port: 20001
   cipher: chacha20-ietf-poly1305
   password: PWpjPo3tqhPN4yRZ
   udp: true
-- name: 🇩🇪 德国 (Germany) 16 - zxmzy
-  type: vless
-  server: 178.104.248.34
-  port: 2087
-  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
+- name: 🇩🇪 德国 (Germany) 11 - zxmzy
+  type: ss
+  server: 209.46.102.22
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 1hhrqrokj3ag
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: tuyiuoyuthgfdbf.localip.ir
-  network: ws
-  ws-opts:
-    path: /hokm
-    headers:
-      Host: tuyiuoyuthgfdbf.localip.ir
-- name: 🇩🇪 德国 (Germany) 17 - zxmzy
-  type: vless
-  server: 199.232.78.159
-  port: 443
-  uuid: e0ef0fb4-f18a-4284-bcf3-f5b3e738c594
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: google.com
-  network: ws
-  ws-opts:
-    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI
-    headers:
-      Host: pan2e.global.ssl.fastly.net
-- name: 🇩🇪 德国 (Germany) 18 - zxmzy
+- name: 🇩🇪 德国 (Germany) 12 - zxmzy
   type: vless
   server: 31.77.126.2
   port: 443
@@ -228,170 +136,35 @@ proxies:
     path: /cart/docs/www/proxyip=108.160.132.132
     headers:
       Host: lucasjow.us.ci
-- name: 🇩🇪 德国 (Germany) 19 - zxmzy
+- name: 🇩🇪 德国 (Germany) 13 - zxmzy
   type: vless
-  server: 57.129.41.216
-  port: 80
-  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: OV-Germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 20 - zxmzy
-  type: vless
-  server: 46.101.253.244
-  port: 2083
-  uuid: bba95b1f-f48c-454b-897b-a6c6bc307df1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edge.yzkvm.top
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edge.yzkvm.top
-- name: 🇩🇪 德国 (Germany) 21 - zxmzy
-  type: vmess
-  server: 178.105.168.171
-  port: 2110
-  uuid: 06d4d001-4168-4876-9416-7caecf578f40
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 22 - zxmzy
-  type: ss
-  server: 2.58.81.221
-  port: 443
-  cipher: aes-256-gcm
-  password: kKEd0rBrd56Furjz
-  udp: true
-- name: 🇩🇪 德国 (Germany) 23 - zxmzy
-  type: vless
-  server: 162.159.153.4
-  port: 443
-  uuid: f2a73750-3087-48ff-a763-1348c15dce68
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: rayan-007.maxima.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: rayan-007.maxima.dpdns.org
-- name: 🇩🇪 德国 (Germany) 24 - zxmzy
-  type: vless
-  server: 162.159.153.4
-  port: 443
-  uuid: f2a73750-3087-48ff-a763-1348c15dce68
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: rAyAn-007.mAxImA.DpDnS.OrG
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: rAyAn-007.mAxImA.DpDnS.OrG
-- name: 🇩🇪 德国 (Germany) 25 - zxmzy
-  type: ss
-  server: 185.226.172.8
-  port: 8008
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-  udp: true
-- name: 🇩🇪 德国 (Germany) 26 - zxmzy
-  type: vless
-  server: 162.159.152.4
-  port: 443
-  uuid: f2a73750-3087-48ff-a763-1348c15dce68
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: rayan-007.maxima.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: rayan-007.maxima.dpdns.org
-- name: 🇩🇪 德国 (Germany) 27 - zxmzy
-  type: vless
-  server: 157.230.101.36
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇩🇪 德国 (Germany) 28 - zxmzy
-  type: vless
-  server: 94.103.168.48
+  server: tuyiuoyuthgfdbf.localip.ir
   port: 2087
   uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ops4asfseretuiyk.localip.ir
+  servername: tuyiuoyuthgfdbf.localip.ir
   network: ws
   ws-opts:
     path: /hokm
     headers:
-      Host: ops4asfseretuiyk.localip.ir
-- name: 🇩🇪 德国 (Germany) 29 - zxmzy
+      Host: tuyiuoyuthgfdbf.localip.ir
+- name: 🇩🇪 德国 (Germany) 14 - zxmzy
   type: vless
-  server: ops4asfseretuiyk.localip.ir
+  server: 94.103.168.58
   port: 2087
   uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ops4asfseretuiyk.localip.ir
+  servername: stop.localip.ir
   network: ws
   ws-opts:
     path: /hokm
     headers:
-      Host: ops4asfseretuiyk.localip.ir
-- name: 🇩🇪 德国 (Germany) 30 - zxmzy
-  type: vless
-  server: 94.103.168.48
-  port: 2087
-  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ops4asfseretuiyk.localip.ir
-  network: ws
-  ws-opts:
-    path: /hokm
-    headers:
-      Host: ops4asfseretuiyk.localip.ir
-- name: 🇩🇪 德国 (Germany) 31 - zxmzy
-  type: vless
-  server: 167.172.165.106
-  port: 2083
-  uuid: bba95b1f-f48c-454b-897b-a6c6bc307df1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edge.yzkvm.top
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edge.yzkvm.top
-- name: 🇩🇪 德国 (Germany) 32 - zxmzy
+      Host: stop.localip.ir
+- name: 🇩🇪 德国 (Germany) 15 - zxmzy
   type: vless
   server: stop.localip.ir
   port: 2087
@@ -405,56 +178,91 @@ proxies:
     path: /hokm
     headers:
       Host: stop.localip.ir
-- name: 🇩🇪 德国 (Germany) 33 - zxmzy
-  type: ss
-  server: 2.58.81.221
-  port: 80
-  cipher: aes-256-gcm
-  password: kKEd0rBrd56Furjz
-  udp: true
-- name: 🇩🇪 德国 (Germany) 34 - zxmzy
+- name: 🇩🇪 德国 (Germany) 16 - zxmzy
   type: vless
-  server: 199.232.78.159
+  server: 157.230.101.36
   port: 443
-  uuid: e0ef0fb4-f18a-4284-bcf3-f5b3e738c594
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: google.com
+  servername: ccc.010304.xyz
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: pan2e.global.ssl.fastly.net
-- name: 🇩🇪 德国 (Germany) 35 - zxmzy
+      Host: ccc.010304.xyz
+- name: 🇩🇪 德国 (Germany) 17 - zxmzy
+  type: ss
+  server: 185.226.172.8
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+  udp: true
+- name: 🇩🇪 德国 (Germany) 18 - zxmzy
+  type: ss
+  server: 185.226.172.8
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+  udp: true
+- name: 🇩🇪 德国 (Germany) 19 - zxmzy
   type: vless
   server: 199.232.78.159
   port: 443
-  uuid: e0ef0fb4-f18a-4284-bcf3-f5b3e738c594
+  uuid: eea97160-a606-4552-97ad-8acc1ce863e1
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: google.com
+  servername: speedtest.net
   network: ws
   ws-opts:
-    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2048
+    path: /
     headers:
-      Host: pan2e.global.ssl.fastly.net
-- name: 🇩🇪 德国 (Germany) 36 - zxmzy
+      Host: azdddaiji5.global.ssl.fastly.net
+- name: 🇩🇪 德国 (Germany) 20 - zxmzy
+  type: ss
+  server: 51.195.126.38
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: 2YdE4lFOid5a
+  udp: true
+- name: 🇩🇪 德国 (Germany) 21 - zxmzy
   type: vless
-  server: 172.67.130.187
-  port: 2083
-  uuid: 2b8738de-1af5-4267-b101-c05707769ed4
+  server: 199.232.78.159
+  port: 443
+  uuid: eea97160-a606-4552-97ad-8acc1ce863e1
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: fans.liverpool.qzz.io
+  servername: speedtest.net
   network: ws
   ws-opts:
-    path: /eyJqdW5rIjoiY0Y0cENQUmxsNyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    path: /?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
     headers:
-      Host: fans.liverpool.qzz.io
-- name: 🇩🇪 德国 (Germany) 37 - zxmzy
+      Host: azdddaiji5.global.ssl.fastly.net
+- name: 🇩🇪 德国 (Germany) 22 - zxmzy
+  type: ss
+  server: 213.202.208.199
+  port: 7001
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+  udp: true
+- name: 🇩🇪 德国 (Germany) 23 - zxmzy
+  type: vless
+  server: 91.107.247.173
+  port: 2083
+  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sino.bestsellers1.site
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 91.107.247.173
+- name: 🇩🇪 德国 (Germany) 24 - zxmzy
   type: vless
   server: fert3retujnbc.localip.ir
   port: 2087
@@ -468,14 +276,63 @@ proxies:
     path: /hokm
     headers:
       Host: fert3retujnbc.localip.ir
-- name: 🇩🇪 德国 (Germany) 38 - zxmzy
-  type: ss
-  server: 213.202.208.199
-  port: 7001
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
+- name: 🇩🇪 德国 (Germany) 25 - zxmzy
+  type: vless
+  server: 94.103.168.54
+  port: 2087
+  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
   udp: true
-- name: 🇩🇪 德国 (Germany) 39 - zxmzy
+  tls: true
+  skip-cert-verify: true
+  servername: fert3retujnbc.localip.ir
+  network: ws
+  ws-opts:
+    path: /hokm
+    headers:
+      Host: fert3retujnbc.localip.ir
+- name: 🇩🇪 德国 (Germany) 26 - zxmzy
+  type: vless
+  server: 94.103.168.48
+  port: 2087
+  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ops4asfseretuiyk.localip.ir
+  network: ws
+  ws-opts:
+    path: /hokm
+    headers:
+      Host: ops4asfseretuiyk.localip.ir
+- name: 🇩🇪 德国 (Germany) 27 - zxmzy
+  type: vless
+  server: ops4asfseretuiyk.localip.ir
+  port: 2087
+  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ops4asfseretuiyk.localip.ir
+  network: ws
+  ws-opts:
+    path: /hokm
+    headers:
+      Host: ops4asfseretuiyk.localip.ir
+- name: 🇩🇪 德国 (Germany) 28 - zxmzy
+  type: vless
+  server: 94.103.168.219
+  port: 2087
+  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ops5788tugfuy.localip.ir
+  network: ws
+  ws-opts:
+    path: /hokm
+    headers:
+      Host: ops5788tugfuy.localip.ir
+- name: 🇩🇪 德国 (Germany) 29 - zxmzy
   type: vless
   server: ops5788tugfuy.localip.ir
   port: 2087
@@ -489,7 +346,7 @@ proxies:
     path: /hokm
     headers:
       Host: ops5788tugfuy.localip.ir
-- name: 🇩🇪 德国 (Germany) 40 - zxmzy
+- name: 🇩🇪 德国 (Germany) 30 - zxmzy
   type: vless
   server: 94.103.168.219
   port: 2087
@@ -503,7 +360,7 @@ proxies:
     path: /hokm
     headers:
       Host: ops5788tugfuy.localip.ir
-- name: 🇩🇪 德国 (Germany) 41 - zxmzy
+- name: 🇩🇪 德国 (Germany) 31 - zxmzy
   type: vless
   server: 94.103.168.219
   port: 2087
@@ -517,35 +374,7 @@ proxies:
     path: /hokm
     headers:
       Host: ops5788tugfuy.localip.ir
-- name: 🇩🇪 德国 (Germany) 42 - zxmzy
-  type: vless
-  server: 94.103.168.133
-  port: 2087
-  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fert6.localip.ir
-  network: ws
-  ws-opts:
-    path: /hokm
-    headers:
-      Host: fert6.localip.ir
-- name: 🇩🇪 德国 (Germany) 43 - zxmzy
-  type: vless
-  server: fert6.localip.ir
-  port: 2087
-  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fert6.localip.ir
-  network: ws
-  ws-opts:
-    path: /hokm
-    headers:
-      Host: fert6.localip.ir
-- name: 🇩🇪 德国 (Germany) 44 - zxmzy
+- name: 🇩🇪 德国 (Germany) 32 - zxmzy
   type: vless
   server: 94.103.168.52
   port: 2087
@@ -559,6 +388,48 @@ proxies:
     path: /hokm
     headers:
       Host: fert1qswdfegrthy.localip.ir
+- name: 🇩🇪 德国 (Germany) 33 - zxmzy
+  type: vless
+  server: 94.103.168.133
+  port: 2087
+  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fert6.localip.ir
+  network: ws
+  ws-opts:
+    path: /hokm
+    headers:
+      Host: fert6.localip.ir
+- name: 🇩🇪 德国 (Germany) 34 - zxmzy
+  type: vless
+  server: fert6.localip.ir
+  port: 2087
+  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fert6.localip.ir
+  network: ws
+  ws-opts:
+    path: /hokm
+    headers:
+      Host: fert6.localip.ir
+- name: 🇩🇪 德国 (Germany) 35 - zxmzy
+  type: vless
+  server: 94.103.168.133
+  port: 2087
+  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fert6.localip.ir
+  network: ws
+  ws-opts:
+    path: /hokm
+    headers:
+      Host: fert6.localip.ir
 proxy-groups:
 - name: PROXIES
   type: select
@@ -599,15 +470,6 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 33 - zxmzy
   - 🇩🇪 德国 (Germany) 34 - zxmzy
   - 🇩🇪 德国 (Germany) 35 - zxmzy
-  - 🇩🇪 德国 (Germany) 36 - zxmzy
-  - 🇩🇪 德国 (Germany) 37 - zxmzy
-  - 🇩🇪 德国 (Germany) 38 - zxmzy
-  - 🇩🇪 德国 (Germany) 39 - zxmzy
-  - 🇩🇪 德国 (Germany) 40 - zxmzy
-  - 🇩🇪 德国 (Germany) 41 - zxmzy
-  - 🇩🇪 德国 (Germany) 42 - zxmzy
-  - 🇩🇪 德国 (Germany) 43 - zxmzy
-  - 🇩🇪 德国 (Germany) 44 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -648,14 +510,5 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 33 - zxmzy
   - 🇩🇪 德国 (Germany) 34 - zxmzy
   - 🇩🇪 德国 (Germany) 35 - zxmzy
-  - 🇩🇪 德国 (Germany) 36 - zxmzy
-  - 🇩🇪 德国 (Germany) 37 - zxmzy
-  - 🇩🇪 德国 (Germany) 38 - zxmzy
-  - 🇩🇪 德国 (Germany) 39 - zxmzy
-  - 🇩🇪 德国 (Germany) 40 - zxmzy
-  - 🇩🇪 德国 (Germany) 41 - zxmzy
-  - 🇩🇪 德国 (Germany) 42 - zxmzy
-  - 🇩🇪 德国 (Germany) 43 - zxmzy
-  - 🇩🇪 德国 (Germany) 44 - zxmzy
 rules:
 - MATCH,PROXIES
