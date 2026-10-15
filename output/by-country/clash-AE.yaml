@@ -6,20 +6,6 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - zxmzy
   type: vless
-  server: 31.57.190.17
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132fp=unsafe
-    headers:
-      Host: lucasjow.us.ci
-- name: 🇦🇪 阿联酋 (UAE) 02 - zxmzy
-  type: vless
   server: uae.unixzone.us
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
@@ -31,6 +17,20 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 02 - zxmzy
+  type: vless
+  server: 31.57.190.49
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: lucasjow.us.ci
 - name: 🇦🇪 阿联酋 (UAE) 03 - zxmzy
   type: vless
   server: 185.253.116.33
@@ -46,45 +46,6 @@ proxies:
       Host: 185.253.116.33
 - name: 🇦🇪 阿联酋 (UAE) 04 - zxmzy
   type: vless
-  server: 95.174.68.188
-  port: 14430
-  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 95.174.68.188
-- name: 🇦🇪 阿联酋 (UAE) 05 - zxmzy
-  type: vless
-  server: 95.174.68.188
-  port: 14430
-  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 95.174.68.188
-- name: 🇦🇪 阿联酋 (UAE) 06 - zxmzy
-  type: vless
-  server: 185.253.116.33
-  port: 14430
-  uuid: aee7ae19-672f-49d8-8a92-aa7cdfc89f89
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 185.253.116.33
-- name: 🇦🇪 阿联酋 (UAE) 07 - zxmzy
-  type: vless
   server: uae.unixzone.us
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
@@ -96,7 +57,34 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 08 - zxmzy
+- name: 🇦🇪 阿联酋 (UAE) 05 - zxmzy
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 06 - zxmzy
+  type: vless
+  server: 31.57.190.49
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip=108.160.132.132fp=unsafe
+    headers:
+      Host: lucasjow.us.ci
+- name: 🇦🇪 阿联酋 (UAE) 07 - zxmzy
   type: vless
   server: 31.57.190.17
   port: 443
@@ -107,7 +95,21 @@ proxies:
   servername: lucasjow.us.ci
   network: ws
   ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132
+    path: /cart/docs/www/proxyip=108.160.132.132fp=unsafe
+    headers:
+      Host: lucasjow.us.ci
+- name: 🇦🇪 阿联酋 (UAE) 08 - zxmzy
+  type: vless
+  server: 31.57.190.49
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip=108.160.132.132fp=unsafe
     headers:
       Host: lucasjow.us.ci
 - name: 🇦🇪 阿联酋 (UAE) 09 - zxmzy
@@ -125,19 +127,31 @@ proxies:
       Host: 185.253.116.33
 - name: 🇦🇪 阿联酋 (UAE) 10 - zxmzy
   type: vless
-  server: 147.78.0.186
-  port: 8443
-  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
+  server: 95.174.68.188
+  port: 14430
+  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: free.cndyw.ggff.net
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 95.174.68.188
+- name: 🇦🇪 阿联酋 (UAE) 11 - zxmzy
+  type: vless
+  server: 84.235.244.108
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: free.cndyw.ggff.net
-- name: 🇦🇪 阿联酋 (UAE) 11 - zxmzy
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 12 - zxmzy
   type: vless
   server: 95.174.68.188
   port: 14430
@@ -150,9 +164,21 @@ proxies:
     path: /vless
     headers:
       Host: 95.174.68.188
-- name: 🇦🇪 阿联酋 (UAE) 12 - zxmzy
+- name: 🇦🇪 阿联酋 (UAE) 13 - zxmzy
   type: vless
-  server: 84.235.244.108
+  server: 45.59.120.217
+  port: 443
+  uuid: 8732f92b-ba85-48f7-92e4-ad029f1cd4e7
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: mWxcYeYE-M3iE0RBjTzG88QI9kj2wivJDoIYDu_aG3w
+  servername: strm.yandex.net
+  client-fingerprint: chrome
+- name: 🇦🇪 阿联酋 (UAE) 14 - zxmzy
+  type: vless
+  server: uae.unixzone.us
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -163,91 +189,9 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 13 - zxmzy
-  type: vless
-  server: 178.105.133.160
-  port: 4443
-  uuid: a365fd78-80d4-4a2e-83e2-66019eab0eed
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 14 - zxmzy
-  type: vless
-  server: 31.57.190.49
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: lucasjow.us.ci
-  network: ws
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132fp=unsafe
-    headers:
-      Host: lucasjow.us.ci
 - name: 🇦🇪 阿联酋 (UAE) 15 - zxmzy
   type: vless
   server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 16 - zxmzy
-  type: vless
-  server: 162.159.228.255
-  port: 443
-  uuid: b135a1e0-ebdb-4d46-b3fa-bd1e78580244
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 17 - zxmzy
-  type: vless
-  server: 128.241.25.127
-  port: 30036
-  uuid: 6d565df6-27ac-42be-b2c8-3712d7176656
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 18 - zxmzy
-  type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 19 - zxmzy
-  type: vless
-  server: 84.235.244.108
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -278,10 +222,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 13 - zxmzy
   - 🇦🇪 阿联酋 (UAE) 14 - zxmzy
   - 🇦🇪 阿联酋 (UAE) 15 - zxmzy
-  - 🇦🇪 阿联酋 (UAE) 16 - zxmzy
-  - 🇦🇪 阿联酋 (UAE) 17 - zxmzy
-  - 🇦🇪 阿联酋 (UAE) 18 - zxmzy
-  - 🇦🇪 阿联酋 (UAE) 19 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -302,9 +242,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 13 - zxmzy
   - 🇦🇪 阿联酋 (UAE) 14 - zxmzy
   - 🇦🇪 阿联酋 (UAE) 15 - zxmzy
-  - 🇦🇪 阿联酋 (UAE) 16 - zxmzy
-  - 🇦🇪 阿联酋 (UAE) 17 - zxmzy
-  - 🇦🇪 阿联酋 (UAE) 18 - zxmzy
-  - 🇦🇪 阿联酋 (UAE) 19 - zxmzy
 rules:
 - MATCH,PROXIES
