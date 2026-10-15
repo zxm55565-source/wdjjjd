@@ -13,17 +13,17 @@ proxies:
   udp: true
 - name: 🇿🇦 ZA 02 - zxmzy
   type: ss
-  server: 102.37.156.224
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: aduB9HGxQHjA2SBMRjkHX6
-  udp: true
-- name: 🇿🇦 ZA 03 - zxmzy
-  type: ss
   server: 20.164.209.198
   port: 443
   cipher: chacha20-ietf-poly1305
   password: IdBspBchqpInOZFK
+  udp: true
+- name: 🇿🇦 ZA 03 - zxmzy
+  type: ss
+  server: 102.37.156.224
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: aduB9HGxQHjA2SBMRjkHX6
   udp: true
 - name: 🇿🇦 ZA 04 - zxmzy
   type: vless
