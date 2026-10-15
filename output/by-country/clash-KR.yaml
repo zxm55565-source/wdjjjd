@@ -6,20 +6,19 @@ log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 - zxmzy
   type: vmess
-  server: jp4.998998.best
-  port: 443
-  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  server: 132.145.80.230
+  port: 80
+  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
   alterId: 0
   cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: nat12.9966338.xyz
   network: ws
   ws-opts:
-    path: /vvvvvvvvv
+    path: /cctv13.m3u8
     headers:
-      Host: nat12.9966338.xyz
+      Host: kr02.a0a.xyz
 - name: 🇰🇷 韩国 (South Korea) 02 - zxmzy
   type: vmess
   server: 132.145.80.230
@@ -36,17 +35,12 @@ proxies:
     headers:
       Host: kr02.a0a.xyz
 - name: 🇰🇷 韩国 (South Korea) 03 - zxmzy
-  type: vless
-  server: 34.22.111.30
-  port: 443
-  uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
+  type: ss
+  server: 141.164.45.187
+  port: 8091
+  cipher: aes-256-gcm
+  password: PCnnH6SQSnfoS27
   udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 - name: 🇰🇷 韩国 (South Korea) 04 - zxmzy
   type: vless
   server: 151.245.106.49
@@ -60,37 +54,17 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: firefox
 - name: 🇰🇷 韩国 (South Korea) 05 - zxmzy
-  type: vmess
-  server: 140.238.2.250
+  type: vless
+  server: 34.22.111.30
   port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
+  uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 06 - zxmzy
-  type: ss
-  server: 141.164.45.187
-  port: 6697
-  cipher: aes-256-gcm
-  password: TEzjfAYq2IjtuoS
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 07 - zxmzy
-  type: vmess
-  server: 132.145.80.230
-  port: 80
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: ''
+  reality-opts:
+    public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -101,8 +75,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 03 - zxmzy
   - 🇰🇷 韩国 (South Korea) 04 - zxmzy
   - 🇰🇷 韩国 (South Korea) 05 - zxmzy
-  - 🇰🇷 韩国 (South Korea) 06 - zxmzy
-  - 🇰🇷 韩国 (South Korea) 07 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -113,7 +85,5 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 03 - zxmzy
   - 🇰🇷 韩国 (South Korea) 04 - zxmzy
   - 🇰🇷 韩国 (South Korea) 05 - zxmzy
-  - 🇰🇷 韩国 (South Korea) 06 - zxmzy
-  - 🇰🇷 韩国 (South Korea) 07 - zxmzy
 rules:
 - MATCH,PROXIES
