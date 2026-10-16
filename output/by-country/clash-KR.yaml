@@ -5,28 +5,32 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 - zxmzy
-  type: vmess
-  server: jp4.998998.best
+  type: vless
+  server: 34.22.111.30
   port: 443
-  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
-  alterId: 0
-  cipher: auto
+  uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: nat12.9966338.xyz
+  reality-opts:
+    public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 02 - zxmzy
+  type: vmess
+  server: 132.145.80.230
+  port: 80
+  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /vvvvvvvvv
+    path: /cctv13.m3u8
     headers:
-      Host: nat12.9966338.xyz
-- name: 🇰🇷 韩国 (South Korea) 02 - zxmzy
-  type: ss
-  server: 141.164.45.187
-  port: 8091
-  cipher: aes-256-gcm
-  password: PCnnH6SQSnfoS27
-  udp: true
+      Host: kr02.a0a.xyz
 - name: 🇰🇷 韩国 (South Korea) 03 - zxmzy
   type: vless
   server: 151.245.106.49
@@ -38,90 +42,15 @@ proxies:
   reality-opts:
     public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
   servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇰🇷 韩国 (South Korea) 04 - zxmzy
-  type: vless
-  server: 34.22.111.30
-  port: 443
-  uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 05 - zxmzy
-  type: vmess
-  server: 132.145.80.230
-  port: 80
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: kr02.a0a.xyz
-- name: 🇰🇷 韩国 (South Korea) 06 - zxmzy
-  type: vless
-  server: 43.108.37.107
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edg-2oo.pages.dev
-  network: ws
-  ws-opts:
-    path: /groups?ed=2560
-    headers:
-      Host: edg-2oo.pages.dev
-- name: 🇰🇷 韩国 (South Korea) 07 - zxmzy
-  type: vless
-  server: 151.245.106.49
-  port: 2053
-  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
-  servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇰🇷 韩国 (South Korea) 08 - zxmzy
-  type: vless
-  server: 8.220.241.72
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+- name: 🇰🇷 韩国 (South Korea) 04 - zxmzy
+  type: ss
+  server: 141.164.45.187
+  port: 8888
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: edg-2oo.pages.dev
-  network: ws
-  ws-opts:
-    path: /music/channel?ed=2560
-    headers:
-      Host: edg-2oo.pages.dev
-- name: 🇰🇷 韩国 (South Korea) 09 - zxmzy
-  type: vmess
-  server: 132.145.80.230
-  port: 80
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: kr02.a0a.xyz
-- name: 🇰🇷 韩国 (South Korea) 10 - zxmzy
+- name: 🇰🇷 韩国 (South Korea) 05 - zxmzy
   type: vless
   server: 34.22.111.30
   port: 443
@@ -133,7 +62,7 @@ proxies:
     public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 11 - zxmzy
+- name: 🇰🇷 韩国 (South Korea) 06 - zxmzy
   type: vmess
   server: 140.238.2.250
   port: 443
@@ -143,7 +72,14 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 12 - zxmzy
+- name: 🇰🇷 韩国 (South Korea) 07 - zxmzy
+  type: ss
+  server: 141.164.45.187
+  port: 6697
+  cipher: aes-256-gcm
+  password: TEzjfAYq2IjtuoS
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 08 - zxmzy
   type: vmess
   server: 132.145.80.230
   port: 80
@@ -158,13 +94,18 @@ proxies:
     path: /cctv13.m3u8
     headers:
       Host: ''
-- name: 🇰🇷 韩国 (South Korea) 13 - zxmzy
-  type: ss
-  server: 141.164.45.187
-  port: 9090
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
+- name: 🇰🇷 韩国 (South Korea) 09 - zxmzy
+  type: vless
+  server: 151.245.106.49
+  port: 2053
+  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
   udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
+  servername: www.cloudflare.com
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -179,10 +120,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 07 - zxmzy
   - 🇰🇷 韩国 (South Korea) 08 - zxmzy
   - 🇰🇷 韩国 (South Korea) 09 - zxmzy
-  - 🇰🇷 韩国 (South Korea) 10 - zxmzy
-  - 🇰🇷 韩国 (South Korea) 11 - zxmzy
-  - 🇰🇷 韩国 (South Korea) 12 - zxmzy
-  - 🇰🇷 韩国 (South Korea) 13 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -197,9 +134,5 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 07 - zxmzy
   - 🇰🇷 韩国 (South Korea) 08 - zxmzy
   - 🇰🇷 韩国 (South Korea) 09 - zxmzy
-  - 🇰🇷 韩国 (South Korea) 10 - zxmzy
-  - 🇰🇷 韩国 (South Korea) 11 - zxmzy
-  - 🇰🇷 韩国 (South Korea) 12 - zxmzy
-  - 🇰🇷 韩国 (South Korea) 13 - zxmzy
 rules:
 - MATCH,PROXIES
