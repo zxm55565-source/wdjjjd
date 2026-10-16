@@ -15,7 +15,7 @@ proxies:
   reality-opts:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
   servername: www.google.com
-  client-fingerprint: random
+  client-fingerprint: firefox
 - name: 🇫🇮 FI 02 - zxmzy
   type: vless
   server: 95.216.27.15
@@ -27,7 +27,7 @@ proxies:
   reality-opts:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
   servername: www.google.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇫🇮 FI 03 - zxmzy
   type: vless
   server: 95.216.27.15
@@ -39,7 +39,7 @@ proxies:
   reality-opts:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
   servername: www.google.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇫🇮 FI 04 - zxmzy
   type: vless
   server: edge10.cyrionflare.com
@@ -62,14 +62,6 @@ proxies:
   client-fingerprint: chrome
 - name: 🇫🇮 FI 06 - zxmzy
   type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇫🇮 FI 07 - zxmzy
-  type: vless
   server: 45.144.234.157
   port: 14430
   uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
@@ -81,6 +73,22 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
+- name: 🇫🇮 FI 07 - zxmzy
+  type: vless
+  server: edge10.cyrionflare.com
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇫🇮 FI 08 - zxmzy
+  type: vless
+  server: edge10.cyrionflare.com
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -93,6 +101,7 @@ proxy-groups:
   - 🇫🇮 FI 05 - zxmzy
   - 🇫🇮 FI 06 - zxmzy
   - 🇫🇮 FI 07 - zxmzy
+  - 🇫🇮 FI 08 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -105,5 +114,6 @@ proxy-groups:
   - 🇫🇮 FI 05 - zxmzy
   - 🇫🇮 FI 06 - zxmzy
   - 🇫🇮 FI 07 - zxmzy
+  - 🇫🇮 FI 08 - zxmzy
 rules:
 - MATCH,PROXIES

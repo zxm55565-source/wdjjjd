@@ -7,16 +7,11 @@ proxies:
 - name: 🇨🇾 CY 01 - zxmzy
   type: vless
   server: 5.253.29.254
-  port: 14430
+  port: 10443
   uuid: c7c27192-60a5-4ce1-b613-95270d82309d
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.253.29.254
 - name: 🇨🇾 CY 02 - zxmzy
   type: vless
   server: 5.253.29.254
@@ -33,6 +28,14 @@ proxies:
 - name: 🇨🇾 CY 03 - zxmzy
   type: vless
   server: 5.253.29.254
+  port: 10443
+  uuid: c7c27192-60a5-4ce1-b613-95270d82309d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇾 CY 04 - zxmzy
+  type: vless
+  server: 5.253.29.254
   port: 14430
   uuid: c7c27192-60a5-4ce1-b613-95270d82309d
   udp: true
@@ -43,19 +46,19 @@ proxies:
     path: /vless
     headers:
       Host: 5.253.29.254
-- name: 🇨🇾 CY 04 - zxmzy
+- name: 🇨🇾 CY 05 - zxmzy
   type: vless
-  server: www.csgo.net
-  port: 2095
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  server: 5.253.29.254
+  port: 14430
+  uuid: c7c27192-60a5-4ce1-b613-95270d82309d
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /vless
     headers:
-      Host: openapi.next-ai.us.ci
+      Host: 5.253.29.254
 proxy-groups:
 - name: PROXIES
   type: select
@@ -65,6 +68,7 @@ proxy-groups:
   - 🇨🇾 CY 02 - zxmzy
   - 🇨🇾 CY 03 - zxmzy
   - 🇨🇾 CY 04 - zxmzy
+  - 🇨🇾 CY 05 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -74,5 +78,6 @@ proxy-groups:
   - 🇨🇾 CY 02 - zxmzy
   - 🇨🇾 CY 03 - zxmzy
   - 🇨🇾 CY 04 - zxmzy
+  - 🇨🇾 CY 05 - zxmzy
 rules:
 - MATCH,PROXIES
