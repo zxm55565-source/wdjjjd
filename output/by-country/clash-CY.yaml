@@ -45,12 +45,17 @@ proxies:
       Host: 5.253.29.254
 - name: 🇨🇾 CY 04 - zxmzy
   type: vless
-  server: 5.253.29.254
-  port: 10443
-  uuid: c7c27192-60a5-4ce1-b613-95270d82309d
+  server: www.csgo.net
+  port: 2095
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
   udp: true
   tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: openapi.next-ai.us.ci
 proxy-groups:
 - name: PROXIES
   type: select
