@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇵🇭 PH 01 - zxmzy",
+        "🇵🇭 PH 02 - zxmzy",
+        "🇵🇭 PH 03 - zxmzy",
+        "🇵🇭 PH 04 - zxmzy",
+        "🇵🇭 PH 05 - zxmzy",
+        "🇵🇭 PH 06 - zxmzy",
+        "🇵🇭 PH 07 - zxmzy",
+        "🇵🇭 PH 08 - zxmzy",
+        "🇵🇭 PH 09 - zxmzy",
+        "🇵🇭 PH 10 - zxmzy",
+        "🇵🇭 PH 11 - zxmzy"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇵🇭 PH 01 - zxmzy",
+        "🇵🇭 PH 02 - zxmzy",
+        "🇵🇭 PH 03 - zxmzy",
+        "🇵🇭 PH 04 - zxmzy",
+        "🇵🇭 PH 05 - zxmzy",
+        "🇵🇭 PH 06 - zxmzy",
+        "🇵🇭 PH 07 - zxmzy",
+        "🇵🇭 PH 08 - zxmzy",
+        "🇵🇭 PH 09 - zxmzy",
+        "🇵🇭 PH 10 - zxmzy",
+        "🇵🇭 PH 11 - zxmzy"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
