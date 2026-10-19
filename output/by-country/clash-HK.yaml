@@ -21,32 +21,37 @@ proxies:
     headers:
       Host: NYcQg19zkwaCPM1B.v.3dns.vip
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - zxmzy
-  type: vless
-  server: 43.129.80.179
-  port: 8443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  type: vmess
+  server: 47.243.194.125
+  port: 443
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ccc.010304.xyz
+  servername: nycqg19zkwacpm1b.v.3dns.vip
   network: ws
   ws-opts:
-    path: /
+    path: /ws-vmess
     headers:
-      Host: ccc.010304.xyz
+      Host: nycqg19zkwacpm1b.v.3dns.vip
 - name: 🇭🇰 中国香港 (Hong Kong) 03 - zxmzy
-  type: vless
-  server: 213.176.92.168
-  port: 14430
-  uuid: ba52cc43-700d-4040-9444-29214c98e6e0
+  type: vmess
+  server: vah4urdzl3jdx5r2.v.3dns.vip
+  port: 443
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: vah4urdzl3jdx5r2.v.3dns.vip
   network: ws
   ws-opts:
-    path: /vless
+    path: /ws-vmess
     headers:
-      Host: 213.176.92.168
+      Host: vah4urdzl3jdx5r2.v.3dns.vip
 - name: 🇭🇰 中国香港 (Hong Kong) 04 - zxmzy
   type: vmess
   server: yg1.ygkkk.dpdns.org
@@ -64,21 +69,6 @@ proxies:
     headers:
       Host: jmp1.907737.xyz
 - name: 🇭🇰 中国香港 (Hong Kong) 05 - zxmzy
-  type: vmess
-  server: 47.244.120.197
-  port: 23026
-  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /arki
-    headers:
-      Host: 47.244.120.197
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - zxmzy
   type: vless
   server: 103.148.73.173
   port: 8443
@@ -91,40 +81,8 @@ proxies:
   ws-opts:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
-      Host: 103.148.73.173
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - zxmzy
-  type: vmess
-  server: vah4urdzl3jdx5r2.v.3dns.vip
-  port: 443
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vah4urdzl3jdx5r2.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: vah4urdzl3jdx5r2.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - zxmzy
-  type: vmess
-  server: 47.76.57.83
-  port: 443
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: vah4urdzl3jdx5r2.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: vah4urdzl3jdx5r2.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - zxmzy
+      Host: ty986gfazs.cainiaohub.xyz
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - zxmzy
   type: vmess
   server: 47.244.120.197
   port: 44867
@@ -150,9 +108,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 04 - zxmzy
   - 🇭🇰 中国香港 (Hong Kong) 05 - zxmzy
   - 🇭🇰 中国香港 (Hong Kong) 06 - zxmzy
-  - 🇭🇰 中国香港 (Hong Kong) 07 - zxmzy
-  - 🇭🇰 中国香港 (Hong Kong) 08 - zxmzy
-  - 🇭🇰 中国香港 (Hong Kong) 09 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -164,8 +119,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 04 - zxmzy
   - 🇭🇰 中国香港 (Hong Kong) 05 - zxmzy
   - 🇭🇰 中国香港 (Hong Kong) 06 - zxmzy
-  - 🇭🇰 中国香港 (Hong Kong) 07 - zxmzy
-  - 🇭🇰 中国香港 (Hong Kong) 08 - zxmzy
-  - 🇭🇰 中国香港 (Hong Kong) 09 - zxmzy
 rules:
 - MATCH,PROXIES
