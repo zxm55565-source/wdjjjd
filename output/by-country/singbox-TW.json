@@ -6,14 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 中国台湾 (Taiwan) 01 - zxmzy"
+        "🇹🇼 中国台湾 (Taiwan) 01 - zxmzy",
+        "🇹🇼 中国台湾 (Taiwan) 02 - zxmzy",
+        "🇹🇼 中国台湾 (Taiwan) 03 - zxmzy"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 中国台湾 (Taiwan) 01 - zxmzy"
+        "🇹🇼 中国台湾 (Taiwan) 01 - zxmzy",
+        "🇹🇼 中国台湾 (Taiwan) 02 - zxmzy",
+        "🇹🇼 中国台湾 (Taiwan) 03 - zxmzy"
       ],
       "url": "https://www.google.com/generate_204"
     },
