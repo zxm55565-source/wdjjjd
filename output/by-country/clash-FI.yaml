@@ -32,20 +32,6 @@ proxies:
     path: /mky-ws-4f19c8a7
     headers:
       Host: fi1.merky.one
-- name: 🇫🇮 FI 03 - zxmzy
-  type: vless
-  server: 144.31.34.146
-  port: 2096
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fi1.merky.one
-  network: ws
-  ws-opts:
-    path: /mky-ws-4f19c8a7
-    headers:
-      Host: fi1.merky.one
 proxy-groups:
 - name: PROXIES
   type: select
@@ -53,7 +39,6 @@ proxy-groups:
   - AUTO
   - 🇫🇮 FI 01 - zxmzy
   - 🇫🇮 FI 02 - zxmzy
-  - 🇫🇮 FI 03 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -61,6 +46,5 @@ proxy-groups:
   proxies:
   - 🇫🇮 FI 01 - zxmzy
   - 🇫🇮 FI 02 - zxmzy
-  - 🇫🇮 FI 03 - zxmzy
 rules:
 - MATCH,PROXIES
