@@ -6,52 +6,6 @@ log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - zxmzy
   type: vmess
-  server: 54.37.131.126
-  port: 80
-  uuid: 6deef9ad-1357-443d-f95c-cb18952c20b3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇫🇷 法国 (France) 02 - zxmzy
-  type: vless
-  server: 51.44.38.228
-  port: 22224
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 03 - zxmzy
-  type: vless
-  server: 13.37.140.13
-  port: 22223
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 04 - zxmzy
-  type: vmess
-  server: 145.239.55.210
-  port: 80
-  uuid: 067fcd63-b215-4abd-8529-ae929a9971a9
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
-- name: 🇫🇷 法国 (France) 05 - zxmzy
-  type: vmess
   server: 57.128.164.21
   port: 80
   uuid: bda82bcd-f6e2-46ae-9552-673f0b87ac30
@@ -65,15 +19,15 @@ proxies:
     path: /d3d3LmlyYW5ob3N0LmNvbQ==?ed=2560
     headers:
       Host: https.http.www.net.com.ramseyv2.ir.
-- name: 🇫🇷 法国 (France) 06 - zxmzy
+- name: 🇫🇷 法国 (France) 02 - zxmzy
   type: vless
-  server: 35.180.76.81
-  port: 22224
+  server: 51.44.38.228
+  port: 22222
   uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 07 - zxmzy
+- name: 🇫🇷 法国 (France) 03 - zxmzy
   type: vmess
   server: 162.19.204.71
   port: 1234
@@ -84,6 +38,37 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
+- name: 🇫🇷 法国 (France) 04 - zxmzy
+  type: vmess
+  server: 54.37.131.126
+  port: 80
+  uuid: 6deef9ad-1357-443d-f95c-cb18952c20b3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+- name: 🇫🇷 法国 (France) 05 - zxmzy
+  type: vless
+  server: 51.44.38.228
+  port: 22224
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 06 - zxmzy
+  type: vless
+  server: 51.44.38.228
+  port: 22224
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -95,7 +80,6 @@ proxy-groups:
   - 🇫🇷 法国 (France) 04 - zxmzy
   - 🇫🇷 法国 (France) 05 - zxmzy
   - 🇫🇷 法国 (France) 06 - zxmzy
-  - 🇫🇷 法国 (France) 07 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -107,6 +91,5 @@ proxy-groups:
   - 🇫🇷 法国 (France) 04 - zxmzy
   - 🇫🇷 法国 (France) 05 - zxmzy
   - 🇫🇷 法国 (France) 06 - zxmzy
-  - 🇫🇷 法国 (France) 07 - zxmzy
 rules:
 - MATCH,PROXIES
