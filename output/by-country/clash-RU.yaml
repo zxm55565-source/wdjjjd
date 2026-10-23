@@ -4,24 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇪 IE 01 - zxmzy
+- name: 🇷🇺 俄罗斯 (Russia) 01 - zxmzy
   type: ss
-  server: 20.166.51.228
-  port: 443
+  server: 130.49.189.158
+  port: 43558
   cipher: chacha20-ietf-poly1305
-  password: LVMlhvK82To1FGsy
+  password: nQeEoXC5Yl5PZnPLvKUpFTU9cyQcNG902zpibWkwGbo=
   udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇪 IE 01 - zxmzy
+  - 🇷🇺 俄罗斯 (Russia) 01 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇪 IE 01 - zxmzy
+  - 🇷🇺 俄罗斯 (Russia) 01 - zxmzy
 rules:
 - MATCH,PROXIES
