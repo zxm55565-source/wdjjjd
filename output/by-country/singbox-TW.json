@@ -6,22 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇭 PH 01 - zxmzy",
-        "🇵🇭 PH 02 - zxmzy",
-        "🇵🇭 PH 03 - zxmzy",
-        "🇵🇭 PH 04 - zxmzy",
-        "🇵🇭 PH 05 - zxmzy"
+        "🇹🇼 中国台湾 (Taiwan) 01 - zxmzy"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇭 PH 01 - zxmzy",
-        "🇵🇭 PH 02 - zxmzy",
-        "🇵🇭 PH 03 - zxmzy",
-        "🇵🇭 PH 04 - zxmzy",
-        "🇵🇭 PH 05 - zxmzy"
+        "🇹🇼 中国台湾 (Taiwan) 01 - zxmzy"
       ],
       "url": "https://www.google.com/generate_204"
     },
