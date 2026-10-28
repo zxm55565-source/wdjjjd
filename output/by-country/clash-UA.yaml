@@ -25,34 +25,6 @@ proxies:
     path: /wss
     headers:
       Host: pol.netvia.ir
-- name: 🇺🇦 UA 03 - zxmzy
-  type: vless
-  server: 216.24.57.225
-  port: 2083
-  uuid: 3bcbd7ef-e05b-4745-a1de-5ecf98dd2fb6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: pol.netvia.ir
-  network: ws
-  ws-opts:
-    path: /wss
-    headers:
-      Host: pol.netvia.ir
-- name: 🇺🇦 UA 04 - zxmzy
-  type: vless
-  server: 216.24.57.225
-  port: 2083
-  uuid: 3bcbd7ef-e05b-4745-a1de-5ecf98dd2fb6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: pol.netvia.ir
-  network: ws
-  ws-opts:
-    path: /wss
-    headers:
-      Host: pol.netvia.ir
 proxy-groups:
 - name: PROXIES
   type: select
@@ -60,8 +32,6 @@ proxy-groups:
   - AUTO
   - 🇺🇦 UA 01 - zxmzy
   - 🇺🇦 UA 02 - zxmzy
-  - 🇺🇦 UA 03 - zxmzy
-  - 🇺🇦 UA 04 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -69,7 +39,5 @@ proxy-groups:
   proxies:
   - 🇺🇦 UA 01 - zxmzy
   - 🇺🇦 UA 02 - zxmzy
-  - 🇺🇦 UA 03 - zxmzy
-  - 🇺🇦 UA 04 - zxmzy
 rules:
 - MATCH,PROXIES
