@@ -5,21 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - zxmzy
-  type: vmess
-  server: 47.244.120.197
-  port: 23026
-  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /arki
-    headers:
-      Host: 47.244.120.197
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - zxmzy
   type: vless
   server: 103.238.227.211
   port: 21003
@@ -31,21 +16,31 @@ proxies:
     public-key: EXU8eOS1kf_ROqC68NO-zbzRFGx7U5zE6WvjxRzYeTo
   servername: www.cloudflare.com
   client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - zxmzy
+  type: vless
+  server: 526.150333.xyz
+  port: 21003
+  uuid: 52d2187c-34e1-40fd-a6f5-0a74ff7d3e9a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: EXU8eOS1kf_ROqC68NO-zbzRFGx7U5zE6WvjxRzYeTo
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 03 - zxmzy
-  type: vmess
-  server: 156.245.232.239
-  port: 35043
-  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 213.176.92.168
+  port: 14430
+  uuid: ba52cc43-700d-4040-9444-29214c98e6e0
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /vless
     headers:
-      Host: ''
+      Host: 213.176.92.168
 - name: 🇭🇰 中国香港 (Hong Kong) 04 - zxmzy
   type: vless
   server: 526.150333.xyz
@@ -84,6 +79,49 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: ty986gfazs.cainiaohub.xyz
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - zxmzy
+  type: vmess
+  server: 8.217.254.88
+  port: 443
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 2b9hwy8ocx7q74nm.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: 2b9hwy8ocx7q74nm.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - zxmzy
+  type: vless
+  server: 526.150333.xyz
+  port: 21002
+  uuid: 52d2187c-34e1-40fd-a6f5-0a74ff7d3e9a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: EXU8eOS1kf_ROqC68NO-zbzRFGx7U5zE6WvjxRzYeTo
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - zxmzy
+  type: vmess
+  server: 47.244.120.197
+  port: 23026
+  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /arki
+    headers:
+      Host: 47.244.120.197
 proxy-groups:
 - name: PROXIES
   type: select
@@ -95,6 +133,9 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 04 - zxmzy
   - 🇭🇰 中国香港 (Hong Kong) 05 - zxmzy
   - 🇭🇰 中国香港 (Hong Kong) 06 - zxmzy
+  - 🇭🇰 中国香港 (Hong Kong) 07 - zxmzy
+  - 🇭🇰 中国香港 (Hong Kong) 08 - zxmzy
+  - 🇭🇰 中国香港 (Hong Kong) 09 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -106,5 +147,8 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 04 - zxmzy
   - 🇭🇰 中国香港 (Hong Kong) 05 - zxmzy
   - 🇭🇰 中国香港 (Hong Kong) 06 - zxmzy
+  - 🇭🇰 中国香港 (Hong Kong) 07 - zxmzy
+  - 🇭🇰 中国香港 (Hong Kong) 08 - zxmzy
+  - 🇭🇰 中国香港 (Hong Kong) 09 - zxmzy
 rules:
 - MATCH,PROXIES
