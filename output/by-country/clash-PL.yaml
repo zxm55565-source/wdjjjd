@@ -5,29 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - zxmzy
-  type: ss
-  server: pol.rvpn.app
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: 8z2OB_gvFvpKgjFi8s9Cvw
-  udp: true
-- name: 🇵🇱 PL 02 - zxmzy
   type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇵🇱 PL 03 - zxmzy
-  type: vless
-  server: site.teslamotor.site
+  server: 155.117.5.208
   port: 20001
   uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇵🇱 PL 04 - zxmzy
+- name: 🇵🇱 PL 02 - zxmzy
   type: vless
   server: 168.222.43.53
   port: 2052
@@ -35,7 +20,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇵🇱 PL 05 - zxmzy
+- name: 🇵🇱 PL 03 - zxmzy
   type: vless
   server: 2.26.6.1
   port: 2087
@@ -44,11 +29,28 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: 2.26.6.1
+- name: 🇵🇱 PL 04 - zxmzy
+  type: vless
+  server: 2.26.6.1
+  port: 2087
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 2.26.6.1
+- name: 🇵🇱 PL 05 - zxmzy
+  type: vless
+  server: site.teslamotor.site
+  port: 20001
+  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+  udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇵🇱 PL 06 - zxmzy
   type: vless
-  server: edge10.cyrionflare.com
-  port: 2052
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  server: site.teslamotor.site
+  port: 20001
+  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
   udp: true
   tls: false
   skip-cert-verify: true
@@ -62,7 +64,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇵🇱 PL 08 - zxmzy
   type: vless
-  server: 155.117.5.208
+  server: site.teslamotor.site
   port: 20001
   uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
   udp: true
@@ -70,51 +72,17 @@ proxies:
   skip-cert-verify: true
 - name: 🇵🇱 PL 09 - zxmzy
   type: vless
-  server: site.teslamotor.site
-  port: 20001
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+  server: edge10.cyrionflare.com
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
   udp: true
   tls: false
   skip-cert-verify: true
 - name: 🇵🇱 PL 10 - zxmzy
   type: vless
-  server: 2.26.6.1
-  port: 2087
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2.26.6.1
-- name: 🇵🇱 PL 11 - zxmzy
-  type: vless
-  server: 2.26.6.1
-  port: 2087
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2.26.6.1
-- name: 🇵🇱 PL 12 - zxmzy
-  type: vless
-  server: site.teslamotor.site
-  port: 20001
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇵🇱 PL 13 - zxmzy
-  type: vless
-  server: site.teslamotor.site
-  port: 20001
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇵🇱 PL 14 - zxmzy
-  type: vless
-  server: site.teslamotor.site
-  port: 20001
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+  server: edge10.cyrionflare.com
+  port: 2052
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
   udp: true
   tls: false
   skip-cert-verify: true
@@ -133,10 +101,6 @@ proxy-groups:
   - 🇵🇱 PL 08 - zxmzy
   - 🇵🇱 PL 09 - zxmzy
   - 🇵🇱 PL 10 - zxmzy
-  - 🇵🇱 PL 11 - zxmzy
-  - 🇵🇱 PL 12 - zxmzy
-  - 🇵🇱 PL 13 - zxmzy
-  - 🇵🇱 PL 14 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -152,9 +116,5 @@ proxy-groups:
   - 🇵🇱 PL 08 - zxmzy
   - 🇵🇱 PL 09 - zxmzy
   - 🇵🇱 PL 10 - zxmzy
-  - 🇵🇱 PL 11 - zxmzy
-  - 🇵🇱 PL 12 - zxmzy
-  - 🇵🇱 PL 13 - zxmzy
-  - 🇵🇱 PL 14 - zxmzy
 rules:
 - MATCH,PROXIES
