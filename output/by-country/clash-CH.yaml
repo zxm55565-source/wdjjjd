@@ -6,6 +6,15 @@ log-level: info
 proxies:
 - name: 🇨🇭 CH 01 - zxmzy
   type: vless
+  server: 149.33.15.213
+  port: 443
+  uuid: 054362fb-e485-4a3f-9568-4c5b0f60e074
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: swz.proxyplankton.ru
+- name: 🇨🇭 CH 02 - zxmzy
+  type: vless
   server: 208.69.78.217
   port: 2053
   uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
@@ -16,13 +25,6 @@ proxies:
     public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇨🇭 CH 02 - zxmzy
-  type: ss
-  server: 132.243.175.144
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
-  udp: true
 - name: 🇨🇭 CH 03 - zxmzy
   type: vless
   server: 208.69.78.217
@@ -46,7 +48,7 @@ proxies:
   reality-opts:
     public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇨🇭 CH 05 - zxmzy
   type: vless
   server: 208.69.78.217
@@ -58,28 +60,35 @@ proxies:
   reality-opts:
     public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇨🇭 CH 06 - zxmzy
   type: vless
-  server: 208.69.78.217
-  port: 2053
-  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  server: 199.232.78.159
+  port: 443
+  uuid: c1a3a6ee-34d3-4fcd-8763-c2231adabed6
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
-  servername: www.apple.com
-  client-fingerprint: chrome
+  servername: firefox.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: lofinlaoijji.global.ssl.fastly.net
 - name: 🇨🇭 CH 07 - zxmzy
   type: vless
-  server: 149.33.15.213
+  server: 199.232.78.159
   port: 443
-  uuid: 054362fb-e485-4a3f-9568-4c5b0f60e074
+  uuid: c1a3a6ee-34d3-4fcd-8763-c2231adabed6
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: swz.proxyplankton.ru
+  servername: firefox.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: lofinlaoijji.global.ssl.fastly.net
 - name: 🇨🇭 CH 08 - zxmzy
   type: vless
   server: 208.69.78.217
@@ -91,7 +100,35 @@ proxies:
   reality-opts:
     public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
   servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇨🇭 CH 09 - zxmzy
+  type: vless
+  server: 208.69.78.217
+  port: 2053
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+  servername: www.apple.com
   client-fingerprint: random
+- name: 🇨🇭 CH 10 - zxmzy
+  type: ss
+  server: 132.243.175.144
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
+  udp: true
+- name: 🇨🇭 CH 11 - zxmzy
+  type: vless
+  server: 149.33.15.213
+  port: 443
+  uuid: 054362fb-e485-4a3f-9568-4c5b0f60e074
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: swz.proxyplankton.ru
 proxy-groups:
 - name: PROXIES
   type: select
@@ -105,6 +142,9 @@ proxy-groups:
   - 🇨🇭 CH 06 - zxmzy
   - 🇨🇭 CH 07 - zxmzy
   - 🇨🇭 CH 08 - zxmzy
+  - 🇨🇭 CH 09 - zxmzy
+  - 🇨🇭 CH 10 - zxmzy
+  - 🇨🇭 CH 11 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -118,5 +158,8 @@ proxy-groups:
   - 🇨🇭 CH 06 - zxmzy
   - 🇨🇭 CH 07 - zxmzy
   - 🇨🇭 CH 08 - zxmzy
+  - 🇨🇭 CH 09 - zxmzy
+  - 🇨🇭 CH 10 - zxmzy
+  - 🇨🇭 CH 11 - zxmzy
 rules:
 - MATCH,PROXIES
