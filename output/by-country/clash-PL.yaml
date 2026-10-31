@@ -5,31 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - zxmzy
-  type: ss
-  server: pol.rvpn.app
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: 8z2OB_gvFvpKgjFi8s9Cvw
+  type: vless
+  server: 2.26.6.1
+  port: 2087
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 2.26.6.1
 - name: 🇵🇱 PL 02 - zxmzy
-  type: vless
-  server: 2.26.6.1
-  port: 2087
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2.26.6.1
-- name: 🇵🇱 PL 03 - zxmzy
-  type: vless
-  server: 2.26.6.1
-  port: 2087
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 2.26.6.1
-- name: 🇵🇱 PL 04 - zxmzy
   type: vless
   server: 2.26.6.1
   port: 2087
@@ -45,8 +29,6 @@ proxy-groups:
   - AUTO
   - 🇵🇱 PL 01 - zxmzy
   - 🇵🇱 PL 02 - zxmzy
-  - 🇵🇱 PL 03 - zxmzy
-  - 🇵🇱 PL 04 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -54,7 +36,5 @@ proxy-groups:
   proxies:
   - 🇵🇱 PL 01 - zxmzy
   - 🇵🇱 PL 02 - zxmzy
-  - 🇵🇱 PL 03 - zxmzy
-  - 🇵🇱 PL 04 - zxmzy
 rules:
 - MATCH,PROXIES
