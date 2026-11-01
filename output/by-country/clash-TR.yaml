@@ -18,18 +18,18 @@ proxies:
   client-fingerprint: random
 - name: 🇹🇷 土耳其 (Turkey) 02 - zxmzy
   type: vless
-  server: 146.75.59.186
+  server: 155.103.71.142
   port: 443
-  uuid: e3425eb4-e9be-4568-8740-529a031c9315
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: firefox.com
+  servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /
+    path: /fp=chrome
     headers:
-      Host: looabturkeyeoijji.global.ssl.fastly.net.
+      Host: ccc.010304.xyz
 - name: 🇹🇷 土耳其 (Turkey) 03 - zxmzy
   type: vless
   server: 177.3.208.65
@@ -56,20 +56,6 @@ proxies:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
   servername: www.apple.com
   client-fingerprint: random
-- name: 🇹🇷 土耳其 (Turkey) 05 - zxmzy
-  type: vless
-  server: 155.103.71.142
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ccc.010304.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -79,7 +65,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - zxmzy
   - 🇹🇷 土耳其 (Turkey) 03 - zxmzy
   - 🇹🇷 土耳其 (Turkey) 04 - zxmzy
-  - 🇹🇷 土耳其 (Turkey) 05 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -89,6 +74,5 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - zxmzy
   - 🇹🇷 土耳其 (Turkey) 03 - zxmzy
   - 🇹🇷 土耳其 (Turkey) 04 - zxmzy
-  - 🇹🇷 土耳其 (Turkey) 05 - zxmzy
 rules:
 - MATCH,PROXIES
