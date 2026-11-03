@@ -32,20 +32,6 @@ proxies:
     path: /ws/16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
     headers:
       Host: app-6ada5023.deploy.meerasolution.com
-- name: 🇳🇱 荷兰 (Netherlands) 03 (家宽) - zxmzy
-  type: vless
-  server: 188.114.96.198
-  port: 443
-  uuid: b15f187e-9b34-437c-8243-8651a8ada76c
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: tepar-k4j9.jounet.workers.dev
-  network: ws
-  ws-opts:
-    path: /stream/DEVCOP/8651a8ada76c/loc-1
-    headers:
-      Host: tepar-k4j9.jounet.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -53,7 +39,6 @@ proxy-groups:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - zxmzy
   - 🇮🇳 印度 (India) 02 (家宽) - zxmzy
-  - 🇳🇱 荷兰 (Netherlands) 03 (家宽) - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -61,6 +46,5 @@ proxy-groups:
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - zxmzy
   - 🇮🇳 印度 (India) 02 (家宽) - zxmzy
-  - 🇳🇱 荷兰 (Netherlands) 03 (家宽) - zxmzy
 rules:
 - MATCH,PROXIES
