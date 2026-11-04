@@ -6,14 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇺 俄罗斯 (Russia) 01 - zxmzy"
+        "🇷🇺 俄罗斯 (Russia) 01 - zxmzy",
+        "🇷🇺 俄罗斯 (Russia) 02 - zxmzy",
+        "🇷🇺 俄罗斯 (Russia) 03 - zxmzy"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺 俄罗斯 (Russia) 01 - zxmzy"
+        "🇷🇺 俄罗斯 (Russia) 01 - zxmzy",
+        "🇷🇺 俄罗斯 (Russia) 02 - zxmzy",
+        "🇷🇺 俄罗斯 (Russia) 03 - zxmzy"
       ],
       "url": "https://www.google.com/generate_204"
     },
