@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - zxmzy
   type: vless
-  server: se3.shtil.io
+  server: 194.104.94.141
   port: 443
   uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
   udp: true
@@ -15,26 +15,13 @@ proxies:
   servername: se3.shtil.io
 - name: 🇸🇪 SE 02 - zxmzy
   type: vless
-  server: 194.104.94.141
+  server: se3.shtil.io
   port: 443
   uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 194.104.94.141
-- name: 🇸🇪 SE 03 - zxmzy
-  type: vless
-  server: 5.178.109.174
-  port: 14430
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
+  servername: se3.shtil.io
 proxy-groups:
 - name: PROXIES
   type: select
@@ -42,7 +29,6 @@ proxy-groups:
   - AUTO
   - 🇸🇪 SE 01 - zxmzy
   - 🇸🇪 SE 02 - zxmzy
-  - 🇸🇪 SE 03 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -50,6 +36,5 @@ proxy-groups:
   proxies:
   - 🇸🇪 SE 01 - zxmzy
   - 🇸🇪 SE 02 - zxmzy
-  - 🇸🇪 SE 03 - zxmzy
 rules:
 - MATCH,PROXIES
