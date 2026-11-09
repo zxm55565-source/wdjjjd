@@ -43,6 +43,20 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
+- name: 🇫🇮 FI 04 - zxmzy
+  type: vless
+  server: 146.103.118.189
+  port: 443
+  uuid: ce698f0c-a8ec-474a-b5d8-3be8032deeb8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nl2.574ck.xyz
+  network: ws
+  ws-opts:
+    path: /574ck-finland
+    headers:
+      Host: nl2.574ck.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -51,6 +65,7 @@ proxy-groups:
   - 🇫🇮 FI 01 - zxmzy
   - 🇫🇮 FI 02 - zxmzy
   - 🇫🇮 FI 03 - zxmzy
+  - 🇫🇮 FI 04 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -59,5 +74,6 @@ proxy-groups:
   - 🇫🇮 FI 01 - zxmzy
   - 🇫🇮 FI 02 - zxmzy
   - 🇫🇮 FI 03 - zxmzy
+  - 🇫🇮 FI 04 - zxmzy
 rules:
 - MATCH,PROXIES
