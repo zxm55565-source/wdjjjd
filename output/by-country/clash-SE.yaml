@@ -5,19 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - zxmzy
-  type: vless
-  server: 109.120.134.181
-  port: 443
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  type: ss
+  server: 138.199.55.243
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fs.qicai99.com
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: fs.qicai99.com
 - name: 🇸🇪 SE 02 - zxmzy
   type: vless
   server: 5.178.109.174
@@ -32,13 +25,6 @@ proxies:
     headers:
       Host: 5.178.109.174
 - name: 🇸🇪 SE 03 - zxmzy
-  type: ss
-  server: 138.199.55.243
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇸🇪 SE 04 - zxmzy
   type: vless
   server: 193.188.21.253
   port: 14430
@@ -59,7 +45,6 @@ proxy-groups:
   - 🇸🇪 SE 01 - zxmzy
   - 🇸🇪 SE 02 - zxmzy
   - 🇸🇪 SE 03 - zxmzy
-  - 🇸🇪 SE 04 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -68,6 +53,5 @@ proxy-groups:
   - 🇸🇪 SE 01 - zxmzy
   - 🇸🇪 SE 02 - zxmzy
   - 🇸🇪 SE 03 - zxmzy
-  - 🇸🇪 SE 04 - zxmzy
 rules:
 - MATCH,PROXIES

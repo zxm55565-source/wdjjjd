@@ -20,6 +20,21 @@ proxies:
     headers:
       Host: ''
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - zxmzy
+  type: vmess
+  server: 47.244.120.197
+  port: 44867
+  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /arki
+    headers:
+      Host: ''
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - zxmzy
   type: vless
   server: 213.176.92.168
   port: 14430
@@ -32,7 +47,7 @@ proxies:
     path: /vless
     headers:
       Host: 213.176.92.168
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - zxmzy
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - zxmzy
   type: vless
   server: 213.176.92.168
   port: 14430
@@ -53,6 +68,7 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 01 - zxmzy
   - 🇭🇰 中国香港 (Hong Kong) 02 - zxmzy
   - 🇭🇰 中国香港 (Hong Kong) 03 - zxmzy
+  - 🇭🇰 中国香港 (Hong Kong) 04 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -61,5 +77,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 01 - zxmzy
   - 🇭🇰 中国香港 (Hong Kong) 02 - zxmzy
   - 🇭🇰 中国香港 (Hong Kong) 03 - zxmzy
+  - 🇭🇰 中国香港 (Hong Kong) 04 - zxmzy
 rules:
 - MATCH,PROXIES
