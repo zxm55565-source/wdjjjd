@@ -19,6 +19,20 @@ proxies:
   password: AdawffFMHymlasRb0VOP3HFf7sTG5sJx
   udp: true
 - name: 🇦🇹 AT 03 - zxmzy
+  type: vless
+  server: 193.219.97.198
+  port: 443
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fs.qicai99.com
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: fs.qicai99.com
+- name: 🇦🇹 AT 04 - zxmzy
   type: ss
   server: 82.110.60.9
   port: 19999
@@ -33,6 +47,7 @@ proxy-groups:
   - 🇦🇹 AT 01 - zxmzy
   - 🇦🇹 AT 02 - zxmzy
   - 🇦🇹 AT 03 - zxmzy
+  - 🇦🇹 AT 04 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -41,5 +56,6 @@ proxy-groups:
   - 🇦🇹 AT 01 - zxmzy
   - 🇦🇹 AT 02 - zxmzy
   - 🇦🇹 AT 03 - zxmzy
+  - 🇦🇹 AT 04 - zxmzy
 rules:
 - MATCH,PROXIES

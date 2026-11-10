@@ -13,15 +13,6 @@ proxies:
   udp: true
 - name: 🇸🇪 SE 02 - zxmzy
   type: vless
-  server: 194.104.94.141
-  port: 443
-  uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: se3.shtil.io
-- name: 🇸🇪 SE 03 - zxmzy
-  type: vless
   server: 5.178.109.174
   port: 14430
   uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
@@ -33,23 +24,25 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
-- name: 🇸🇪 SE 04 - zxmzy
-  type: ss
-  server: 70.34.212.124
-  port: 8388
-  cipher: aes-256-gcm
-  password: AxIYWtskJWIIaefW
-  udp: true
-- name: 🇸🇪 SE 05 - zxmzy
+- name: 🇸🇪 SE 03 - zxmzy
   type: vless
-  server: se3.shtil.io
+  server: 194.104.94.141
   port: 443
   uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
   udp: true
   tls: true
   skip-cert-verify: true
   servername: se3.shtil.io
-- name: 🇸🇪 SE 06 - zxmzy
+- name: 🇸🇪 SE 04 - zxmzy
+  type: vless
+  server: 194.104.94.141
+  port: 443
+  uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: se3.shtil.io
+- name: 🇸🇪 SE 05 - zxmzy
   type: vless
   server: 194.104.94.141
   port: 443
@@ -68,7 +61,6 @@ proxy-groups:
   - 🇸🇪 SE 03 - zxmzy
   - 🇸🇪 SE 04 - zxmzy
   - 🇸🇪 SE 05 - zxmzy
-  - 🇸🇪 SE 06 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -79,6 +71,5 @@ proxy-groups:
   - 🇸🇪 SE 03 - zxmzy
   - 🇸🇪 SE 04 - zxmzy
   - 🇸🇪 SE 05 - zxmzy
-  - 🇸🇪 SE 06 - zxmzy
 rules:
 - MATCH,PROXIES
