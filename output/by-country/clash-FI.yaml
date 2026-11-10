@@ -5,6 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - zxmzy
+  type: vmess
+  server: 65.108.240.210
+  port: 39018
+  uuid: 77fb7a80-4724-4e33-9558-4f20c1634c5a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇫🇮 FI 02 - zxmzy
   type: vless
   server: 146.103.118.189
   port: 443
@@ -18,34 +28,19 @@ proxies:
     path: /574ck-finland
     headers:
       Host: nl2.574ck.xyz
-- name: 🇫🇮 FI 02 - zxmzy
-  type: vless
-  server: 109.120.134.181
-  port: 443
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fs.qicai99.com
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: fs.qicai99.com
 - name: 🇫🇮 FI 03 - zxmzy
   type: vless
-  server: 138.124.49.108
-  port: 8443
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: fs.qicai99.com
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /vless
     headers:
-      Host: fs.qicai99.com
+      Host: 45.144.234.157
 - name: 🇫🇮 FI 04 - zxmzy
   type: vless
   server: 45.144.234.157
@@ -61,45 +56,18 @@ proxies:
       Host: 45.144.234.157
 - name: 🇫🇮 FI 05 - zxmzy
   type: vless
-  server: 138.124.124.157
-  port: 443
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  server: 45.144.234.157
+  port: 14430
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: fs.qicai99.com
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /vless
     headers:
-      Host: fs.qicai99.com
+      Host: 45.144.234.157
 - name: 🇫🇮 FI 06 - zxmzy
-  type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 FI 07 - zxmzy
-  type: vless
-  server: 45.144.234.157
-  port: 14430
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 FI 08 - zxmzy
   type: vless
   server: 146.103.118.189
   port: 443
@@ -124,8 +92,6 @@ proxy-groups:
   - 🇫🇮 FI 04 - zxmzy
   - 🇫🇮 FI 05 - zxmzy
   - 🇫🇮 FI 06 - zxmzy
-  - 🇫🇮 FI 07 - zxmzy
-  - 🇫🇮 FI 08 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -137,7 +103,5 @@ proxy-groups:
   - 🇫🇮 FI 04 - zxmzy
   - 🇫🇮 FI 05 - zxmzy
   - 🇫🇮 FI 06 - zxmzy
-  - 🇫🇮 FI 07 - zxmzy
-  - 🇫🇮 FI 08 - zxmzy
 rules:
 - MATCH,PROXIES

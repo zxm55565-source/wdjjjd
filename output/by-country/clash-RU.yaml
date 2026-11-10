@@ -5,12 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - zxmzy
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU=
+  type: vless
+  server: 185.178.208.167
+  port: 443
+  uuid: 4662bf2b-af58-0001-ae5f-ef3d7d3a624f
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: mbr.rkn-pediki.site
+  network: ws
+  ws-opts:
+    path: /session
+    headers:
+      Host: mbr.rkn-pediki.site
 - name: 🇷🇺 俄罗斯 (Russia) 02 - zxmzy
   type: ss
   server: 38.60.223.125
@@ -19,20 +26,6 @@ proxies:
   password: 8722de56b6c0b3f6a4d01cf91c07e6aa
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 03 - zxmzy
-  type: vless
-  server: 199.181.197.99
-  port: 443
-  uuid: 70756c73-0000-4000-8000-650000000000
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: parsa-panel-u48we.wotic15356.workers.dev
-  network: ws
-  ws-opts:
-    path: /pulsefp=chrome
-    headers:
-      Host: parsa-panel-u48we.wotic15356.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 04 - zxmzy
   type: ss
   server: 46.17.47.58
   port: 18443
@@ -47,7 +40,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - zxmzy
   - 🇷🇺 俄罗斯 (Russia) 02 - zxmzy
   - 🇷🇺 俄罗斯 (Russia) 03 - zxmzy
-  - 🇷🇺 俄罗斯 (Russia) 04 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -56,6 +48,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - zxmzy
   - 🇷🇺 俄罗斯 (Russia) 02 - zxmzy
   - 🇷🇺 俄罗斯 (Russia) 03 - zxmzy
-  - 🇷🇺 俄罗斯 (Russia) 04 - zxmzy
 rules:
 - MATCH,PROXIES
