@@ -4,10 +4,10 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇿 CZ 01 - zxmzy
+- name: 🇦🇺 澳大利亚 (Australia) 01 - zxmzy
   type: vless
-  server: 188.137.178.174
-  port: 8443
+  server: 46.250.242.104
+  port: 443
   uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
   udp: true
   tls: true
@@ -23,12 +23,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇨🇿 CZ 01 - zxmzy
+  - 🇦🇺 澳大利亚 (Australia) 01 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇿 CZ 01 - zxmzy
+  - 🇦🇺 澳大利亚 (Australia) 01 - zxmzy
 rules:
 - MATCH,PROXIES
