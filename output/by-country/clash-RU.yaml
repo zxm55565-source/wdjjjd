@@ -6,32 +6,67 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - zxmzy
   type: vless
-  server: 185.86.147.175
+  server: 188.225.37.175
   port: 443
-  uuid: 7955bf18-35c4-412d-aabd-c0b36c793063
+  uuid: 820fa845-a1eb-4a83-b613-e6714cea8a1a
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: bhjolq0d0l.flowersgood.top
+  servername: cryptoventura.online
   network: ws
   ws-opts:
-    path: /service/telemetry/045d381f1166/
+    path: /api/de3/live
     headers:
-      Host: bhjolq0d0l.flowersgood.top
+      Host: cryptoventura.online
 - name: 🇷🇺 俄罗斯 (Russia) 02 - zxmzy
   type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU=
+  server: 185.22.153.117
+  port: 18443
+  cipher: aes-256-gcm
+  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 03 - zxmzy
-  type: ss
-  server: 38.60.223.125
-  port: 13108
-  cipher: aes-128-gcm
-  password: 8722de56b6c0b3f6a4d01cf91c07e6aa
+  type: vless
+  server: 188.225.37.175
+  port: 443
+  uuid: 4b50270b-5caf-4c34-b3da-17b4525604a6
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cryptoventura.online
+  network: ws
+  ws-opts:
+    path: /api/de3/live
+    headers:
+      Host: cryptoventura.online
+- name: 🇷🇺 俄罗斯 (Russia) 04 - zxmzy
+  type: vless
+  server: 185.178.208.167
+  port: 443
+  uuid: 4662bf2b-af58-0001-ae5f-ef3d7d3a624f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: mbr.rkn-pediki.site
+  network: ws
+  ws-opts:
+    path: /session
+    headers:
+      Host: mbr.rkn-pediki.site
+- name: 🇷🇺 俄罗斯 (Russia) 05 - zxmzy
+  type: vless
+  server: 185.178.208.167
+  port: 443
+  uuid: 4662bf2b-af58-0001-ae5f-ef3d7d3a624f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: mbr.rkn-pediki.site
+  network: ws
+  ws-opts:
+    path: /session
+    headers:
+      Host: mbr.rkn-pediki.site
 proxy-groups:
 - name: PROXIES
   type: select
@@ -40,6 +75,8 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - zxmzy
   - 🇷🇺 俄罗斯 (Russia) 02 - zxmzy
   - 🇷🇺 俄罗斯 (Russia) 03 - zxmzy
+  - 🇷🇺 俄罗斯 (Russia) 04 - zxmzy
+  - 🇷🇺 俄罗斯 (Russia) 05 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -48,5 +85,7 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - zxmzy
   - 🇷🇺 俄罗斯 (Russia) 02 - zxmzy
   - 🇷🇺 俄罗斯 (Russia) 03 - zxmzy
+  - 🇷🇺 俄罗斯 (Russia) 04 - zxmzy
+  - 🇷🇺 俄罗斯 (Russia) 05 - zxmzy
 rules:
 - MATCH,PROXIES
