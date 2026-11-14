@@ -5,6 +5,41 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - zxmzy
+  type: vless
+  server: 31.177.111.184
+  port: 443
+  uuid: 2232d904-8e6a-4202-8240-6efd8aec02e9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: zry9ocg43w.flowersgood.top
+  network: ws
+  ws-opts:
+    path: /static/collect/9412171e8a3a/
+    headers:
+      Host: zry9ocg43w.flowersgood.top
+- name: 🇷🇺 俄罗斯 (Russia) 02 - zxmzy
+  type: vless
+  server: 104.21.29.38
+  port: 443
+  uuid: 51c5a070-39ff-43fd-ac53-597bb7e7ff3d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fast-route-4aa49d-gw.staging-api-05a87c.workers.dev
+  network: ws
+  ws-opts:
+    path: /9dffa10cc2d3b317?ed=2560
+    headers:
+      Host: fast-route-4aa49d-gw.staging-api-05a87c.workers.dev
+- name: 🇷🇺 俄罗斯 (Russia) 03 - zxmzy
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU=
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 04 - zxmzy
   type: ss
   server: 185.22.153.117
   port: 18443
@@ -17,11 +52,17 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - zxmzy
+  - 🇷🇺 俄罗斯 (Russia) 02 - zxmzy
+  - 🇷🇺 俄罗斯 (Russia) 03 - zxmzy
+  - 🇷🇺 俄罗斯 (Russia) 04 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - zxmzy
+  - 🇷🇺 俄罗斯 (Russia) 02 - zxmzy
+  - 🇷🇺 俄罗斯 (Russia) 03 - zxmzy
+  - 🇷🇺 俄罗斯 (Russia) 04 - zxmzy
 rules:
 - MATCH,PROXIES
