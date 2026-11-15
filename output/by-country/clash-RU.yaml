@@ -12,6 +12,20 @@ proxies:
   password: yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU=
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 02 - zxmzy
+  type: vless
+  server: 104.18.79.242
+  port: 443
+  uuid: bb2a729c-6185-4170-8769-6f5b9f64d5b8
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: cloud-sync-3d1512-gw.maziarkish.workers.dev
+  network: ws
+  ws-opts:
+    path: /11290579a72cdb4e?ed=2560
+    headers:
+      Host: cloud-sync-3d1512-gw.maziarkish.workers.dev
+- name: 🇷🇺 俄罗斯 (Russia) 03 - zxmzy
   type: ss
   server: 185.22.153.117
   port: 18443
@@ -25,6 +39,7 @@ proxy-groups:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - zxmzy
   - 🇷🇺 俄罗斯 (Russia) 02 - zxmzy
+  - 🇷🇺 俄罗斯 (Russia) 03 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -32,5 +47,6 @@ proxy-groups:
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - zxmzy
   - 🇷🇺 俄罗斯 (Russia) 02 - zxmzy
+  - 🇷🇺 俄罗斯 (Russia) 03 - zxmzy
 rules:
 - MATCH,PROXIES
