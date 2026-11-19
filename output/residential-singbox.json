@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇾 CY 01 - zxmzy"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - zxmzy",
+        "🇩🇪 德国 (Germany) 02 (家宽) - zxmzy"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇾 CY 01 - zxmzy"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - zxmzy",
+        "🇩🇪 德国 (Germany) 02 (家宽) - zxmzy"
       ],
       "url": "https://www.google.com/generate_204"
     },
