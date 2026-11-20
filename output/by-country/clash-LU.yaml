@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇱🇺 LU 01 - zxmzy
   type: vless
-  server: subgift.gcorecdn.com
+  server: 92.223.84.254
   port: 443
   uuid: 740b2630-b42d-425c-bacd-37e7e30d78f1
   udp: true
