@@ -6,18 +6,16 @@ log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - zxmzy
   type: vless
-  server: 194.135.34.118
-  port: 8443
-  uuid: 020f7f86-a559-4366-8d2d-c6f81d6bbe5f
+  server: 130.94.2.227
+  port: 443
+  uuid: 3a1c6827-72a1-4d1c-9413-44109ff815f4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: web.hosttcp.fun
-  network: ws
-  ws-opts:
-    path: /api/v4/media/session
-    headers:
-      Host: 194.135.34.118
+  reality-opts:
+    public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc
+  servername: navi.bankrate.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
