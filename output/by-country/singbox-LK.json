@@ -6,14 +6,22 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇩🇪 德国 (Germany) 01 (家宽) - zxmzy"
+        "🇱🇰 LK 01 - zxmzy",
+        "🇱🇰 LK 02 - zxmzy",
+        "🇱🇰 LK 03 - zxmzy",
+        "🇱🇰 LK 04 - zxmzy",
+        "🇱🇰 LK 05 - zxmzy"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇩🇪 德国 (Germany) 01 (家宽) - zxmzy"
+        "🇱🇰 LK 01 - zxmzy",
+        "🇱🇰 LK 02 - zxmzy",
+        "🇱🇰 LK 03 - zxmzy",
+        "🇱🇰 LK 04 - zxmzy",
+        "🇱🇰 LK 05 - zxmzy"
       ],
       "url": "https://www.google.com/generate_204"
     },
