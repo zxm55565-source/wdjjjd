@@ -6,6 +6,34 @@ log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - zxmzy
   type: vless
+  server: 45.74.158.105
+  port: 443
+  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: accessfooter.cleanfoodshop.org
+  network: ws
+  ws-opts:
+    path: /media/ws/
+    headers:
+      Host: accessfooter.cleanfoodshop.org
+- name: 🇹🇷 土耳其 (Turkey) 02 - zxmzy
+  type: vless
+  server: 188.114.98.0
+  port: 443
+  uuid: 14eccb4f-ca88-4732-b191-d8daacf63448
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: sinavm3.soft10.ir
+  network: ws
+  ws-opts:
+    path: /SiNAVM-SiNAVM-SiNAVM-SiNAVM
+    headers:
+      Host: sinavm3.soft10.ir
+- name: 🇹🇷 土耳其 (Turkey) 03 - zxmzy
+  type: vless
   server: 172.64.155.209
   port: 443
   uuid: 14eccb4f-ca88-4732-b191-d8daacf63448
@@ -18,7 +46,7 @@ proxies:
     path: /SiNAVM-SiNAVM-SiNAVM-SiNAVM
     headers:
       Host: sinavm3.soft10.ir
-- name: 🇹🇷 土耳其 (Turkey) 02 - zxmzy
+- name: 🇹🇷 土耳其 (Turkey) 04 - zxmzy
   type: vless
   server: 143.246.136.128
   port: 50738
@@ -34,6 +62,8 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - zxmzy
   - 🇹🇷 土耳其 (Turkey) 02 - zxmzy
+  - 🇹🇷 土耳其 (Turkey) 03 - zxmzy
+  - 🇹🇷 土耳其 (Turkey) 04 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -41,5 +71,7 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - zxmzy
   - 🇹🇷 土耳其 (Turkey) 02 - zxmzy
+  - 🇹🇷 土耳其 (Turkey) 03 - zxmzy
+  - 🇹🇷 土耳其 (Turkey) 04 - zxmzy
 rules:
 - MATCH,PROXIES
