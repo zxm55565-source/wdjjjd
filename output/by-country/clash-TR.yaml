@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - zxmzy
   type: vless
-  server: turkey-ip1.mmdaqaorg.xyz
+  server: 143.246.136.128
   port: 50738
   uuid: 56665684-5ac0-4ba9-9d49-8b258fb57974
   udp: true
@@ -15,7 +15,21 @@ proxies:
   servername: turkey-ip1.mmdaqaorg.xyz
 - name: 🇹🇷 土耳其 (Turkey) 02 - zxmzy
   type: vless
-  server: 143.246.136.128
+  server: 194.135.34.118
+  port: 8443
+  uuid: 020f7f86-a559-4366-8d2d-c6f81d6bbe5f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: web.hosttcp.fun
+  network: ws
+  ws-opts:
+    path: /api/v4/media/session
+    headers:
+      Host: 194.135.34.118
+- name: 🇹🇷 土耳其 (Turkey) 03 - zxmzy
+  type: vless
+  server: turkey-ip1.mmdaqaorg.xyz
   port: 50738
   uuid: 56665684-5ac0-4ba9-9d49-8b258fb57974
   udp: true
@@ -29,6 +43,7 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - zxmzy
   - 🇹🇷 土耳其 (Turkey) 02 - zxmzy
+  - 🇹🇷 土耳其 (Turkey) 03 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -36,5 +51,6 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - zxmzy
   - 🇹🇷 土耳其 (Turkey) 02 - zxmzy
+  - 🇹🇷 土耳其 (Turkey) 03 - zxmzy
 rules:
 - MATCH,PROXIES
