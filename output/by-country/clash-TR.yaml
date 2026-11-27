@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - zxmzy
   type: vless
-  server: 143.246.136.128
+  server: turkey-ip1.mmdaqaorg.xyz
   port: 50738
   uuid: 56665684-5ac0-4ba9-9d49-8b258fb57974
   udp: true
@@ -15,27 +15,72 @@ proxies:
   servername: turkey-ip1.mmdaqaorg.xyz
 - name: 🇹🇷 土耳其 (Turkey) 02 - zxmzy
   type: vless
-  server: 194.135.34.118
-  port: 8443
-  uuid: 020f7f86-a559-4366-8d2d-c6f81d6bbe5f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: web.hosttcp.fun
-  network: ws
-  ws-opts:
-    path: /api/v4/media/session
-    headers:
-      Host: 194.135.34.118
-- name: 🇹🇷 土耳其 (Turkey) 03 - zxmzy
-  type: vless
-  server: turkey-ip1.mmdaqaorg.xyz
+  server: 143.246.136.128
   port: 50738
   uuid: 56665684-5ac0-4ba9-9d49-8b258fb57974
   udp: true
   tls: true
   skip-cert-verify: true
   servername: turkey-ip1.mmdaqaorg.xyz
+- name: 🇹🇷 土耳其 (Turkey) 03 - zxmzy
+  type: vless
+  server: 172.67.199.12
+  port: 443
+  uuid: 963A4918-A630-29DA-A873-093CDF8AD784
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: still-bar-5702.vpnetwork3567.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: still-bar-5702.vpnetwork3567.workers.dev
+- name: 🇹🇷 土耳其 (Turkey) 04 - zxmzy
+  type: vless
+  server: 143.246.136.128
+  port: 50738
+  uuid: 56665684-5ac0-4ba9-9d49-8b258fb57974
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: turkey-ip1.mmdaqaorg.xyz
+- name: 🇹🇷 土耳其 (Turkey) 05 - zxmzy
+  type: vless
+  server: leviko-tr3795.shopingggg.ir
+  port: 50738
+  uuid: 56665684-5ac0-4ba9-9d49-8b258fb57974
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: turkey-ip1.mmdaqaorg.xyz
+- name: 🇹🇷 土耳其 (Turkey) 06 - zxmzy
+  type: vless
+  server: 104.21.44.113
+  port: 443
+  uuid: 963A4918-A630-29DA-A873-093CDF8AD784
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: still-bar-5702.vpnetwork3567.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: still-bar-5702.vpnetwork3567.workers.dev
+- name: 🇹🇷 土耳其 (Turkey) 07 - zxmzy
+  type: vless
+  server: v2new.nimbaha9.ir
+  port: 8080
+  uuid: f279c19a-b324-40cf-af57-049f9b1b68f2
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /XDS45
+    headers:
+      Host: v2new.nimbaha9.ir
 proxy-groups:
 - name: PROXIES
   type: select
@@ -44,6 +89,10 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - zxmzy
   - 🇹🇷 土耳其 (Turkey) 02 - zxmzy
   - 🇹🇷 土耳其 (Turkey) 03 - zxmzy
+  - 🇹🇷 土耳其 (Turkey) 04 - zxmzy
+  - 🇹🇷 土耳其 (Turkey) 05 - zxmzy
+  - 🇹🇷 土耳其 (Turkey) 06 - zxmzy
+  - 🇹🇷 土耳其 (Turkey) 07 - zxmzy
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -52,5 +101,9 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - zxmzy
   - 🇹🇷 土耳其 (Turkey) 02 - zxmzy
   - 🇹🇷 土耳其 (Turkey) 03 - zxmzy
+  - 🇹🇷 土耳其 (Turkey) 04 - zxmzy
+  - 🇹🇷 土耳其 (Turkey) 05 - zxmzy
+  - 🇹🇷 土耳其 (Turkey) 06 - zxmzy
+  - 🇹🇷 土耳其 (Turkey) 07 - zxmzy
 rules:
 - MATCH,PROXIES
