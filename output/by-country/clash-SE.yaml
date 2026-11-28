@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇸🇪 SE 01 - zxmzy
   type: vmess
-  server: 138.199.55.230
+  server: 62.93.166.184
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -16,13 +16,6 @@ proxies:
   skip-cert-verify: true
   servername: ''
 - name: 🇸🇪 SE 02 - zxmzy
-  type: ss
-  server: 138.199.55.243
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇸🇪 SE 03 - zxmzy
   type: vless
   server: 193.188.21.253
   port: 14430
@@ -35,6 +28,17 @@ proxies:
     path: /vless
     headers:
       Host: 193.188.21.253
+- name: 🇸🇪 SE 03 - zxmzy
+  type: vmess
+  server: 138.199.55.230
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
 - name: 🇸🇪 SE 04 - zxmzy
   type: vmess
   server: 62.93.166.184
@@ -47,6 +51,35 @@ proxies:
   skip-cert-verify: true
   servername: ''
 - name: 🇸🇪 SE 05 - zxmzy
+  type: vmess
+  server: 62.93.166.184
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇸🇪 SE 06 - zxmzy
+  type: vmess
+  server: 62.93.166.184
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: xmfhlpy.com
+- name: 🇸🇪 SE 07 - zxmzy
+  type: ss
+  server: 138.199.55.243
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇸🇪 SE 08 - zxmzy
   type: vless
   server: 5.178.109.174
   port: 14430
@@ -59,18 +92,7 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
-- name: 🇸🇪 SE 06 - zxmzy
-  type: vmess
-  server: 62.93.166.184
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇸🇪 SE 07 - zxmzy
+- name: 🇸🇪 SE 09 - zxmzy
   type: vless
   server: ws.dhafhdtjdti.site
   port: 2053
@@ -84,28 +106,6 @@ proxies:
     path: /
     headers:
       Host: ws.dhafhdtjdti.site
-- name: 🇸🇪 SE 08 - zxmzy
-  type: vmess
-  server: 62.93.166.184
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇸🇪 SE 09 - zxmzy
-  type: vmess
-  server: 62.93.166.184
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
 proxy-groups:
 - name: PROXIES
   type: select
